@@ -1,13 +1,13 @@
-/* Variables base para un diseño limpio y educativo */
+/* Variables base para un diseño limpio, profesional y educativo */
 :root {
-  --primary: #2563eb;
-  /* Azul vibrante moderno */
+  --primary: #2563eb;       
   --primary-dark: #1d4ed8;
-  --secondary: #10b981;
-  /* Verde esmeralda para éxitos/reflexiones */
-  --light-bg: #f8fafc;
-  /* Fondo principal gris muy claro */
+  --primary-subtle: #dbeafe;
+  --secondary: #10b981;     
+  --light-bg: #f8fafc;      
   --dark-text: #0f172a;
+  --text-muted: #64748b;
+  --netflix-red: #e50914;
 }
 
 body {
@@ -15,78 +15,52 @@ body {
   color: var(--dark-text);
   background-color: #ffffff;
   position: relative;
+  padding-top: 70px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.navbar-brand,
-.section-title {
+h1, h2, h3, h4, h5, h6, .navbar-brand, .section-title {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Espaciados personalizados */
 .py-6 {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-.text-primary {
-  color: var(--primary) !important;
-}
-
-.bg-primary {
-  background-color: var(--primary) !important;
-}
-
-.btn-primary {
-  background-color: var(--primary);
-  border-color: var(--primary);
-}
-
-.btn-primary:hover {
-  background-color: var(--primary-dark);
-  border-color: var(--primary-dark);
-}
-
-/* Navbar efecto Glassmorphism al hacer scroll */
+/* Navbar superior */
 .navbar {
   transition: all 0.3s ease;
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
-
 .navbar-brand {
   font-size: 1.5rem;
   color: var(--primary) !important;
 }
-
 .nav-link {
   color: #475569;
   text-transform: uppercase;
   font-size: 0.85rem;
   letter-spacing: 0.5px;
 }
-
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover, .nav-link.active {
   color: var(--primary) !important;
 }
+.nav-link.text-danger:hover {
+  color: var(--netflix-red) !important;
+}
 
-/* Títulos de sección */
+/* Títulos con línea decorativa inferior */
 .section-title {
   position: relative;
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
-
 .section-title::after {
   content: '';
   position: absolute;
-  width: 50px;
+  width: 60px;
   height: 4px;
   background-color: var(--primary);
   bottom: 0;
@@ -95,79 +69,193 @@ h6,
   border-radius: 2px;
 }
 
-/* Portada (Hero) */
+/* Hero / Portada Principal */
 .hero-section {
-  min-height: 100vh;
-  /* Imagen de fondo educativa. Puedes cambiar la URL */
+  min-height: 85vh;
   background: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
   position: relative;
 }
-
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* Gradiente sobre la imagen para asegurar lectura del texto */
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(15, 23, 42, 0.8) 100%);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.92) 0%, rgba(15, 23, 42, 0.85) 100%);
   z-index: 1;
 }
-
 .text-shadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
 }
-
 .tracking-wide {
   letter-spacing: 2px;
 }
 
-/* Tarjetas de Sesiones (estilo grid/componentes UI) */
+/* Tarjetas de Diario de Sesiones */
 .session-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0,0,0,0.06);
 }
-
 .session-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 1rem 3rem rgba(37, 99, 235, 0.08) !important;
   border-color: var(--primary) !important;
 }
-
 .session-icon {
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border-radius: 12px;
 }
 
-/* Integrantes */
-.group-photo-card img {
-  height: 400px;
+/* --- MULTIMEDIA SESIONES (Modal 2x2) --- */
+.media-box {
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.media-box iframe, .media-box img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center 20%;
 }
 
-.member-card {
+/* --- VLOG ESTILO NETFLIX (GRID) --- */
+.vlog-seasons .nav-link {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+}
+.vlog-seasons .nav-link:hover {
+  border-color: #888;
+}
+.vlog-seasons .nav-link.active {
+  background-color: var(--netflix-red) !important;
+  border-color: var(--netflix-red) !important;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);
+}
+
+.vlog-card {
+  background: #181818;
+  border-radius: 8px;
+  overflow: hidden;
   transition: transform 0.3s ease;
+  cursor: pointer;
+  height: 100%; /* Adapta la altura en el Grid */
+  border: 1px solid #333;
+}
+.vlog-card:hover {
+  transform: scale(1.05);
+  border-color: #555;
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.vlog-thumbnail {
+  aspect-ratio: 16/9; /* Proporción panorámica para videos */
+  background: #222;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vlog-card img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+.play-btn-overlay {
+  position: absolute;
+  font-size: 3rem;
+  color: rgba(255,255,255,0.8);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.vlog-card:hover .play-btn-overlay { 
+  opacity: 1; 
 }
 
-.member-card:hover {
-  transform: translateY(-5px);
+/* Proyecto: Pestañas y Acordeones */
+.nav-pills .nav-link {
+  color: var(--dark-text);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.nav-pills .nav-link:hover {
+  background-color: #e2e8f0;
+}
+.nav-pills#proyecto-tabs .nav-link.active {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+.accordion-item {
+  border: 1px solid rgba(0,0,0,0.06) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--light-bg);
+  color: var(--primary);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.05);
+}
+.accordion-button:focus {
+  box-shadow: none;
 }
 
+/* Área de Tareas individuales */
+.task-btn {
+  transition: transform 0.2s;
+}
+.task-btn:hover {
+  transform: scale(1.04);
+}
+.task-card {
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05) !important;
+}
+.task-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary) !important;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.06) !important;
+}
+.task-card .btn-outline-secondary:hover {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+/* --- INTEGRANTES (CUADROS) --- */
+.member-img-wrapper {
+  aspect-ratio: 3/4;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f1f5f9;
+  border: 4px solid #fff;
+}
+.member-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.member-card:hover img { 
+  transform: scale(1.1); 
+}
 .avatar-placeholder {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }

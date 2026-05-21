@@ -8,9 +8,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Open+Sans:wght@400;500;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 
@@ -28,6 +26,9 @@
         <ul class="navbar-nav gap-3 fw-semibold">
           <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="#sesiones">Sesiones</a></li>
+          <li class="nav-item"><a class="nav-link text-danger fw-bold" href="#vlog">Didaflix</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyecto">Proyecto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tareas">Tareas</a></li>
           <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
           <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusión</a></li>
         </ul>
@@ -47,7 +48,6 @@
       </p>
       <div class="d-flex justify-content-center gap-3">
         <a href="#sesiones" class="btn btn-light btn-lg px-5 rounded-pill fw-bold shadow-lg">Ver Sesiones</a>
-        <a href="#integrantes" class="btn btn-outline-light btn-lg px-5 rounded-pill fw-bold">Conócenos</a>
       </div>
     </div>
     <div class="hero-overlay"></div>
@@ -57,9 +57,8 @@
     <div class="container">
       <div class="text-center mb-5">
         <h2 class="fw-bold section-title">Diario de Sesiones</h2>
-        <p class="text-muted">Desarrollo de las 28 clases teóricas y prácticas del curso.</p>
+        <p class="text-muted">Desarrollo de las 28 clases teóricas y prácticas. Haz clic para leer más.</p>
       </div>
-
       <div class="row g-4" id="contenedor-sesiones"></div>
     </div>
   </section>
@@ -73,18 +72,257 @@
         </div>
         <div class="modal-body p-4 p-md-5 bg-light">
           <div class="d-flex gap-2 mb-4" id="modalBadges"></div>
-
-          <h6 class="fw-bold text-primary text-uppercase mb-3"><i class="bi bi-file-earmark-text me-2"></i>Desarrollo
-          </h6>
-          <div id="modalApuntes" class="mb-4 bg-white p-4 rounded-3 shadow-sm border border-light"></div>
-
-          <h6 class="fw-bold text-success text-uppercase mb-3"><i class="bi bi-camera-video me-2"></i>Vlog Reflexivo
-          </h6>
-          <div id="modalVlog" class="mb-3"></div>
+          
+          <h6 class="fw-bold text-primary text-uppercase mb-3"><i class="bi bi-file-earmark-text me-2"></i>Desarrollo de la sesión</h6>
+          <div id="modalApuntes" class="mb-4 bg-white p-4 rounded-3 shadow-sm border border-light text-secondary"></div>
+          
+          <h6 class="fw-bold text-dark text-uppercase mb-3"><i class="bi bi-collection-play me-2"></i>Galería Multimedia</h6>
+          <div class="row g-2" id="modalMultimedia"></div>
         </div>
       </div>
     </div>
   </div>
+
+  <section id="vlog" class="py-6 bg-dark text-white overflow-hidden">
+    <div class="container">
+      <div class="mb-5 text-center text-md-start">
+        <h2 class="fw-bold fs-2 mb-2"><span class="text-danger">VLOG:</span> La Serie Documental</h2>
+        <p class="text-white-50">Sigue nuestro viaje de aprendizaje clase a clase.</p>
+      </div>
+
+      <ul class="nav nav-pills mb-4 vlog-seasons justify-content-center justify-content-md-start" id="vlog-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-pill px-4 py-2 me-2 mb-2 fw-bold" id="t1-tab" data-bs-toggle="pill" data-bs-target="#t1" type="button" role="tab">Temporada 1</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4 py-2 me-2 mb-2 fw-bold" id="t2-tab" data-bs-toggle="pill" data-bs-target="#t2" type="button" role="tab">Temporada 2</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4 py-2 me-2 mb-2 fw-bold" id="t3-tab" data-bs-toggle="pill" data-bs-target="#t3" type="button" role="tab">Temporada 3</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="vlog-tabContent">
+        <div class="tab-pane fade show active" id="t1" role="tabpanel" tabindex="0">
+          <div class="row g-4" id="vlog-t1-container"></div>
+        </div>
+        <div class="tab-pane fade" id="t2" role="tabpanel" tabindex="0">
+          <div class="row g-4" id="vlog-t2-container"></div>
+        </div>
+        <div class="tab-pane fade" id="t3" role="tabpanel" tabindex="0">
+          <div class="row g-4" id="vlog-t3-container"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="proyecto" class="py-6">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold section-title">El Proyecto</h2>
+        <p class="text-muted">Desglose de nuestra propuesta educativa.</p>
+      </div>
+
+      <ul class="nav nav-pills justify-content-center mb-5" id="proyecto-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-pill px-4 py-2 mx-2 fw-bold" id="planificacion-tab"
+            data-bs-toggle="pill" data-bs-target="#planificacion" type="button" role="tab">Planificación</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4 py-2 mx-2 fw-bold" id="accion-tab" data-bs-toggle="pill"
+            data-bs-target="#accion" type="button" role="tab">Acción</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="proyecto-tabContent">
+        <div class="tab-pane fade show active" id="planificacion" role="tabpanel" tabindex="0">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="accordion shadow-sm" id="accordionPlanificacion">
+                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-afect">
+                      <i class="bi bi-heart-fill text-danger me-2"></i> Afectividad
+                    </button>
+                  </h2>
+                  <div id="plan-afect" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
+                    <div class="accordion-body bg-light">Texto sobre la planificación de la afectividad...</div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-movi">
+                      <i class="bi bi-activity text-success me-2"></i> Movimiento
+                    </button>
+                  </h2>
+                  <div id="plan-movi" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
+                    <div class="accordion-body bg-light">Texto sobre la planificación del movimiento...</div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-meta">
+                      <i class="bi bi-brain text-primary me-2"></i> Proceso Metacognitivo
+                    </button>
+                  </h2>
+                  <div id="plan-meta" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
+                    <div class="accordion-body bg-light">Texto sobre el proceso metacognitivo en la planificación...</div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-lenguaje">
+                      <i class="bi bi-chat-quote-fill text-warning me-2"></i> Lenguaje
+                    </button>
+                  </h2>
+                  <div id="plan-lenguaje" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
+                    <div class="accordion-body bg-light">Texto sobre la planificación del lenguaje...</div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0 rounded-3 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-ysi">
+                      <i class="bi bi-question-circle-fill text-info me-2"></i> ¿Y si...?
+                    </button>
+                  </h2>
+                  <div id="plan-ysi" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
+                    <div class="accordion-body bg-light">Hipótesis y planes de contingencia (¿Y si...?).</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="accion" role="tabpanel" tabindex="0">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="accordion shadow-sm" id="accordionAccion">
+                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-afect">
+                      <i class="bi bi-heart-fill text-danger me-2"></i> Afectividad
+                    </button>
+                  </h2>
+                  <div id="acc-afect" class="accordion-collapse collapse" data-bs-parent="#accordionAccion">
+                    <div class="accordion-body bg-light">Ejecución en el área de afectividad...</div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-movi">
+                      <i class="bi bi-activity text-success me-2"></i> Movimiento
+                    </button>
+                  </h2>
+                  <div id="acc-movi" class="accordion-collapse collapse" data-bs-parent="#accordionAccion">
+                    <div class="accordion-body bg-light">Ejecución en el área de movimiento...</div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-meta">
+                      <i class="bi bi-brain text-primary me-2"></i> Proceso Metacognitivo
+                    </button>
+                  </h2>
+                  <div id="acc-meta" class="accordion-collapse collapse" data-bs-parent="#accordionAccion">
+                    <div class="accordion-body bg-light">Ejecución del proceso metacognitivo...</div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0 rounded-3 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-lenguaje">
+                      <i class="bi bi-chat-quote-fill text-warning me-2"></i> Lenguaje
+                    </button>
+                  </h2>
+                  <div id="acc-lenguaje" class="accordion-collapse collapse" data-bs-parent="#accordionAccion">
+                    <div class="accordion-body bg-light">Ejecución en el área del lenguaje...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tareas" class="py-6 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold section-title">Tareas del Grupo</h2>
+        <p class="text-muted">Desglose de los 7 documentos de trabajo elaborados durante el curso.</p>
+      </div>
+
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8 text-center">
+          <div class="p-4 bg-white rounded-4 shadow-sm border border-primary-subtle">
+            <h4 class="fw-bold text-primary mb-4"><i class="bi bi-people-fill me-2"></i>Tareas Conjuntas</h4>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <button class="btn btn-primary px-4 py-2 rounded-pill shadow-sm task-btn"><i class="bi bi-file-earmark-pdf-fill me-2"></i>Tarea 1</button>
+              <button class="btn btn-primary px-4 py-2 rounded-pill shadow-sm task-btn"><i class="bi bi-file-earmark-pdf-fill me-2"></i>Tarea 2</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="fw-bold text-center mb-4"><i class="bi bi-person-lines-fill text-secondary me-2"></i>Tareas Individuales</h4>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm rounded-4 h-100 p-3 task-card text-center">
+            <div class="avatar-placeholder bg-primary-subtle text-primary mx-auto mb-3">GL</div>
+            <h5 class="fw-bold mb-3">Gloria</h5>
+            <div class="d-flex flex-column gap-2">
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 3</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 4</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 5</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 6</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 7</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm rounded-4 h-100 p-3 task-card text-center">
+            <div class="avatar-placeholder bg-success-subtle text-success mx-auto mb-3">LP</div>
+            <h5 class="fw-bold mb-3">Pacheco</h5>
+            <div class="d-flex flex-column gap-2">
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 3</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 4</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 5</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 6</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 7</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm rounded-4 h-100 p-3 task-card text-center">
+            <div class="avatar-placeholder bg-warning-subtle text-warning mx-auto mb-3">JM</div>
+            <h5 class="fw-bold mb-3">Joselu</h5>
+            <div class="d-flex flex-column gap-2">
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 3</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 4</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 5</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 6</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 7</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm rounded-4 h-100 p-3 task-card text-center">
+            <div class="avatar-placeholder bg-danger-subtle text-danger mx-auto mb-3">NO</div>
+            <h5 class="fw-bold mb-3">Nathalie</h5>
+            <div class="d-flex flex-column gap-2">
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 3</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 4</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 5</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 6</button>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill"><i class="bi bi-file-text me-1"></i>Tarea 7</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="integrantes" class="py-6">
     <div class="container">
@@ -93,46 +331,41 @@
         <p class="text-muted">Los futuros docentes detrás de este proyecto.</p>
       </div>
 
-      <div class="row justify-content-center mb-5">
-        <div class="col-md-8">
-          <div class="card border-0 shadow-sm rounded-4 overflow-hidden group-photo-card">
-            <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-              class="card-img-top" alt="Foto de grupo Profequerones">
-            <div class="card-body text-center p-4">
-              <h5 class="fw-bold text-primary mb-0">Grupo Profequerones</h5>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="member-card text-center">
+            <div class="member-img-wrapper mb-3 shadow-sm">
+              <img src="https://via.placeholder.com/300x400?text=Gloria" class="img-fluid" alt="Gloria">
             </div>
+            <h5 class="fw-bold mb-0">Gloria María</h5>
+            <p class="text-primary small fw-bold">Luque Ángel</p>
           </div>
         </div>
-      </div>
-
-      <div class="row g-4 text-center justify-content-center">
-        <div class="col-sm-6 col-lg-3">
-          <div class="member-card p-4 rounded-4 shadow-sm bg-white border border-light h-100">
-            <div class="avatar-placeholder bg-primary-subtle text-primary mx-auto mb-3">GL</div>
-            <h5 class="fw-bold mb-1">Gloria María Luque</h5>
-            <p class="text-muted small">Investigación y Redacción</p>
+        <div class="col-6 col-md-3">
+          <div class="member-card text-center">
+            <div class="member-img-wrapper mb-3 shadow-sm">
+              <img src="https://via.placeholder.com/300x400?text=Pacheco" class="img-fluid" alt="Pacheco">
+            </div>
+            <h5 class="fw-bold mb-0">Lucas</h5>
+            <p class="text-primary small fw-bold">Pacheco Bravo</p>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-3">
-          <div class="member-card p-4 rounded-4 shadow-sm bg-white border border-light h-100">
-            <div class="avatar-placeholder bg-success-subtle text-success mx-auto mb-3">LP</div>
-            <h5 class="fw-bold mb-1">Lucas Pacheco</h5>
-            <p class="text-muted small">Coordinación y Diseño</p>
+        <div class="col-6 col-md-3">
+          <div class="member-card text-center">
+            <div class="member-img-wrapper mb-3 shadow-sm">
+              <img src="https://via.placeholder.com/300x400?text=Joselu" class="img-fluid" alt="Joselu">
+            </div>
+            <h5 class="fw-bold mb-0">José Luis</h5>
+            <p class="text-primary small fw-bold">Molina Redondo</p>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-3">
-          <div class="member-card p-4 rounded-4 shadow-sm bg-white border border-light h-100">
-            <div class="avatar-placeholder bg-warning-subtle text-warning mx-auto mb-3">JM</div>
-            <h5 class="fw-bold mb-1">José Luis Molina</h5>
-            <p class="text-muted small">Desarrollo Web y Vlogs</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <div class="member-card p-4 rounded-4 shadow-sm bg-white border border-light h-100">
-            <div class="avatar-placeholder bg-danger-subtle text-danger mx-auto mb-3">NO</div>
-            <h5 class="fw-bold mb-1">Nathalie Sophie Orens</h5>
-            <p class="text-muted small">Edición y Reflexión</p>
+        <div class="col-6 col-md-3">
+          <div class="member-card text-center">
+            <div class="member-img-wrapper mb-3 shadow-sm">
+              <img src="https://via.placeholder.com/300x400?text=Nathalie" class="img-fluid" alt="Nathalie">
+            </div>
+            <h5 class="fw-bold mb-0">Nathalie Sophie</h5>
+            <p class="text-primary small fw-bold">Orens Gómez</p>
           </div>
         </div>
       </div>
