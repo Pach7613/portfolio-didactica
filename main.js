@@ -20,7 +20,7 @@ Sobre la nota, se divide al 50%: la mitad son los trabajos y el portfolio, y la 
 Para terminar la sesión, formamos los equipos de trabajo. La regla para repartir los roles (Coordinación, Secretaría, Portavoz y Material) era muy curiosa: cada uno debía elegir el rol que peor se le da para así obligarse a mejorar. Tras debatir, así nació oficialmente nuestro grupo: Glori, Pacheco, Joselu y Nathalie.`,
     fotos: [
       ("./img/clase.png"),
-      ("./img/img.jpg")
+      ("./img/img.JPG")
     ],
     videos: []
   },
@@ -43,8 +43,8 @@ Por último, asignamos nuestros roles definitivos en el grupo. Como acordamos el
 - Portavoz (Pacheco): No le gusta nada hablar en público, así que esto le servirá para ganar seguridad y perder el miedo.
 - Responsable de Material (Glori): Aunque toma buenos apuntes, es bastante despistada. Esto le ayudará a ser más atenta a los detalles y organizada.`,
     fotos: [
-      ("./img/img1.jpg"),
-      ("./img/img2.jpg")
+      ("./img/img1.JPG"),
+      ("./img/img2.JPG")
     ],
     videos: []
   },
@@ -76,7 +76,7 @@ Además, pautamos los tiempos: 40 min de clase, 5 de descanso y 15 de repaso.
       
       <div class="media-box rounded-4 overflow-hidden border border-success border-opacity-25 shadow">
         <video controls class="w-100 d-block">
-          <source src="./img/Minecraft.mp4" type="video/mp4">
+          <source src="./img/Minecraft.MP4" type="video/mp4">
           Tu navegador no soporta el vídeo.
         </video>
         
@@ -134,10 +134,10 @@ Para poner nuestras investigaciones en común, Carlos propuso una dinámica de r
 Para romper el hielo y conocernos mejor, hicimos varios juegos conjuntos: simulamos el sonido de una tormenta, hicimos interpretaciones creativas usando el palo de una escoba, y terminamos con un reto de coordinación donde grupos de cinco teníamos que bajar el palo hasta el suelo usando solo dos dedos. Fue una experiencia preciosa. Salir de las cuatro paredes del aula a las que estamos acostumbrados y convivir con otra clase es un soplo de aire fresco que enriquece un montón la asignatura.`,
     fotos: [],
     videos: [
-      "./img/video1.mp4", 
-      "./img/video2.mp4",
-      "./img/video3.mp4",
-      "./img/video4.mp4"
+      "./img/video1.MP4", 
+      "./img/video2.MP4",
+      "./img/video3.MP4",
+      "./img/video4.MP4"
     ]
   },
   // ------------------ SESIÓN 5 ------------------
