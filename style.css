@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .section-title {
 /* Hero / Portada Principal */
 .hero-section {
   min-height: 85vh;
-  background: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  background: url('./img/clase.png') center/cover no-repeat;
   position: relative;
 }
 .hero-overlay {
@@ -266,4 +266,41 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .section-title {
 .hover-scale:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3) !important;
+}
+/* --- ESTILOS EXTRA PARA SESIÓN 3 (MINECRAFT Y TIKTOK) --- */
+
+/* Caja destacada para el trabajo de Minecraft */
+.minecraft-work-callout {
+  background: #1e1e1e; /* Fondo oscuro tipo código/juego */
+  border: 2px solid #388e3c; /* Borde verde Minecraft */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.minecraft-work-callout:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(56, 142, 60, 0.2) !important;
+}
+
+/* Botones para los links de TikTok */
+.tiktok-link-button {
+  background-color: white;
+  color: #161823; /* Negro TikTok */
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #e1e1e2;
+}
+
+.tiktok-link-button:hover {
+  background-color: #f8f8f8;
+  border-color: #ff0050; /* Rojo TikTok al hover */
+  color: #ff0050;
+  transform: translateY(-2px);
+}
+
+.tiktok-link-button i {
+  color: #ff0050; /* Icono siempre rojo */
+  transition: transform 0.3s ease;
+}
+
+.tiktok-link-button:hover i {
+  transform: rotate(10deg) scale(1.1);
 }

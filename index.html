@@ -61,11 +61,22 @@
 
   <section id="sesiones" class="py-6 bg-light">
     <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold section-title">Diario de Sesiones</h2>
-        <p class="text-muted">Desarrollo de las 28 clases teóricas y prácticas. Haz clic para leer más.</p>
+      
+      <div class="row mb-5 align-items-end text-center text-md-start">
+        <div class="col-md-8">
+          <h2 class="fw-bold section-title">Diario de Sesiones</h2>
+          <p class="text-muted mb-0">Desarrollo de las clases teóricas y prácticas. Haz clic para leer más.</p>
+        </div>
+        
+        <div class="col-md-4 text-md-end mt-4 mt-md-0">
+          <button class="btn btn-primary rounded-pill fw-bold shadow-sm px-4" data-bs-toggle="modal" data-bs-target="#modalApuntesTeoria">
+            <i class="bi bi-journal-bookmark-fill me-2"></i>Ver Apuntes Globales
+          </button>
+        </div>
       </div>
+
       <div class="row g-4" id="contenedor-sesiones"></div>
+      
     </div>
   </section>
 
@@ -471,6 +482,150 @@
       </div>
     </div>
   </section>
+
+  <div class="modal fade" id="modalApuntesTeoria" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+      <div class="modal-content border-0 shadow-lg rounded-4">
+        
+        <div class="modal-header bg-primary text-white border-0 py-3">
+          <div>
+            <h4 class="modal-title fw-bold mb-0"><i class="bi bi-book-half me-2"></i>Apuntes Globales de Teoría</h4>
+            <p class="small mb-0 text-white-50 mt-1">Síntesis para el Ejercicio Reflexivo (Recopilación del Portfolio)</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body p-4 p-md-5 bg-light">
+          
+          <div class="alert alert-info border-0 shadow-sm mb-4">
+            <h5 class="fw-bold"><i class="bi bi-info-circle-fill me-2"></i>Nuestra Reflexión sobre la Teoría</h5>
+            <p class="mb-0 small">Realizando estos apuntes nos hemos dado cuenta de que hemos podido poner en práctica todos los apartados a lo largo del curso. Comprobamos que realmente no hacía falta estudiar de memoria porque lo hemos ido aplicando y asimilando: desde abandonar el modelo estandarizado de fábricas, hasta aplicar metodologías activas (gamificación, ABP en nuestro proyecto ROMA), valores de inclusión y sistemas de coevaluación/autoevaluación. ¡Entendemos todo gracias a la práctica!</p>
+          </div>
+
+          <div class="accordion shadow-sm rounded-4 overflow-hidden" id="accordionApuntes">
+            
+            <div class="accordion-item border-0 border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#apuntes1">
+                  1. Vigotsky y Evolución de los Principios Pedagógicos
+                </button>
+              </h2>
+              <div id="apuntes1" class="accordion-collapse collapse show" data-bs-parent="#accordionApuntes">
+                <div class="accordion-body bg-white text-muted lh-lg">
+                  <h6 class="fw-bold text-primary">Vigotsky y la Doble Formación</h6>
+                  <p>El aprendizaje es un proceso social. Ocurre un proceso de <strong>doble formación</strong>: primero aprendizajes interpersonales (con ayuda de otros) y luego intrapersonales (interiorizado e individual). Todo a través del lenguaje, creando una realidad (ej. este portfolio).</p>
+                  
+                  <h6 class="fw-bold text-primary mt-4">El paso de la Enseñanza al Aprendizaje</h6>
+                  <ul class="mb-4">
+                    <li><strong>Pedagogía vs Didáctica:</strong> Pedagogía es teoría; didáctica es la práctica en el aula.</li>
+                    <li><strong>Objetivos vs Competencias:</strong> Objetivos = lo que se debe saber. Competencias = <em>saber hacer</em> con ese conocimiento en la vida real.</li>
+                    <li><strong>Cambios clave:</strong> Del alumnado pasivo al activo, del docente transmisor al guía/facilitador, y evaluación tradicional a evaluación formativa.</li>
+                  </ul>
+
+                  <h6 class="fw-bold text-primary">De la Fábrica al Mundo</h6>
+                  <p>Entre los siglos XVIII y XX se educaba como en las fábricas: estandarización por edades, fragmentación por asignaturas, obediencia, repetición y memorización. <br>
+                  A raíz de informes como Delors (1996) o PISA (2000), que evidenciaron que este modelo no preparaba para la vida, nacen iniciativas como el proyecto DeSeCo (competencias) o la Agenda 2030 (equidad, sostenibilidad e inclusión), analizados hoy por OCDE y UNESCO.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#apuntes2">
+                  2. La Didáctica, Políticas Educativas y el Currículum
+                </button>
+              </h2>
+              <div id="apuntes2" class="accordion-collapse collapse" data-bs-parent="#accordionApuntes">
+                <div class="accordion-body bg-white text-muted lh-lg">
+                  <h6 class="fw-bold text-primary">Contextos de la Didáctica</h6>
+                  <ul>
+                    <li><strong>Formal:</strong> La escuela. Jerárquico, certificado, normativo, con diseño y sistemas de evaluación.</li>
+                    <li><strong>No Formal:</strong> Actividades organizadas pero fuera de lo oficial (seminarios, jornadas).</li>
+                    <li><strong>Informal:</strong> Vida cotidiana. Muchas veces aprendemos más aquí (experiencial).</li>
+                  </ul>
+
+                  <h6 class="fw-bold text-primary mt-4">Políticas Educativas</h6>
+                  <p>Ninguna política educativa es neutra. Fluctúa dependiendo del partido o del modelo (conservador, social, etc). Si la metodología es abierta, hay más inclusión.</p>
+
+                  <h6 class="fw-bold text-primary mt-4">Tipos de Currículum</h6>
+                  <ul>
+                    <li><strong>Explícito/Formal:</strong> Experiencias conectadas a la normativa (objetivos, contenidos, evaluación). </li>
+                    <li><strong>Oculto:</strong> Valores y conductas no escritas que se transmiten. La teoría explicada debe concordar con nuestras conductas (ej. si hablas de diversidad, debes demostrar respeto).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#apuntes3">
+                  3. Metodologías Activas y Modelo TPACK
+                </button>
+              </h2>
+              <div id="apuntes3" class="accordion-collapse collapse" data-bs-parent="#accordionApuntes">
+                <div class="accordion-body bg-white text-muted lh-lg">
+                  <p>Cualquier metodología tiene un sustento epistémico (enfoque cualitativo/humanista o cuantitativo/instrumental). A los maestros a veces no se les da el valor que tienen sus prácticas.</p>
+                  
+                  <h6 class="fw-bold text-primary mt-3">Ejemplos de Metodologías:</h6>
+                  <ul class="mb-4">
+                    <li><strong>Gamificación:</strong> Aprendizaje basado en mecánicas de juego.</li>
+                    <li><strong>Flipped Classroom:</strong> Aula invertida.</li>
+                    <li><strong>Aprendizaje Servicio:</strong> Aprender haciendo una acción social real.</li>
+                    <li><strong>Visible Thinking:</strong> Rutinas de Harvard para hacer explícitos los procesos cognitivos.</li>
+                    <li><strong>ABP y Aprendizaje Cooperativo:</strong> Proyectos grupales heterogéneos con un fin común.</li>
+                  </ul>
+
+                  <h6 class="fw-bold text-primary">Modelo TPACK (Gracias a Irene)</h6>
+                  <p>Busca combinar 3 conocimientos fundamentales del docente:</p>
+                  <ol>
+                    <li><strong>CK (Contenido):</strong> Saber el temario (ej. qué es el sistema solar).</li>
+                    <li><strong>PK (Pedagógico):</strong> Saber cómo enseñar ese temario.</li>
+                    <li><strong>TK (Tecnológico):</strong> Saber aplicar las tecnologías para enseñarlo.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#apuntes4">
+                  4. Sistemas de Evaluación y Normativa Andaluza
+                </button>
+              </h2>
+              <div id="apuntes4" class="accordion-collapse collapse" data-bs-parent="#accordionApuntes">
+                <div class="accordion-body bg-white text-muted lh-lg">
+                  <h6 class="fw-bold text-primary">Tipos de Evaluación (En el tiempo)</h6>
+                  <ul>
+                    <li>Inicial o Diagnóstica</li>
+                    <li>Formativa o Continua (Valora el proceso, enfoque cualitativo)</li>
+                    <li>Sumativa o Final (Nota finalista, enfoque cuantitativo)</li>
+                  </ul>
+
+                  <h6 class="fw-bold text-primary mt-3">Tipos de Evaluación (Según quién)</h6>
+                  <ul>
+                    <li><strong>Heteroevaluación:</strong> Docente al alumno.</li>
+                    <li><strong>Autoevaluación:</strong> El alumno se evalúa a sí mismo.</li>
+                    <li><strong>Coevaluación:</strong> Compartida entre compañeros/pares.</li>
+                  </ul>
+
+                  <h6 class="fw-bold text-primary mt-4">Normativa y Estructura en Andalucía</h6>
+                  <p>Actualmente se rige por la LOMLOE a nivel estatal y el Decreto 101/2023 en Andalucía. <br>
+                  <strong>Competencias Claves:</strong> Son transversales (Lingüística, STEM, Digital...). <br>
+                  <strong>Competencias Específicas:</strong> Son los antiguos saberes de cada área y se dividen en descriptores operativos.</p>
+                  <p>La estructura del centro se divide en el Proyecto Educativo del Centro (el "ADN"), el ROF (normas de funcionamiento) y el Proyecto de Gestión (recursos y presupuestos).</p>
+                </div>
+              </div>
+            </div>
+
+          </div> </div>
+        
+        <div class="modal-footer border-0 bg-light py-3">
+          <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Cerrar Apuntes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="qrModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm">
       <div class="modal-content border-0 shadow-lg rounded-4 text-center p-3">
