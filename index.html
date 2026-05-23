@@ -30,6 +30,7 @@
           <li class="nav-item"><a class="nav-link" href="#proyecto">Proyecto</a></li>
           <li class="nav-item"><a class="nav-link" href="#tareas">Tareas</a></li>
           <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-success" href="#evaluacion">Evaluación</a></li> 
           <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusión</a></li>
           <li class="nav-item ms-lg-3 d-flex align-items-center">
             <button class="btn btn-outline-primary btn-sm rounded-pill fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#qrModal">
@@ -373,6 +374,84 @@
             <p class="text-primary small fw-bold">Orens Gómez</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evaluacion" class="py-6 bg-white border-top">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold section-title">Proceso de Evaluación</h2>
+        <p class="text-muted">Nuestra reflexión grupal y vuestra valoración sobre el proyecto.</p>
+      </div>
+
+      <div class="row g-5 align-items-stretch">
+        
+        <div class="col-lg-5">
+          <div class="p-4 p-md-5 bg-primary-subtle rounded-4 h-100 shadow-sm border border-primary-subtle d-flex flex-column">
+            <h4 class="fw-bold text-primary mb-4"><i class="bi bi-person-check-fill me-2"></i>Nuestra Autoevaluación</h4>
+            <div class="text-dark lh-lg flex-grow-1">
+              <p>
+                Como futuros docentes, creemos que la reflexión sobre nuestra propia práctica es fundamental. Durante estas 14 semanas hemos aprendido a trabajar en equipo, a delegar y a confiar en las capacidades de los demás.
+              </p>
+              <p>
+                <strong><i class="bi bi-arrow-up-right-circle text-success me-1"></i>Nuestras fortalezas:</strong> La creatividad en el diseño de esta web, la constancia en el diario de sesiones y nuestra capacidad de adaptar la teoría a formatos visuales y reales.
+              </p>
+              <p>
+                <strong><i class="bi bi-arrow-down-right-circle text-danger me-1"></i>Nuestros retos:</strong> Mejorar la capacidad de síntesis ante el gran volumen de información y aprender a controlar mejor los tiempos en nuestras exposiciones orales.
+              </p>
+            </div>
+            <div class="mt-4 p-3 bg-white rounded-3 border-start border-4 border-primary shadow-sm">
+              <span class="text-primary fw-bold d-block mb-1">Calificación propuesta por el grupo:</span> 
+              <span class="fs-5 fw-bold text-dark"><i class="bi bi-star-fill text-warning me-2"></i>Excelente (Sobresaliente)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="p-4 p-md-5 bg-light rounded-4 h-100 shadow-sm border border-light">
+            <h4 class="fw-bold text-dark mb-3"><i class="bi bi-clipboard-data-fill text-success me-2"></i>Evalúa nuestro trabajo</h4>
+            <p class="text-muted small mb-4">Ayúdanos a mejorar. Desliza la barra para valorar del 1 (Insuficiente) al 5 (Excelente) y déjanos un comentario constructivo.</p>
+
+            <form action="https://formspree.io/f/xdajdlnp" method="POST">
+              
+              <div class="mb-4">
+                <label class="form-label fw-bold text-dark">1. Presentación Oral y Claridad</label>
+                <input type="range" class="form-range" min="1" max="5" step="1" name="Nota_Presentacion_Oral" value="3">
+                <div class="d-flex justify-content-between text-muted" style="font-size: 0.7rem; font-weight: 600;">
+                  <span>Insuficiente</span><span>Mejorable</span><span>Bien</span><span>Muy Bien</span><span>Excelente</span>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-bold text-dark">2. Diseño y Usabilidad del Portfolio</label>
+                <input type="range" class="form-range" min="1" max="5" step="1" name="Nota_Pagina_Web" value="3">
+                <div class="d-flex justify-content-between text-muted" style="font-size: 0.7rem; font-weight: 600;">
+                  <span>Insuficiente</span><span>Mejorable</span><span>Bien</span><span>Muy Bien</span><span>Excelente</span>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-bold text-dark">3. Recursos (Vídeos, TikToks, Escape Room...)</label>
+                <input type="range" class="form-range" min="1" max="5" step="1" name="Nota_Recursos" value="3">
+                <div class="d-flex justify-content-between text-muted" style="font-size: 0.7rem; font-weight: 600;">
+                  <span>Insuficiente</span><span>Mejorable</span><span>Bien</span><span>Muy Bien</span><span>Excelente</span>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="comentarios" class="form-label fw-bold text-dark">Comentarios o Sugerencias (Opcional)</label>
+                <textarea class="form-control bg-white" id="comentarios" name="Comentario_Feedback" rows="3" placeholder="Escribe aquí tu opinión sobre nuestro trabajo..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-success px-4 py-3 fw-bold w-100 rounded-pill shadow-sm hover-scale">
+                <i class="bi bi-send-fill me-2"></i>Enviar Evaluación a Profequerones
+              </button>
+            </form>
+
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

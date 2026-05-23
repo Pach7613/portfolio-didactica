@@ -92,7 +92,7 @@ Cerramos el día grabando nuestro primer TikTok como encargados de la semana: hi
     semana: "Segunda Semana",
     fecha: "26/02/2026",
     titulo: "María Zambrano, Sueños y Encuentro con la Clase C",
-    apuntes: `Siguiendo con la temática del Día de Andalucía, hoy en los grupos reducidos tocó investigs noar sobre una figura andaluza importante. Nosotros elegimos a la veleña María Zambrano, la primera mujer filósofa en lengua española y una intelectual clave de nuestra historia. 
+    apuntes: `Siguiendo con la temática del Día de Andalucía, hoy en los grupos reducidos tocó investigar sobre una figura andaluza importante. Nosotros elegimos a la veleña María Zambrano, la primera mujer filósofa en lengua española y una intelectual clave de nuestra historia. 
 
 Nos centramos en un fragmento de su libro "Los Sueños y El Tiempo". Nos pareció fascinante cómo distingue dos tipos de sueños: los de la "psique" (pasivos, desordenados y dominados por el deseo) y los de la "persona". Estos últimos son muy especiales porque, aunque tampoco actuamos voluntariamente en ellos, nos presentan de golpe descubrimientos o soluciones a dilemas de nuestra vida real. Tienen una trascendencia que nos ayuda a comprendernos.
 
@@ -257,38 +257,63 @@ document.addEventListener('DOMContentLoaded', () => {
   const contenedorSesiones = document.getElementById('contenedor-sesiones');
   const modal = new bootstrap.Modal(document.getElementById('sesionModal'));
 
-  // A) Inyectar Tarjetas de Sesiones
-  sesionesDelPDF.forEach(sesion => {
-    if(!sesion) return;
+  // A) Agrupar las sesiones por semana
+  const sesionesPorSemana = sesionesDelPDF.reduce((acc, sesion) => {
+    if (!sesion) return acc;
+    if (!acc[sesion.semana]) {
+      acc[sesion.semana] = [];
+    }
+    acc[sesion.semana].push(sesion);
+    return acc;
+  }, {});
 
-    const div = document.createElement('div');
-    div.className = 'col-sm-6 col-md-6 col-lg-4';
+  // B) Inyectar Tarjetas de Sesiones organizadas por Semana
+  for (const [semana, sesiones] of Object.entries(sesionesPorSemana)) {
     
-    div.innerHTML = `
-      <div class="card h-100 p-4 rounded-4 bg-white session-card shadow-sm" onclick="abrirSesion(${sesion.id})">
-        <div class="d-flex justify-content-between align-items-start mb-3">
-          <div class="session-icon bg-primary-subtle text-primary fw-bold">
-            ${sesion.id}
-          </div>
-          <span class="badge bg-light text-secondary border px-2 py-1"><i class="bi bi-calendar3 me-1"></i>${sesion.fecha}</span>
-        </div>
-        <h5 class="fw-bold text-dark mb-2">${sesion.titulo}</h5>
-        <p class="text-muted small mb-0 fw-semibold"><i class="bi bi-clock me-1"></i>${sesion.semana}</p>
-        
-        <div class="mt-2">
-          <span class="badge bg-dark text-white"><i class="bi bi-images me-1"></i> Galería 2x2</span>
-        </div>
-        
-        <div class="mt-auto pt-3 d-flex align-items-center justify-content-between">
-          <span class="text-primary small fw-bold">Abrir sesión</span>
-          <i class="bi bi-arrow-right-short text-primary fs-4"></i>
-        </div>
+    // Crear el encabezado de la semana (Línea de tiempo / Separador guay)
+    const headerSemana = document.createElement('div');
+    headerSemana.className = 'col-12 mt-5 mb-3';
+    headerSemana.innerHTML = `
+      <div class="d-flex align-items-center gap-3">
+        <span class="badge bg-primary rounded-pill px-4 py-2 fs-6 shadow-sm text-uppercase tracking-wide">
+          <i class="bi bi-calendar-week me-2"></i>${semana}
+        </span>
+        <div class="flex-grow-1 border-bottom border-2 border-primary opacity-25"></div>
       </div>
     `;
-    contenedorSesiones.appendChild(div);
-  });
+    contenedorSesiones.appendChild(headerSemana);
 
-  // B) Inyectar Vlogs en Temporadas (10 capítulos por Temporada en un Grid responsive)
+    // Añadir las tarjetas de esa semana
+    sesiones.forEach(sesion => {
+      const div = document.createElement('div');
+      div.className = 'col-sm-6 col-md-6 col-lg-4';
+      
+      div.innerHTML = `
+        <div class="card h-100 p-4 rounded-4 bg-white session-card shadow-sm" onclick="abrirSesion(${sesion.id})">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="session-icon bg-primary-subtle text-primary fw-bold">
+              ${sesion.id}
+            </div>
+            <span class="badge bg-light text-secondary border px-2 py-1"><i class="bi bi-calendar3 me-1"></i>${sesion.fecha}</span>
+          </div>
+          <h5 class="fw-bold text-dark mb-2">${sesion.titulo}</h5>
+          <p class="text-muted small mb-0 fw-semibold"><i class="bi bi-clock me-1"></i>${sesion.semana}</p>
+          
+          <div class="mt-2">
+            <span class="badge bg-dark text-white"><i class="bi bi-images me-1"></i> Galería 2x2</span>
+          </div>
+          
+          <div class="mt-auto pt-3 d-flex align-items-center justify-content-between">
+            <span class="text-primary small fw-bold">Abrir sesión</span>
+            <i class="bi bi-arrow-right-short text-primary fs-4"></i>
+          </div>
+        </div>
+      `;
+      contenedorSesiones.appendChild(div);
+    });
+  }
+
+  // C) Inyectar Vlogs en Temporadas (10 capítulos por Temporada en un Grid responsive)
   const containerT1 = document.getElementById('vlog-t1-container');
   const containerT2 = document.getElementById('vlog-t2-container');
   const containerT3 = document.getElementById('vlog-t3-container');
@@ -322,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // C) Función para abrir la sesión en el Modal
+  // D) Función para abrir la sesión en el Modal
   window.abrirSesion = function(id) {
     const sesion = sesionesDelPDF.find(s => s.id === id);
     if(sesion) {
@@ -364,7 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // D) Función para hacer zoom a las fotos (Lightbox)
+  // E) Función para hacer zoom a las fotos (Lightbox)
   window.abrirFoto = function(src) {
     const modalImg = document.createElement("div");
     modalImg.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:10000;display:flex;align-items:center;justify-content:center;cursor:zoom-out;backdrop-filter:blur(8px);";

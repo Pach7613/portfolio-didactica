@@ -259,3 +259,11 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .section-title {
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
+/* Efecto para el botón de Evaluación */
+.hover-scale {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hover-scale:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3) !important;
+}
