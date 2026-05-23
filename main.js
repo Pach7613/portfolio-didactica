@@ -193,7 +193,7 @@ Como reflexión final, la entrevista de Ana Orantes debería ser obligatoria en 
     titulo: "La Emoción del Hilo: Presentación de las Narrativas Textiles",
     apuntes: `El día de hoy ha sido, sin duda, uno de los más emotivos del curso. Nos hemos reunido en el grupo reducido para reflexionar y presentar el resultado de nuestras narrativas textiles. La gran mayoría de la clase (incluido Carlos) hemos coincidido en dedicar este trabajo a nuestras madres o abuelas, mujeres valientes que han sido pilares fundamentales en nuestro desarrollo. 
 
-Se vivieron momentos de mucha emoción; compañeros que derramaron lágrimas al contar cómo esas mujeres dejaron atrás sus sueños para verles crecer, y otros que se emocionaron profundamente solo de escuchar los testimonios ajenos. Estas sesiones nos enseñan la importancia de ser agradecidos y de saber expresar nuestros sentimientos públicamente, una cualidad vital para nuestro futuro como docentes.
+Se vivieron momentos de mucha emoción donde incluso hubo quienes derramaron lágrimas al contar cómo esas mujeres dejaron atrás sus sueños para verles crecer, y otros que se emocionaron profundamente solo de escuchar los testimonios ajenos. Estas sesiones nos enseñan la importancia de ser agradecidos y de saber expresar nuestros sentimientos públicamente, una cualidad vital para nuestro futuro como docentes.
 
 A continuación, compartimos las reflexiones individuales de nuestro grupo:
 
