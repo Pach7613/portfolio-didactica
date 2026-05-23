@@ -31,6 +31,11 @@
           <li class="nav-item"><a class="nav-link" href="#tareas">Tareas</a></li>
           <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
           <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusión</a></li>
+          <li class="nav-item ms-lg-3 d-flex align-items-center">
+            <button class="btn btn-outline-primary btn-sm rounded-pill fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#qrModal">
+              <i class="bi bi-qr-code-scan me-1"></i> Escanear Web
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -335,7 +340,7 @@
         <div class="col-6 col-md-3">
           <div class="member-card text-center">
             <div class="member-img-wrapper mb-3 shadow-sm">
-              <img src="https://via.placeholder.com/300x400?text=Gloria" class="img-fluid" alt="Gloria">
+              <img src="./img/gloria.png" class="img-fluid" alt="Gloria">
             </div>
             <h5 class="fw-bold mb-0">Gloria María</h5>
             <p class="text-primary small fw-bold">Luque Ángel</p>
@@ -344,7 +349,7 @@
         <div class="col-6 col-md-3">
           <div class="member-card text-center">
             <div class="member-img-wrapper mb-3 shadow-sm">
-              <img src="https://via.placeholder.com/300x400?text=Pacheco" class="img-fluid" alt="Pacheco">
+              <img src="./img/pacheco1.png" class="img-fluid" alt="Pacheco">
             </div>
             <h5 class="fw-bold mb-0">Lucas</h5>
             <p class="text-primary small fw-bold">Pacheco Bravo</p>
@@ -353,7 +358,7 @@
         <div class="col-6 col-md-3">
           <div class="member-card text-center">
             <div class="member-img-wrapper mb-3 shadow-sm">
-              <img src="https://via.placeholder.com/300x400?text=Joselu" class="img-fluid" alt="Joselu">
+              <img src="./img/joselu.jpeg" class="img-fluid" alt="Joselu">
             </div>
             <h5 class="fw-bold mb-0">José Luis</h5>
             <p class="text-primary small fw-bold">Molina Redondo</p>
@@ -362,7 +367,7 @@
         <div class="col-6 col-md-3">
           <div class="member-card text-center">
             <div class="member-img-wrapper mb-3 shadow-sm">
-              <img src="https://via.placeholder.com/300x400?text=Nathalie" class="img-fluid" alt="Nathalie">
+              <img src="./img/nathalie.png" class="img-fluid" alt="Nathalie">
             </div>
             <h5 class="fw-bold mb-0">Nathalie Sophie</h5>
             <p class="text-primary small fw-bold">Orens Gómez</p>
@@ -387,6 +392,22 @@
       </div>
     </div>
   </section>
+  <div class="modal fade" id="qrModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content border-0 shadow-lg rounded-4 text-center p-3">
+        <div class="modal-header border-0 pb-0 justify-content-end">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <h5 class="fw-bold text-primary mb-2"><i class="bi bi-phone me-2"></i>¡Sigue nuestro Portfolio!</h5>
+          <p class="text-muted small mb-4">Abre la cámara de tu móvil y escanea el código para ver la web en directo.</p>
+          
+          <img src="./img/qr-web.png" alt="Código QR de la web" class="img-fluid rounded-3 shadow-sm border border-2 p-2 mb-2">
+          
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="bg-dark text-white-50 py-4 text-center">
     <div class="container">
