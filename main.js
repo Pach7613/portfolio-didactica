@@ -952,4 +952,48 @@ document.addEventListener('DOMContentLoaded', () => {
       modalEl.remove();
     });
   };
+  // Función para activar/desactivar el modo Tráiler Cinematográfico
+// Función para activar/desactivar el modo Tráiler Cinematográfico con Pantalla Completa
+window.toggleTrailer = function() {
+  const section = document.getElementById('vlog-section');
+  const video = document.getElementById('bg-trailer');
+  const btn = document.getElementById('btn-trailer');
+  const headerText = document.getElementById('vlog-text-header');
+
+  if (!section || !video) return;
+
+  section.classList.toggle('trailer-active');
+
+  if (section.classList.contains('trailer-active')) {
+    // EL TRÁILER SE ABRE
+    video.muted = false;       
+    video.currentTime = 0;     
+    btn.innerHTML = '<i class="bi bi-x-circle-fill me-2"></i>Volver a la Serie';
+    btn.classList.replace('btn-danger', 'btn-light');
+    headerText.style.opacity = '0'; 
+
+    // 🎬 Magia: Poner a pantalla completa
+    if (section.requestFullscreen) {
+      section.requestFullscreen();
+    } else if (section.webkitRequestFullscreen) { /* Para Safari */
+      section.webkitRequestFullscreen();
+    }
+
+  } else {
+    // VOLVEMOS A LA WEB NORMAL
+    video.muted = true;        
+    btn.innerHTML = '<i class="bi bi-play-circle-fill me-2"></i>Ver Tráiler';
+    btn.classList.replace('btn-light', 'btn-danger');
+    headerText.style.opacity = '1';
+
+    // 🎬 Magia: Salir de la pantalla completa
+    if (document.fullscreenElement || document.webkitFullscreenElement) {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) { /* Para Safari */
+        document.webkitExitFullscreen();
+      }
+    }
+  }
+};
 });
