@@ -689,15 +689,27 @@ Como reflexión final, tenemos que ser sinceros y críticos: este ejercicio nos 
 // ==========================================
 // 2. BASE DE DATOS - EPISODIOS VLOG (30 CAPÍTULOS)
 // ==========================================
-// Generamos automáticamente 30 capítulos. 
-const episodiosVlog = Array.from({ length: 30 }, (_, i) => {
-  return {
-    cap: i + 1,
-    titulo: `Episodio ${i + 1}: Resumen de la clase`,
-    duracion: `${Math.floor(Math.random() * 5 + 4)}:${Math.floor(Math.random() * 50 + 10)}`, // Duración aleatoria para que quede real
-    thumb: `https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80` // Pon la miniatura que quieras
-  };
-});
+const SOON_THUMB = 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80';
+function driveThumb(id) { return `https://drive.google.com/thumbnail?id=${id}&sz=w400`; }
+function driveEmbed(id) { return `https://drive.google.com/file/d/${id}/preview`; }
+
+const episodiosVlog = [
+  // ---- TEMPORADA 1 (Caps 1-10) ----
+  { cap: 1,  titulo: 'Reflexión Semana 1',  thumb: driveThumb('15GCefoVnx0VX_V4ZnA-H1DIje8QV-2z4'), videoUrl: driveEmbed('15GCefoVnx0VX_V4ZnA-H1DIje8QV-2z4') },
+  { cap: 2,  titulo: 'Reflexión Semana 2',  thumb: driveThumb('1BPfCf6NuNW6QX_C7CVCQ34bjt27oXVFj'), videoUrl: driveEmbed('1BPfCf6NuNW6QX_C7CVCQ34bjt27oXVFj') },
+  { cap: 3,  titulo: 'Próximamente',        thumb: SOON_THUMB, videoUrl: null },
+  { cap: 4,  titulo: 'Reflexión Semana 4',  thumb: driveThumb('1KTtx978AwuBk96efOH9TUIbyJAbSrbHA'), videoUrl: driveEmbed('1KTtx978AwuBk96efOH9TUIbyJAbSrbHA') },
+  { cap: 5,  titulo: 'Próximamente',        thumb: SOON_THUMB, videoUrl: null },
+  { cap: 6,  titulo: 'Reflexión Semana 6',  thumb: driveThumb('1OLA0ConXPvMS3tSZKJCHbOdsIFEIroux'), videoUrl: driveEmbed('1OLA0ConXPvMS3tSZKJCHbOdsIFEIroux') },
+  { cap: 7,  titulo: 'Reflexión Semana 7',  thumb: driveThumb('1SBhEPDYPxjxFjbYExGtuS8eiXfgtxMXi'), videoUrl: driveEmbed('1SBhEPDYPxjxFjbYExGtuS8eiXfgtxMXi') },
+  { cap: 8,  titulo: 'Reflexión Semana 8',  thumb: driveThumb('1Vy_2kcJREqV2cH35vj1pe1KgXg8QJSm9'), videoUrl: driveEmbed('1Vy_2kcJREqV2cH35vj1pe1KgXg8QJSm9') },
+  { cap: 9,  titulo: 'Reflexión Semana 9',  thumb: driveThumb('1nTVdxwir_WadC2HNsjEwKM3bw1jvU8Ck'), videoUrl: driveEmbed('1nTVdxwir_WadC2HNsjEwKM3bw1jvU8Ck') },
+  { cap: 10, titulo: 'Reflexión Semana 10', thumb: driveThumb('1u6mAOfBUlt_BQtOp6r9K47_9qSV6qwGW'), videoUrl: driveEmbed('1u6mAOfBUlt_BQtOp6r9K47_9qSV6qwGW') },
+  // ---- TEMPORADA 2 (Caps 11-20) ---- Próximamente
+  ...Array.from({ length: 10 }, (_, i) => ({ cap: i + 11, titulo: 'Próximamente', thumb: SOON_THUMB, videoUrl: null })),
+  // ---- TEMPORADA 3 (Caps 21-30) ---- Próximamente
+  ...Array.from({ length: 10 }, (_, i) => ({ cap: i + 21, titulo: 'Próximamente', thumb: SOON_THUMB, videoUrl: null })),
+];
 
 // ==========================================
 // 3. LÓGICA DE RENDERIZADO
@@ -771,16 +783,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const div = document.createElement('div');
     div.className = 'col-12 col-sm-6 col-md-4 col-lg-3'; // Columnas para la cuadrícula
     
+    const hasVideo = ep.videoUrl && ep.videoUrl.trim() !== '';
     div.innerHTML = `
-      <div class="vlog-card shadow-sm">
+      <div class="vlog-card shadow-sm ${hasVideo ? '' : 'opacity-50'}"
+           style="${hasVideo ? 'cursor:pointer;' : 'cursor:default;'}"
+           ${hasVideo ? `onclick="abrirVlog('${ep.videoUrl}', '${ep.titulo}', ${ep.cap})"` : ''}>
         <div class="vlog-thumbnail">
-          <img src="${ep.thumb}" alt="${ep.titulo}">
-          <div class="play-btn-overlay"><i class="bi bi-play-circle-fill"></i></div>
+          <img src="${ep.thumb}" alt="${ep.titulo}" onerror="this.src='${SOON_THUMB}'">
+          <div class="play-btn-overlay">
+            <i class="bi ${hasVideo ? 'bi-play-circle-fill' : 'bi-clock-fill'}"
+               style="${hasVideo ? '' : 'font-size:2rem;opacity:0.5;'}"></i>
+          </div>
         </div>
         <div class="p-3">
           <div class="d-flex justify-content-between small text-white-50 mb-1">
             <span class="fw-bold text-danger">Capítulo ${ep.cap}</span>
-            <span>${ep.duracion} min</span>
+            <span>${hasVideo ? '▶ Ver vídeo' : 'Próximamente'}</span>
           </div>
           <h6 class="fw-bold mb-0 text-white fs-6">${ep.titulo}</h6>
         </div>
@@ -885,5 +903,53 @@ document.addEventListener('DOMContentLoaded', () => {
     modalImg.innerHTML = `<img src="${src}" class="img-fluid rounded-4 shadow-lg border border-secondary" style="max-width:90vw;max-height:90vh;">`;
     modalImg.onclick = () => modalImg.remove();
     document.body.appendChild(modalImg);
+  };
+
+  // F) Modal para reproducir vídeos del Vlog
+  window.abrirVlog = function(videoUrl, titulo, cap) {
+    const prev = document.getElementById('vlogPlayerModal');
+    if (prev) prev.remove();
+
+    const modalEl = document.createElement('div');
+    modalEl.id = 'vlogPlayerModal';
+    modalEl.className = 'modal fade';
+    modalEl.tabIndex = -1;
+    modalEl.innerHTML = `
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content border-0 shadow-lg rounded-4 bg-dark">
+          <div class="modal-header border-0 py-3 px-4 bg-dark">
+            <div class="d-flex align-items-center gap-3">
+              <span class="badge bg-danger px-3 py-2 rounded-pill fs-6">Cap. ${cap}</span>
+              <h5 class="modal-title fw-bold text-white mb-0">${titulo}</h5>
+            </div>
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-0 rounded-bottom-4 overflow-hidden">
+            <div id="vlog-iframe-container" style="aspect-ratio:16/9; background:#000;"></div>
+          </div>
+        </div>
+      </div>`;
+
+    document.body.appendChild(modalEl);
+    const vlogModal = new bootstrap.Modal(modalEl);
+    vlogModal.show();
+
+    // Inyectar iframe tras abrir el modal (evita bloqueo de innerHTML)
+    modalEl.addEventListener('shown.bs.modal', function() {
+      const container = document.getElementById('vlog-iframe-container');
+      const iframe = document.createElement('iframe');
+      iframe.src = videoUrl;
+      iframe.className = 'w-100 d-block';
+      iframe.style.cssText = 'border:none; min-height:300px; height:100%;';
+      iframe.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
+      iframe.setAttribute('allowfullscreen', '');
+      container.appendChild(iframe);
+    });
+
+    // Parar el vídeo al cerrar
+    modalEl.addEventListener('hidden.bs.modal', function() {
+      document.getElementById('vlog-iframe-container').innerHTML = '';
+      modalEl.remove();
+    });
   };
 });
