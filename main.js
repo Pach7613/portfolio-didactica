@@ -75,10 +75,14 @@ Además, pautamos los tiempos: 40 min de clase, 5 de descanso y 15 de repaso.
       </div>
       
       <div class="media-box rounded-4 overflow-hidden border border-success border-opacity-25 shadow">
-        <video controls class="w-100 d-block">
-          <source src="./img/Minecraft.mp4" type="video/mp4">
-          Tu navegador no soporta el vídeo.
-        </video>
+        <iframe
+          class="w-100 d-block"
+          style="aspect-ratio: 16/9; border: none;"
+          src="https://www.youtube.com/embed/8lUW9aiSqmY"
+          title="Proyecto Aula-Cerebro en Minecraft"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
         
         </div>
       
