@@ -954,6 +954,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   // Función para activar/desactivar el modo Tráiler Cinematográfico
 // Función para activar/desactivar el modo Tráiler Cinematográfico con Pantalla Completa
+// Función para activar/desactivar el modo Tráiler Cinematográfico a prueba de iOS
 window.toggleTrailer = function() {
   const section = document.getElementById('vlog-section');
   const video = document.getElementById('bg-trailer');
@@ -972,11 +973,15 @@ window.toggleTrailer = function() {
     btn.classList.replace('btn-danger', 'btn-light');
     headerText.style.opacity = '0'; 
 
-    // 🎬 Magia: Poner a pantalla completa
-    if (section.requestFullscreen) {
-      section.requestFullscreen();
-    } else if (section.webkitRequestFullscreen) { /* Para Safari */
-      section.webkitRequestFullscreen();
+    // Intentamos Fullscreen de forma segura (con bloque try-catch para que no rompa iOS)
+    try {
+      if (section.requestFullscreen) {
+        section.requestFullscreen();
+      } else if (section.webkitRequestFullscreen) {
+        section.webkitRequestFullscreen();
+      }
+    } catch (e) {
+      console.log("Este dispositivo no soporta Fullscreen nativo, pero el vídeo funcionará.");
     }
 
   } else {
@@ -986,13 +991,17 @@ window.toggleTrailer = function() {
     btn.classList.replace('btn-light', 'btn-danger');
     headerText.style.opacity = '1';
 
-    // 🎬 Magia: Salir de la pantalla completa
-    if (document.fullscreenElement || document.webkitFullscreenElement) {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.webkitExitFullscreen) { /* Para Safari */
-        document.webkitExitFullscreen();
+    // Salimos de Fullscreen de forma segura
+    try {
+      if (document.fullscreenElement || document.webkitFullscreenElement) {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
       }
+    } catch (e) {
+      console.log("Salida de fullscreen controlada.");
     }
   }
 };

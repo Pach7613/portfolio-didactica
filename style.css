@@ -367,3 +367,16 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .section-title {
   color: white !important; /* Texto blanco */
   border-color: #dc3545 !important; /* Borde rojo */
 }
+/* --- ESTADO CUANDO EL TRÁILER ESTÁ A PANTALLA COMPLETA --- */
+.vlog-section.trailer-active .vlog-overlay {
+  background: rgba(0, 0, 0, 0.1); 
+}
+
+.vlog-section.trailer-active .vlog-content-wrapper {
+  opacity: 0;
+  -webkit-filter: blur(20px); /* Para iPhone/iPad */
+  filter: blur(20px); /* Para el resto */
+  -webkit-transform: scale(0.95); /* Para iPhone/iPad */
+  transform: scale(0.95); /* Para el resto */
+  pointer-events: none; 
+}
