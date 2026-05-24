@@ -694,21 +694,29 @@ function driveThumb(id) { return `https://drive.google.com/thumbnail?id=${id}&sz
 function driveEmbed(id) { return `https://drive.google.com/file/d/${id}/preview`; }
 
 const episodiosVlog = [
-  // ---- TEMPORADA 1 (Caps 1-10) ----
-  { cap: 1,  titulo: 'Reflexión Semana 1',  thumb: driveThumb('15GCefoVnx0VX_V4ZnA-H1DIje8QV-2z4'), videoUrl: driveEmbed('15GCefoVnx0VX_V4ZnA-H1DIje8QV-2z4') },
-  { cap: 2,  titulo: 'Reflexión Semana 2',  thumb: driveThumb('1BPfCf6NuNW6QX_C7CVCQ34bjt27oXVFj'), videoUrl: driveEmbed('1BPfCf6NuNW6QX_C7CVCQ34bjt27oXVFj') },
-  { cap: 3,  titulo: 'Próximamente',        thumb: SOON_THUMB, videoUrl: null },
-  { cap: 4,  titulo: 'Reflexión Semana 4',  thumb: driveThumb('1KTtx978AwuBk96efOH9TUIbyJAbSrbHA'), videoUrl: driveEmbed('1KTtx978AwuBk96efOH9TUIbyJAbSrbHA') },
-  { cap: 5,  titulo: 'Próximamente',        thumb: SOON_THUMB, videoUrl: null },
-  { cap: 6,  titulo: 'Reflexión Semana 6',  thumb: driveThumb('1OLA0ConXPvMS3tSZKJCHbOdsIFEIroux'), videoUrl: driveEmbed('1OLA0ConXPvMS3tSZKJCHbOdsIFEIroux') },
-  { cap: 7,  titulo: 'Reflexión Semana 7',  thumb: driveThumb('1SBhEPDYPxjxFjbYExGtuS8eiXfgtxMXi'), videoUrl: driveEmbed('1SBhEPDYPxjxFjbYExGtuS8eiXfgtxMXi') },
-  { cap: 8,  titulo: 'Reflexión Semana 8',  thumb: driveThumb('1Vy_2kcJREqV2cH35vj1pe1KgXg8QJSm9'), videoUrl: driveEmbed('1Vy_2kcJREqV2cH35vj1pe1KgXg8QJSm9') },
-  { cap: 9,  titulo: 'Reflexión Semana 9',  thumb: driveThumb('1nTVdxwir_WadC2HNsjEwKM3bw1jvU8Ck'), videoUrl: driveEmbed('1nTVdxwir_WadC2HNsjEwKM3bw1jvU8Ck') },
-  { cap: 10, titulo: 'Reflexión Semana 10', thumb: driveThumb('1u6mAOfBUlt_BQtOp6r9K47_9qSV6qwGW'), videoUrl: driveEmbed('1u6mAOfBUlt_BQtOp6r9K47_9qSV6qwGW') },
-  // ---- TEMPORADA 2 (Caps 11-20) ---- Próximamente
-  ...Array.from({ length: 10 }, (_, i) => ({ cap: i + 11, titulo: 'Próximamente', thumb: SOON_THUMB, videoUrl: null })),
-  // ---- TEMPORADA 3 (Caps 21-30) ---- Próximamente
-  ...Array.from({ length: 10 }, (_, i) => ({ cap: i + 21, titulo: 'Próximamente', thumb: SOON_THUMB, videoUrl: null })),
+  // ---- TEMPORADA 1 (Caps 1-6) ----
+  { cap: 1,  titulo: 'El caos del primer blog', thumb: driveThumb('15GCefoVnx0VX_V4ZnA-H1DIje8QV-2z4'), videoUrl: driveEmbed('15GCefoVnx0VX_V4ZnA-H1DIje8QV-2z4') },
+  { cap: 2,  titulo: 'Clase de bordado al C', thumb: driveThumb('1BPfCf6NuNW6QX_C7CVCQ34bjt27oXVFj'), videoUrl: driveEmbed('1BPfCf6NuNW6QX_C7CVCQ34bjt27oXVFj') },
+  { cap: 3,  titulo: 'Popurrí de marzo', thumb: driveThumb('1uCSCg8pSP05hwmwzoE35OZMfEWP_X4b8'), videoUrl: driveEmbed('1uCSCg8pSP05hwmwzoE35OZMfEWP_X4b8') },
+  { cap: 4,  titulo: 'María Zambrano', thumb: driveThumb('1OLA0ConXPvMS3tSZKJCHbOdsIFEIroux'), videoUrl: driveEmbed('1OLA0ConXPvMS3tSZKJCHbOdsIFEIroux') },
+  { cap: 5,  titulo: 'Ganar lleva el peso de evaluar', thumb: driveThumb('1UkzweoJ5y8YAHoerBMPEnAMqeU7KCSui'), videoUrl: driveEmbed('1UkzweoJ5y8YAHoerBMPEnAMqeU7KCSui') },
+  { cap: 6,  titulo: 'A nuestros yo de 5 años', thumb: driveThumb('1SBhEPDYPxjxFjbYExGtuS8eiXfgtxMXi'), videoUrl: driveEmbed('1SBhEPDYPxjxFjbYExGtuS8eiXfgtxMXi') },
+  
+  // ---- TEMPORADA 2 (Caps 7-12) ----
+  { cap: 7,  titulo: 'La silla caliente', thumb: driveThumb('1Vy_2kcJREqV2cH35vj1pe1KgXg8QJSm9'), videoUrl: driveEmbed('1Vy_2kcJREqV2cH35vj1pe1KgXg8QJSm9') },
+  { cap: 8,  titulo: 'El pueblo gitano', thumb: driveThumb('1KTtx978AwuBk96efOH9TUIbyJAbSrbHA'), videoUrl: driveEmbed('1KTtx978AwuBk96efOH9TUIbyJAbSrbHA') },
+  { cap: 9,  titulo: 'La silla caliente vol 2', thumb: driveThumb('1nTVdxwir_WadC2HNsjEwKM3bw1jvU8Ck'), videoUrl: driveEmbed('1nTVdxwir_WadC2HNsjEwKM3bw1jvU8Ck') },
+  { cap: 10, titulo: 'Quién es alvarito?', thumb: driveThumb('1u6mAOfBUlt_BQtOp6r9K47_9qSV6qwGW'), videoUrl: driveEmbed('1u6mAOfBUlt_BQtOp6r9K47_9qSV6qwGW') },
+  { cap: 11, titulo: 'Un "bichito"?', thumb: driveThumb('1ORsWs6Ba-5rcKov8sjVNNqhYZcTsTpoV'), videoUrl: driveEmbed('1ORsWs6Ba-5rcKov8sjVNNqhYZcTsTpoV') },
+  { cap: 12, titulo: 'Post-tutoría', thumb: driveThumb('1JkqdzewmR77wwhGpIHEuc7qHI2eTQ3XE'), videoUrl: driveEmbed('1JkqdzewmR77wwhGpIHEuc7qHI2eTQ3XE') },
+  
+  // ---- TEMPORADA 3 (Caps 13-18) ----
+  { cap: 13, titulo: 'Ojú la nubecita', thumb: driveThumb('16jej8Be8SpHfb7obtvVhHw6Aq9cqyS8B'), videoUrl: driveEmbed('16jej8Be8SpHfb7obtvVhHw6Aq9cqyS8B') },
+  { cap: 14, titulo: 'El del examen', thumb: driveThumb('17bx0IxWMF2AahsZj6z-082nJtYulwVBM'), videoUrl: driveEmbed('17bx0IxWMF2AahsZj6z-082nJtYulwVBM') },
+  { cap: 15, titulo: 'Próximamente', thumb: SOON_THUMB, videoUrl: null },
+  { cap: 16, titulo: 'El de el voluntariado', thumb: driveThumb('1B4dBMUzbjDvp6Sl9BOdoLcK4hVnGQLfD'), videoUrl: driveEmbed('1B4dBMUzbjDvp6Sl9BOdoLcK4hVnGQLfD') },
+  { cap: 17, titulo: 'Próximamente', thumb: SOON_THUMB, videoUrl: null },
+  { cap: 18, titulo: 'Próximamente', thumb: SOON_THUMB, videoUrl: null }
 ];
 
 // ==========================================
@@ -774,14 +782,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // C) Inyectar Vlogs en Temporadas (10 capítulos por Temporada en un Grid responsive)
+  // C) Inyectar Vlogs en Temporadas (6 capítulos por Temporada en un Grid responsive)
   const containerT1 = document.getElementById('vlog-t1-container');
   const containerT2 = document.getElementById('vlog-t2-container');
   const containerT3 = document.getElementById('vlog-t3-container');
 
   episodiosVlog.forEach((ep, index) => {
     const div = document.createElement('div');
-    div.className = 'col-12 col-sm-6 col-md-4 col-lg-3'; // Columnas para la cuadrícula
+    div.className = 'col-12 col-sm-6 col-md-4 col-lg-3';
     
     const hasVideo = ep.videoUrl && ep.videoUrl.trim() !== '';
     div.innerHTML = `
@@ -804,10 +812,10 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>`;
 
-    // Lógica para repartir los capítulos (1-10 en T1, 11-20 en T2, 21-30 en T3)
-    if (index < 10) {
+    // Lógica para repartir los capítulos en bloques de 6
+    if (index < 6) {
       containerT1.appendChild(div);
-    } else if (index < 20) {
+    } else if (index < 12) {
       containerT2.appendChild(div);
     } else {
       containerT3.appendChild(div);

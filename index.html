@@ -151,134 +151,223 @@
 </section>
 
   <section id="proyecto" class="py-6">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold section-title">El Proyecto</h2>
-        <p class="text-muted">Desglose de nuestra propuesta educativa.</p>
-      </div>
-
-      <ul class="nav nav-pills justify-content-center mb-5" id="proyecto-tabs" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active rounded-pill px-4 py-2 mx-2 fw-bold" id="planificacion-tab"
-            data-bs-toggle="pill" data-bs-target="#planificacion" type="button" role="tab">Planificación</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link rounded-pill px-4 py-2 mx-2 fw-bold" id="accion-tab" data-bs-toggle="pill"
-            data-bs-target="#accion" type="button" role="tab">Acción</button>
-        </li>
-      </ul>
-
-      <div class="tab-content" id="proyecto-tabContent">
-        <div class="tab-pane fade show active" id="planificacion" role="tabpanel" tabindex="0">
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
-              <div class="accordion shadow-sm" id="accordionPlanificacion">
-                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-afect">
-                      <i class="bi bi-heart-fill text-danger me-2"></i> Afectividad
-                    </button>
-                  </h2>
-                  <div id="plan-afect" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
-                    <div class="accordion-body bg-light">Texto sobre la planificación de la afectividad...</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-movi">
-                      <i class="bi bi-activity text-success me-2"></i> Movimiento
-                    </button>
-                  </h2>
-                  <div id="plan-movi" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
-                    <div class="accordion-body bg-light">Texto sobre la planificación del movimiento...</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-meta">
-                      <i class="bi bi-brain text-primary me-2"></i> Proceso Metacognitivo
-                    </button>
-                  </h2>
-                  <div id="plan-meta" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
-                    <div class="accordion-body bg-light">Texto sobre el proceso metacognitivo en la planificación...</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-lenguaje">
-                      <i class="bi bi-chat-quote-fill text-warning me-2"></i> Lenguaje
-                    </button>
-                  </h2>
-                  <div id="plan-lenguaje" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
-                    <div class="accordion-body bg-light">Texto sobre la planificación del lenguaje...</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-0 rounded-3 overflow-hidden">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-ysi">
-                      <i class="bi bi-question-circle-fill text-info me-2"></i> ¿Y si...?
-                    </button>
-                  </h2>
-                  <div id="plan-ysi" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
-                    <div class="accordion-body bg-light">Hipótesis y planes de contingencia (¿Y si...?).</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="tab-pane fade" id="accion" role="tabpanel" tabindex="0">
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
-              <div class="accordion shadow-sm" id="accordionAccion">
-                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-afect">
-                      <i class="bi bi-heart-fill text-danger me-2"></i> Afectividad
-                    </button>
-                  </h2>
-                  <div id="acc-afect" class="accordion-collapse collapse" data-bs-parent="#accordionAccion">
-                    <div class="accordion-body bg-light">Ejecución en el área de afectividad...</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-movi">
-                      <i class="bi bi-activity text-success me-2"></i> Movimiento
-                    </button>
-                  </h2>
-                  <div id="acc-movi" class="accordion-collapse collapse" data-bs-parent="#accordionAccion">
-                    <div class="accordion-body bg-light">Ejecución en el área de movimiento...</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-meta">
-                      <i class="bi bi-brain text-primary me-2"></i> Proceso Metacognitivo
-                    </button>
-                  </h2>
-                  <div id="acc-meta" class="accordion-collapse collapse" data-bs-parent="#accordionAccion">
-                    <div class="accordion-body bg-light">Ejecución del proceso metacognitivo...</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-0 rounded-3 overflow-hidden">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-lenguaje">
-                      <i class="bi bi-chat-quote-fill text-warning me-2"></i> Lenguaje
-                    </button>
-                  </h2>
-                  <div id="acc-lenguaje" class="accordion-collapse collapse" data-bs-parent="#accordionAccion">
-                    <div class="accordion-body bg-light">Ejecución en el área del lenguaje...</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="container">
+    <div class="text-center mb-5 mt-5">
+      <h2 class="fw-bold section-title">El Proyecto</h2>
+      <p class="text-muted">Desglose de nuestra propuesta educativa basada en el Proceso Lógico de Pensamiento.</p>
     </div>
-  </section>
+
+    <ul class="nav nav-pills justify-content-center mb-5" id="proyecto-tabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active rounded-pill px-4 py-2 mx-2 fw-bold" id="planificacion-tab"
+          data-bs-toggle="pill" data-bs-target="#planificacion" type="button" role="tab">Planificación</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link rounded-pill px-4 py-2 mx-2 fw-bold" id="accion-tab" data-bs-toggle="pill"
+          data-bs-target="#accion" type="button" role="tab">Acción</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="proyecto-tabContent">
+      
+      <div class="tab-pane fade show active" id="planificacion" role="tabpanel" tabindex="0">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="accordion shadow-sm" id="accordionPlanificacion">
+              
+              <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
+                <h2 class="accordion-header">
+                  <relative class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-afect">
+                    <i class="bi bi-heart-fill text-danger me-2"></i> Afectividad
+                  </relative>
+                </h2>
+                <div id="plan-afect" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
+                  <div class="accordion-body bg-light">
+                    <h6 class="fw-bold text-dark mb-3">Estrategia y Valores del Grupo:</h6>
+                    <ul class="text-muted small lh-lg mb-4 ps-3">
+                      <li><strong>Normas y Actitudes:</strong> Creación de un reglamento propio para asegurar la equidad en el reparto de las tareas de cada miembro del grupo.</li>
+                      <li><strong>Valores:</strong> Inclusión, buena educación y respeto mutuo para facilitar los debates sanos y evitar malentendidos.</li>
+                      <li><strong>Valor de la Diferencia:</strong> Aprovechar las distintas perspectivas y valores de cada uno para enriquecer el análisis del proyecto.</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-dark mb-3 border-top pt-3"><i class="bi bi-question-circle-fill text-danger me-2"></i>Preguntas de Investigación Asociadas:</h6>
+                    <ul class="list-unstyled mb-0 px-2">
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿Cómo aplicar la didáctica para este curso?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque incluye los comportamientos del discente.</span>
+                      </li>
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿Cómo hacer que se valore la didáctica?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque en la afectividad se destacan los valores.</span>
+                      </li>
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿Qué formas y principios tienen?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque dentro de la afectividad destacamos las actitudes y los comportamientos.</span>
+                      </li>
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿Por qué surge la didáctica?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque tenemos que tener en cuenta el aprendizaje inclusivo y democrático buscando superar la exclusión educativa.</span>
+                      </li>
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿Por qué es importante la didáctica en los procesos de aprendizaje?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque tenemos que transformar el aula en un espacio de convivencia sin que haya exclusión.</span>
+                      </li>
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿Qué mundo tendríamos si no existiera la didáctica?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque sin la didáctica no existirían los valores.</span>
+                      </li>
+                      <li class="mb-0">
+                        <strong class="text-dark small d-block mb-1">¿Cuál es el mejor tipo de didáctica y cómo se aplicaría según la edad?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque según los valores, las normas, las actitudes y los comportamientos tendríamos que adaptarlo a una clase y otra.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
+                <h2 class="accordion-header">
+                  <relative class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-movi">
+                    <i class="bi bi-activity text-success me-2"></i> Movimiento
+                  </relative>
+                </h2>
+                <div id="plan-movi" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
+                  <div class="accordion-body bg-light">
+                    <h6 class="fw-bold text-dark mb-3">Autonomía y Responsabilidad:</h6>
+                    <ul class="text-muted small lh-lg mb-4 ps-3">
+                      <li><strong>Autonomía Física:</strong> Buen descanso, salud y deporte para tener la mente despejada, además del desplazamiento para reuniones y compra de materiales.</li>
+                      <li><strong>Autonomía Personal y Social:</strong> Aportar creatividad propia sin abusar de la IA. Mantener buena relación grupal y respetar al profesor como guía.</li>
+                      <li><strong>Autonomía Moral:</strong> Responsabilidad, entrega a tiempo, honestidad intelectual y aplicación estricta de normativa APA para evitar el plagio.</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-dark mb-3 border-top pt-3"><i class="bi bi-question-circle-fill text-success me-2"></i>Preguntas de Investigación Asociadas:</h6>
+                    <ul class="list-unstyled mb-0 px-2">
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿Cómo extrapolar para nuestra vida?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque es una acción y al ser futuros docentes vamos a tener la oportunidad de poder usarla tanto en la escuela como en nuestro día a día.</span>
+                      </li>
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿Para qué sirve la didáctica?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque es muy importante en la autonomía moral para actuar según sus propias convicciones.</span>
+                      </li>
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿A quién le afecta la didáctica?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque dentro de la autonomía social afecta al aprendizaje cooperativo y a la transformación social.</span>
+                      </li>
+                      <li class="mb-0">
+                        <strong class="text-dark small d-block mb-1">¿La didáctica existe o la creamos nosotros/as?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque tiene que haber coherencia entre reflexión y acción y aunque sea una u otra tiene que haber un desarrollo notable.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
+                <h2 class="accordion-header">
+                  <relative class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-meta">
+                    <i class="bi bi-brain text-primary me-2"></i> Proceso Cognitivo y Metacognitivo
+                  </relative>
+                </h2>
+                <div id="plan-meta" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
+                  <div class="accordion-body bg-light">
+                    <h6 class="fw-bold text-dark mb-3">Organización Mental, Espacial y Temporal:</h6>
+                    <ul class="text-muted small lh-lg mb-4 ps-3">
+                      <li><strong>Procesos Básicos:</strong> Percepción (oído, vista, tacto) para procesar información y manejar materiales, atención enfocada (sin móviles) y memoria para no repetir errores pasados.</li>
+                      <li><strong>Espacio:</strong> Disposición en círculo (cara a cara los 4), en un entorno silencioso y bien iluminado con luz natural o blanca.</li>
+                      <li><strong>Tiempo:</strong> Franja diurna (7:00 a 19:00) para aprovechar la luz solar. Reuniones eficientes fuera de clase coordinadas mediante un planificador semanal.</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-dark mb-3 border-top pt-3"><i class="bi bi-question-circle-fill text-primary me-2"></i>Preguntas de Investigación Asociadas:</h6>
+                    <ul class="list-unstyled mb-0 px-2">
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿La calificación es una parte finalista de la didáctica?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque lo consideramos importante en la parte de la planificación a la hora de organizar las aulas.</span>
+                      </li>
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿Qué es la didáctica?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque tenemos que realizar el proceso de pensamiento cognitivo y metacognitivo.</span>
+                      </li>
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿Quienes imparten la didáctica?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque al impartir la didáctica se tiene que tener en cuenta la percepción y atención centralizada en lo que se está impartiendo.</span>
+                      </li>
+                      <li class="mb-3 pb-2 border-bottom border-secondary-subtle">
+                        <strong class="text-dark small d-block mb-1">¿Cuál es el objetivo y finalidad de la didáctica?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque tenemos que tener en cuenta la planificación y el pensamiento antes de entender cuál es dicho objetivo y finalidad.</span>
+                      </li>
+                      <li class="mb-0">
+                        <strong class="text-dark small d-block mb-1">¿Existe una manera o distintas maneras de hacer la didáctica?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque tenemos que tener una planificación y percepción previa.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
+                <h2 class="accordion-header">
+                  <relative class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-lenguaje">
+                    <i class="bi bi-chat-quote-fill text-warning me-2"></i> Lenguaje
+                  </relative>
+                </h2>
+                <div id="plan-lenguaje" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
+                  <div class="accordion-body bg-light">
+                    <h6 class="fw-bold text-dark mb-3">Formas de Expresión y Comunicación:</h6>
+                    <ul class="text-muted small lh-lg mb-4 ps-3">
+                      <li><strong>Lectoescritura y Nominar:</strong> Definición precisa de conceptos clave, roles y autores. Documentación colaborativa mediante fuentes fiables (Google Académico/Biblioteca) redactada en digital (Arial 12, Normas APA).</li>
+                      <li><strong>Lógico-Matemático:</strong> Cálculo y control de plazos de tiempo, extensión del trabajo y costes de material.</li>
+                      <li><strong>Artístico y Musical:</strong> Uso de música ambiental (según necesidad de concentración o relax), mapas conceptuales, infografías y edición de imagen/sonido.</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-dark mb-3 border-top pt-3"><i class="bi bi-question-circle-fill text-warning me-2"></i>Preguntas de Investigación Asociadas:</h6>
+                    <ul class="list-unstyled mb-0 px-2">
+                      <li class="mb-0">
+                        <strong class="text-dark small d-block mb-1">¿Qué opinan las diferentes autorías de la didáctica?</strong>
+                        <span class="text-muted small"><i class="bi bi-arrow-return-right me-1"></i>Porque estas diferentes autorías comunican sus opiniones haciendo uso del lenguaje lógico-matemático.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 rounded-3 overflow-hidden">
+                <h2 class="accordion-header">
+                  <relative class="accordion-button bg-white fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plan-ysi">
+                    <i class="bi bi-question-circle-fill text-info me-2"></i> ¿Y si...?
+                  </relative>
+                </h2>
+                <div id="plan-ysi" class="accordion-collapse collapse" data-bs-parent="#accordionPlanificacion">
+                  <div class="accordion-body bg-light">
+                    <ul class="text-muted small lh-lg mb-0 ps-3">
+                      <li><strong>Fallo tecnológico o pérdida de archivos (Docs/Canva):</strong> Guardaremos borradores a mano en forma de esquemas y mantendremos copias de seguridad digitales individuales.</li>
+                      <li><strong>Falta de asistencia continuada de un miembro:</strong> Hablaremos con el profesor para debatir y adaptar cómo será la evaluación de esa persona.</li>
+                      <li><strong>Baja el día de la exposición final:</strong> Todos trabajaremos de forma global y colaborativa para que cualquiera pueda cubrir la parte del compañero ausente, demostrando un progreso equitativo registrado por el profesor.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="accion" role="tabpanel" tabindex="0">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="text-center py-5">
+              <i class="bi bi-tools text-muted mb-3" style="font-size: 3rem;"></i>
+              <h5 class="fw-bold text-dark">Fase de Acción en Proceso</h5>
+              <p class="text-muted small mx-auto" style="max-width: 500px;">Este apartado se desbloqueará e irá recopilando la aplicación práctica, las respuestas elaboradas a nuestras preguntas de investigación y las evidencias del trabajo en el aula.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <section id="tareas" class="py-6 bg-light">
     <div class="container">
