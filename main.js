@@ -63,6 +63,17 @@ Tras esto, Carlos nos introdujo el Proyecto Roma. El reto era organizar el aula 
 - Lenguaje y Cognición: Estanterías con libros a elegir, diarios de clase para los últimos 5 minutos y un espacio para un concurso matemático semanal.
 Además, pautamos los tiempos: 40 min de clase, 5 de descanso y 15 de repaso.
 
+<div class="minecraft-work-callout p-4 p-md-5 rounded-4 shadow-sm text-center text-md-start">
+  <div class="d-flex flex-column flex-md-row align-items-center gap-4 mb-4">
+    <i class="bi bi-box-fill text-success" style="font-size: 3rem;"></i>
+    <div>
+      <h4 class="fw-bold text-white mb-2">Proyecto Especial: El Aula-Cerebro en Minecraft</h4>
+      <p class="text-white-50 mb-0 lh-lg">Llevamos nuestra planificación teórica a la práctica diseñando nuestra aula ideal dentro de Minecraft. Creamos un entorno visual que refleja las cuatro dimensiones del Proceso Lógico de Pensamiento, funcionando como un 'cerebro social'.</p>
+    </div>
+  </div>
+  <div class="media-box rounded-4 overflow-hidden border border-success border-opacity-25 shadow" data-youtube-src="https://www.youtube.com/embed/8lUW9aiSqmY" data-youtube-title="Proyecto Aula-Cerebro en Minecraft"></div>
+</div>
+
 Después de nombrar a teóricos como Vigotsky o Bruner, consensuamos las normas de convivencia reales de nuestra clase: levantar la mano, respeto mutuo, entrar con buen humor y poder comer siempre que dejemos todo limpio.
 
 La segunda mitad de la clase fue pura acción: ¡un Escape Room Didáctico por el Día de Andalucía! Nos unimos al grupo "Los Silbones" y diseñamos una propuesta basada en una gymkana por provincias, utilizando portátiles (competencia digital) y fomentando la inclusión cultural bajo el lema de que "todos somos andaluces". 
@@ -92,7 +103,7 @@ Cerramos el día grabando nuestro primer TikTok como encargados de la semana. Pa
       "./img/img6.png",
       "./img/img7.png"
     ],
-    videos: ["https://www.youtube.com/embed/8lUW9aiSqmY"] // Vídeo Minecraft en YouTube
+    videos: [] // El vídeo de Minecraft está integrado en el cuadro de apuntes
   },
 
   // ------------------ SESIÓN 4 ------------------
@@ -796,7 +807,26 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="badge bg-success px-3 py-2 rounded-pill"><i class="bi bi-calendar-event me-1"></i>${sesion.fecha}</span>
       `;
       
-      document.getElementById('modalApuntes').innerHTML = `<p class="mb-0 lh-lg">${sesion.apuntes.replace(/\n/g, '<br>')}</p>`;
+      // Renderizar apuntes: bloques HTML se insertan tal cual; texto plano se convierte en párrafos
+      const apuntesEl = document.getElementById('modalApuntes');
+      const apuntesHtml = sesion.apuntes
+        .split(/\n\n+/)
+        .map(block => block.trim())
+        .filter(block => block)
+        .map(block => block.startsWith('<') ? block : `<p class="mb-2 lh-lg">${block.replace(/\n/g, '<br>')}</p>`)
+        .join('');
+      apuntesEl.innerHTML = apuntesHtml;
+      // Inyectar iframes de YouTube desde placeholders (createElement evita el bloqueo de innerHTML)
+      apuntesEl.querySelectorAll('[data-youtube-src]').forEach(el => {
+        const iframe = document.createElement('iframe');
+        iframe.src = el.dataset.youtubeSrc;
+        iframe.title = el.dataset.youtubeTitle || 'Vídeo';
+        iframe.className = 'w-100 d-block';
+        iframe.style.cssText = 'aspect-ratio: 16/9; border: none;';
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+        iframe.setAttribute('allowfullscreen', '');
+        el.appendChild(iframe);
+      });
       
       // Control de Multimedia Inteligente (Fotos y Vídeos dinámicos)
       const multimediaContainer = document.getElementById('modalMultimedia');
