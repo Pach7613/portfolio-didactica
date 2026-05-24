@@ -3,24 +3,49 @@
 // ==========================================
 const sesionesDelPDF = [
   
-  // ------------------ SESIÓN 1 ------------------
+// ------------------ SESIÓN 1 ------------------
   {
     id: 1,
     semana: "Primera Semana",
     fecha: "17/02/2026",
     titulo: "Presentación de la Asignatura y Creación del Grupo",
-    apuntes: `Hoy ha sido nuestro primer día de Didáctica General con el profesor Carlos Guirado. Nos ha presentado una asignatura con bastante peso, concretamente 9 créditos, y nos ha explicado las dos opciones de itinerario: la Opción A, basada en la evaluación continua, el trabajo diario, la asistencia y la creación de este portfolio; y la Opción B, para quienes prefieran jugársela al 100% en un examen final. Evidentemente, nosotros hemos apostado por la A.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Hoy ha sido nuestro primer día de Didáctica General con el profesor Carlos Guirado. Nos ha presentado una asignatura con bastante peso (9 créditos) y nos ha explicado las dos opciones de itinerario para aprobar:</p>
+        
+        <div class="row g-3 my-3">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-primary bg-opacity-10 p-3 rounded-4">
+              <h6 class="fw-bold text-primary mb-1"><i class="bi bi-journal-check me-2"></i>Opción A (Nuestra elección)</h6>
+              <p class="small mb-0 text-dark">Basada en la evaluación continua, el trabajo diario, la asistencia y la creación de este portfolio.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-danger bg-opacity-10 p-3 rounded-4">
+              <h6 class="fw-bold text-danger mb-1"><i class="bi bi-x-octagon me-2"></i>Opción B</h6>
+              <p class="small mb-0 text-dark">Para quienes prefieran jugársela al 100% en un examen final tradicional.</p>
+            </div>
+          </div>
+        </div>
 
-Carlos nos ha dejado claro que la clase debe ser un espacio seguro. Los pilares fundamentales van a ser el respeto, un enfoque hacia la diversidad y la transformación social, y sobre todo, la confianza. El aula es un lugar para equivocarse y aprender de los errores, donde el profesor actuará como un guía que nos acompañará en el proceso.
+        <p>Carlos nos ha dejado claro que la clase debe ser un <strong>espacio seguro</strong>. Los pilares fundamentales van a ser el respeto, el enfoque hacia la diversidad, la transformación social y la confianza. El aula es un lugar para equivocarse y aprender de los errores, donde el profesor actuará como un guía que nos acompañará en el proceso.</p>
 
-En cuanto a la metodología, va a ser muy dinámica: trabajaremos por proyectos (ABP), usaremos una cuenta de TikTok grupal, haremos asambleas y alguna salida fuera del aula. Un detalle importante es que se permite el uso ético de la IA, pero el plagio o cualquier falta de respeto supondrán el suspenso directo.
+        <h5 class="fw-bold text-dark mt-4 mb-3"><i class="bi bi-gear-fill text-secondary me-2"></i>Metodología y Evaluación</h5>
+        <ul class="list-unstyled ps-2 mb-4">
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Trabajo por proyectos (ABP), asambleas, salidas fuera del aula y uso de una cuenta de TikTok grupal.</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Se permite el uso ético de la Inteligencia Artificial, pero el plagio o las faltas de respeto suponen el suspenso directo.</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>La nota se divide al 50%: mitad trabajos/portfolio y mitad el proceso diario y la asamblea final. <em>"No sirve un trabajo perfecto al final si no se ha visto la evolución"</em>.</li>
+        </ul>
 
-Sobre la nota, se divide al 50%: la mitad son los trabajos y el portfolio, y la otra mitad valora nuestro proceso diario y la asamblea final. No sirve de nada entregar un trabajo perfecto al final si no se ha visto la evolución. Además, la evaluación será muy reflexiva, incluyendo autoevaluación y coevaluación.
-
-Para terminar la sesión, formamos los equipos de trabajo. La regla para repartir los roles (Coordinación, Secretaría, Portavoz y Material) era muy curiosa: cada uno debía elegir el rol que peor se le da para así obligarse a mejorar. Tras debatir, así nació oficialmente nuestro grupo: Glori, Pacheco, Joselu y Nathalie.`,
+        <div class="alert alert-warning border-0 rounded-4 mt-4">
+          <h6 class="fw-bold text-dark mb-2"><i class="bi bi-people-fill me-2"></i>La Creación del Equipo</h6>
+          <p class="small mb-0 text-dark">La regla para repartir los roles era muy curiosa: cada uno debía elegir el rol que peor se le da para así obligarse a mejorar. Tras debatir, así nació oficialmente nuestro grupo: <strong>Glori, Pacheco, Joselu y Nathalie</strong>.</p>
+        </div>
+      </div>
+    `,
     fotos: [
-      ("./img/clase.png"),
-      ("./img/img.JPG")
+      "./img/clase.png",
+      "./img/img.JPG"
     ],
     videos: []
   },
@@ -31,20 +56,52 @@ Para terminar la sesión, formamos los equipos de trabajo. La regla para reparti
     semana: "Primera Semana",
     fecha: "19/02/2026",
     titulo: "Vínculos, TikTok y Asignación de Roles",
-    apuntes: `Hoy tuvimos nuestra primera clase en grupos reducidos. Empezamos en asamblea leyendo un texto de Donna Haraway, la primera de las "Cuestiones Previas" para trabajar por Proyectos de Investigación. La lectura nos hizo reflexionar sobre la importancia de crear vínculos reales y profundos desde el primer día, no solo saber cómo nos llamamos. El aula debe ser un "cerebro social" basado en la confianza, el diálogo y el respeto mutuo, rompiendo con la idea tradicional de escuela.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Hoy tuvimos nuestra primera clase en grupos reducidos. Empezamos en asamblea leyendo un texto de Donna Haraway, la primera de las "Cuestiones Previas" para trabajar por Proyectos de Investigación.</p>
+        
+        <div class="border-start border-4 border-info bg-light p-3 rounded-end-3 my-4">
+          <p class="mb-0 text-dark fst-italic">La lectura nos hizo reflexionar sobre la importancia de crear vínculos reales y profundos desde el primer día, no solo saber cómo nos llamamos. El aula debe ser un <strong>"cerebro social"</strong> basado en la confianza, el diálogo y el respeto mutuo, rompiendo con la idea tradicional de escuela.</p>
+        </div>
 
-Para poner esto en práctica, dedicamos un rato a presentarnos todos a fondo, incluido el profesor. Después, Carlos nos sorprendió pidiéndonos propuestas para la excursión que haremos más adelante; nos gustó mucho este detalle de darnos voz y voto, ya que normalmente los profesores imponen las salidas sin darnos opción.
+        <p>Para poner esto en práctica, dedicamos un rato a presentarnos todos a fondo, incluido el profesor. Después, Carlos nos sorprendió pidiéndonos propuestas para la excursión que haremos más adelante; nos gustó mucho este detalle de darnos voz y voto, ya que normalmente los profesores imponen las salidas sin opción a réplica.</p>
 
-También arrancamos oficialmente con la cuenta de TikTok de la clase. Nosotros, los Profequerones, nos ofrecimos voluntarios para gestionarla y subir los vídeos de esta primera semana. Glori y Pacheco se encargaron de crearla y mandarle las claves a Carlos.
+        <h5 class="fw-bold text-dark mt-4 mb-3"><i class="bi bi-camera-video-fill text-danger me-2"></i>Iniciativa TikTok</h5>
+        <p>Arrancamos oficialmente con la cuenta de TikTok de la clase. Nosotros, los <em>Profequerones</em>, nos ofrecimos voluntarios para gestionarla y subir los vídeos de esta primera semana. Glori y Pacheco se encargaron de crearla y mandarle las claves a Carlos.</p>
 
-Por último, asignamos nuestros roles definitivos en el grupo. Como acordamos el primer día, elegimos lo que peor se nos da para forzarnos a mejorar:
-- Coordinación (Nathalie): Para aprender a delegar tareas y confiar en el equipo, ya que tiende a asumir todo el trabajo ella sola.
-- Secretario (Joselu): Suele trabajar bien, pero a veces se distrae. Este rol le obligará a mantener la atención y anotar todo.
-- Portavoz (Pacheco): No le gusta nada hablar en público, así que esto le servirá para ganar seguridad y perder el miedo.
-- Responsable de Material (Glori): Aunque toma buenos apuntes, es bastante despistada. Esto le ayudará a ser más atenta a los detalles y organizada.`,
+        <h5 class="fw-bold text-dark mt-5 mb-3 border-bottom pb-2">Asignación de Roles: El Reto Personal</h5>
+        <p class="small">Como acordamos el primer día, elegimos lo que peor se nos da para forzarnos a mejorar:</p>
+        <div class="row g-3 mt-1">
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm rounded-4 p-3 bg-white h-100">
+              <h6 class="fw-bold text-primary mb-1">Nathalie (Coordinación)</h6>
+              <p class="small mb-0">Para aprender a delegar tareas y confiar en el equipo, ya que tiende a asumir todo el trabajo ella sola.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm rounded-4 p-3 bg-white h-100">
+              <h6 class="fw-bold text-success mb-1">Joselu (Secretaría)</h6>
+              <p class="small mb-0">Suele trabajar bien, pero a veces se distrae. Este rol le obligará a mantener la atención y anotarlo todo.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm rounded-4 p-3 bg-white h-100">
+              <h6 class="fw-bold text-warning mb-1">Pacheco (Portavoz)</h6>
+              <p class="small mb-0">No le gusta nada hablar en público, así que esto le servirá para ganar seguridad y perder el miedo.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm rounded-4 p-3 bg-white h-100">
+              <h6 class="fw-bold text-danger mb-1">Glori (Material)</h6>
+              <p class="small mb-0">Aunque toma buenos apuntes, es bastante despistada. Esto le ayudará a ser más atenta a los detalles y organizada.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
     fotos: [
-      ("./img/img1.JPG"),
-      ("./img/img2.JPG")
+      "./img/img1.JPG",
+      "./img/img2.JPG"
     ],
     videos: []
   },
@@ -55,72 +112,97 @@ Por último, asignamos nuestros roles definitivos en el grupo. Como acordamos el
     semana: "Segunda Semana",
     fecha: "24/02/2026",
     titulo: "Modelos, el Aula como Cerebro y Escape Room",
-    apuntes: `Empezamos la sesión analizando los diferentes planos de la realidad y cómo la Didáctica se sitúa a medio camino entre el modelo repetidor y el transformador. Surgió un debate muy interesante en clase: ¿educamos para repetir o para transformar? Concluimos que, aunque el cerebro necesita estímulos nuevos para aprender, cierta base de memorización y repetición sigue siendo necesaria dependiendo de la asignatura.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Empezamos la sesión analizando los diferentes planos de la realidad y cómo la Didáctica se sitúa a medio camino entre el modelo repetidor y el transformador. Surgió un debate muy interesante en clase: <em>¿educamos para repetir o para transformar?</em> Concluimos que, aunque el cerebro necesita estímulos nuevos para aprender, cierta base de memorización y repetición sigue siendo necesaria dependiendo de la asignatura.</p>
+        
+        <h4 class="fw-bold text-dark mt-4 mb-3"><i class="bi bi-diagram-3-fill text-primary me-2"></i>Proyecto Roma: Organizando el Aula</h4>
+        <p>Carlos nos introdujo el Proyecto Roma. El reto era organizar el aula basándonos en el Proceso Lógico de Pensamiento, funcionando como si fuera un cerebro. Diseñamos un aula en forma de "U" (como una grada) para vernos las caras, dividida en zonas estratégicas:</p>
+        
+        <ul class="list-unstyled ps-2 mb-4">
+          <li class="mb-2"><i class="bi bi-heart-fill text-danger me-2"></i><strong>Afectividad y Normas:</strong> Un tablón de normas creado por todos.</li>
+          <li class="mb-2"><i class="bi bi-activity text-success me-2"></i><strong>Movimiento y Autonomía:</strong> Una alfombra central para dinámicas y mesas redondas para fomentar el trabajo en equipo.</li>
+          <li class="mb-2"><i class="bi bi-brain text-info me-2"></i><strong>Lenguaje y Cognición:</strong> Estanterías de libros, diarios de clase y espacio para un concurso matemático semanal.</li>
+        </ul>
 
-Tras esto, Carlos nos introdujo el Proyecto Roma. El reto era organizar el aula basándonos en el Proceso Lógico de Pensamiento, funcionando como si fuera un cerebro. Diseñamos un aula en forma de "U", como si de una grada se tratase, para que todos nos veamos las caras. La dividimos en zonas estratégicas:
-- Afectividad y Normas: Un tablón de normas creado por todos desde el primer día.
-- Movimiento y Autonomía: Una alfombra central para dinámicas, mesas redondas para fomentar la autonomía social (trabajo en equipo) y sillas auxiliares a la izquierda.
-- Lenguaje y Cognición: Estanterías con libros a elegir, diarios de clase para los últimos 5 minutos y un espacio para un concurso matemático semanal.
-Además, pautamos los tiempos: 40 min de clase, 5 de descanso y 15 de repaso.
+        <div class="minecraft-work-callout p-4 p-md-5 rounded-4 shadow-sm text-center text-md-start my-4">
+          <div class="d-flex flex-column flex-md-row align-items-center gap-4 mb-4">
+            <i class="bi bi-box-fill text-success" style="font-size: 3rem;"></i>
+            <div>
+              <h4 class="fw-bold text-white mb-2">Proyecto Especial: El Aula-Cerebro en Minecraft</h4>
+              <p class="text-white-50 mb-0 lh-lg">Llevamos nuestra planificación teórica a la práctica diseñando nuestra aula ideal dentro de Minecraft. Creamos un entorno visual que refleja las cuatro dimensiones del Proceso Lógico de Pensamiento, funcionando como un 'cerebro social'.</p>
+            </div>
+          </div>
+          <div class="media-box rounded-4 overflow-hidden border border-success border-opacity-25 shadow" data-youtube-src="https://www.youtube.com/embed/8lUW9aiSqmY" data-youtube-title="Proyecto Aula-Cerebro en Minecraft"></div>
+        </div>
 
-<div class="minecraft-work-callout p-4 p-md-5 rounded-4 shadow-sm text-center text-md-start">
-  <div class="d-flex flex-column flex-md-row align-items-center gap-4 mb-4">
-    <i class="bi bi-box-fill text-success" style="font-size: 3rem;"></i>
-    <div>
-      <h4 class="fw-bold text-white mb-2">Proyecto Especial: El Aula-Cerebro en Minecraft</h4>
-      <p class="text-white-50 mb-0 lh-lg">Llevamos nuestra planificación teórica a la práctica diseñando nuestra aula ideal dentro de Minecraft. Creamos un entorno visual que refleja las cuatro dimensiones del Proceso Lógico de Pensamiento, funcionando como un 'cerebro social'.</p>
-    </div>
-  </div>
-  <div class="media-box rounded-4 overflow-hidden border border-success border-opacity-25 shadow" data-youtube-src="https://www.youtube.com/embed/8lUW9aiSqmY" data-youtube-title="Proyecto Aula-Cerebro en Minecraft"></div>
-</div>
+        <p>Después de nombrar a teóricos como Vigotsky o Bruner, consensuamos las normas de convivencia reales de nuestra clase: levantar la mano, respeto mutuo, entrar con buen humor y poder comer siempre que dejemos todo limpio.</p>
 
-Después de nombrar a teóricos como Vigotsky o Bruner, consensuamos las normas de convivencia reales de nuestra clase: levantar la mano, respeto mutuo, entrar con buen humor y poder comer siempre que dejemos todo limpio.
+        <h4 class="fw-bold text-dark mt-5 mb-3"><i class="bi bi-unlock-fill text-warning me-2"></i>Escape Room Didáctico</h4>
+        <p>La segunda mitad de la clase fue pura acción: ¡un Escape Room por el Día de Andalucía! Nos unimos al grupo "Los Silbones" y diseñamos una gymkana por provincias, utilizando portátiles y fomentando la inclusión bajo el lema de que "todos somos andaluces".</p>
+        <p>Gloria formó parte de la Comisión Evaluadora. Las valoraciones fueron totalmente objetivas y sinceras, puntuando como "Pobre" a los grupos que carecieron de coherencia o inclusividad real. Al final, nuestro esfuerzo se vio recompensado y quedamos en un merecidísimo <strong>2º puesto</strong>.</p>
 
-La segunda mitad de la clase fue pura acción: ¡un Escape Room Didáctico por el Día de Andalucía! Nos unimos al grupo "Los Silbones" y diseñamos una propuesta basada en una gymkana por provincias, utilizando portátiles (competencia digital) y fomentando la inclusión cultural bajo el lema de que "todos somos andaluces". 
+        <div class="row my-5 g-4">
+          <div class="col-12 col-md-6">
+            <a href="https://www.tiktok.com/@1dprimariaa_/video/7610893785320443158?is_from_webapp=1&sender_device=pc&web_id=7611210260893091350" target="_blank" class="tiktok-link-button card h-100 p-4 rounded-4 shadow-sm text-center align-items-center justify-content-center flex-column d-flex gap-2 text-decoration-none">
+              <i class="bi bi-tiktok fs-1 text-dark"></i>
+              <span class="fw-bold fs-6 text-dark">TikTok: Ping-Pong 1</span>
+              <span class="text-muted small">Ver TikTok en formato "Ping-pong" con Nathalie entrevistando a Mario</span>
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <a href="https://www.tiktok.com/@1dprimariaa_/video/7611093612033543446?is_from_webapp=1&sender_device=pc&web_id=7611210260893091350" target="_blank" class="tiktok-link-button card h-100 p-4 rounded-4 shadow-sm text-center align-items-center justify-content-center flex-column d-flex gap-2 text-decoration-none">
+              <i class="bi bi-tiktok fs-1 text-dark"></i>
+              <span class="fw-bold fs-6 text-dark">TikTok: Ping-Pong 2</span>
+              <span class="text-muted small">Ver TikTok en formato "Ping-pong" con Pacheco entrevistando a Joselu</span>
+            </a>
+          </div>
+        </div>
 
-Gloria formó parte de la Comisión Evaluadora. Las valoraciones fueron totalmente objetivas y sinceras, puntuando como "Pobre" a los grupos que carecieron de coherencia o inclusividad real. Al final, nuestro esfuerzo se vio recompensado y quedamos en un merecidísimo 2º puesto.
-
-<div class="row my-5 g-4">
-  <div class="col-12 col-md-6">
-    <a href="https://www.tiktok.com/@1dprimariaa_/video/7610893785320443158?is_from_webapp=1&sender_device=pc&web_id=7611210260893091350" target="_blank" class="tiktok-link-button card h-100 p-4 rounded-4 shadow-sm text-center align-items-center justify-content-center flex-column d-flex gap-2 text-decoration-none">
-      <i class="bi bi-tiktok fs-1"></i>
-      <span class="fw-bold fs-6">TikTok: Ping-Pong 1</span>
-      <span class="text-muted small">Ver TikTok en formato "Ping-pong" con Nathalie entrevistando a Mario</span>
-    </a>
-  </div>
-  <div class="col-12 col-md-6">
-    <a href="https://www.tiktok.com/@1dprimariaa_/video/7611093612033543446?is_from_webapp=1&sender_device=pc&web_id=7611210260893091350" target="_blank" class="tiktok-link-button card h-100 p-4 rounded-4 shadow-sm text-center align-items-center justify-content-center flex-column d-flex gap-2 text-decoration-none">
-      <i class="bi bi-tiktok fs-1"></i>
-      <span class="fw-bold fs-6">TikTok: Ping-Pong 2</span>
-      <span class="text-muted small">Ver TikTok en formato "Ping-pong" con Pacheco entrevistando a Joselu</span>
-    </a>
-  </div>
-</div>
-Cerramos el día grabando nuestro primer TikTok como encargados de la semana. Para la próxima clase, tenemos el encargo de investigar a un autor andaluz.`,
+        <p class="mb-0">Cerramos el día grabando nuestro primer TikTok como encargados de la semana. Para la próxima clase, tenemos el encargo de investigar a un autor andaluz.</p>
+      </div>
+    `,
     fotos: [
-      "./img/img4.png", // Mantén las capturas
+      "./img/img4.png",
       "./img/img8.png",
       "./img/img6.png",
       "./img/img7.png"
     ],
-    videos: [] // El vídeo de Minecraft está integrado en el cuadro de apuntes
+    videos: []
   },
 
-  // ------------------ SESIÓN 4 ------------------
+// ------------------ SESIÓN 4 ------------------
   {
     id: 4,
     semana: "Segunda Semana",
     fecha: "26/02/2026",
     titulo: "María Zambrano, Sueños y Encuentro con la Clase C",
-    apuntes: `Siguiendo con la temática del Día de Andalucía, hoy en los grupos reducidos tocó investigar sobre una figura andaluza importante. Nosotros elegimos a la veleña María Zambrano, la primera mujer filósofa en lengua española y una intelectual clave de nuestra historia. 
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Siguiendo con la temática del Día de Andalucía, hoy en los grupos reducidos tocó investigar sobre una figura andaluza importante. Nosotros elegimos a la veleña <strong>María Zambrano</strong>, la primera mujer filósofa en lengua española y una intelectual clave de nuestra historia.</p>
+        
+        <div class="bg-light p-4 rounded-3 border-start border-4 border-info my-4">
+          <h6 class="fw-bold text-dark mb-2">Los Sueños y El Tiempo</h6>
+          <p class="mb-0 small">Nos centramos en un fragmento de este libro. Nos pareció fascinante cómo distingue dos tipos de sueños: los de la <strong>"psique"</strong> (pasivos, desordenados y dominados por el deseo) y los de la <strong>"persona"</strong>. Estos últimos son muy especiales porque, aunque tampoco actuamos voluntariamente en ellos, nos presentan de golpe descubrimientos o soluciones a dilemas de nuestra vida real. Tienen una trascendencia que nos ayuda a comprendernos.</p>
+        </div>
 
-Nos centramos en un fragmento de su libro "Los Sueños y El Tiempo". Nos pareció fascinante cómo distingue dos tipos de sueños: los de la "psique" (pasivos, desordenados y dominados por el deseo) y los de la "persona". Estos últimos son muy especiales porque, aunque tampoco actuamos voluntariamente en ellos, nos presentan de golpe descubrimientos o soluciones a dilemas de nuestra vida real. Tienen una trascendencia que nos ayuda a comprendernos.
+        <p>Para poner nuestras investigaciones en común, Carlos propuso una dinámica de rotación: dos miembros del grupo se quedaban en la mesa explicando a Zambrano, mientras los otros dos rotábamos por el resto de grupos para aprender sobre sus autores. Lamentablemente, solo nos dio tiempo a escuchar al grupo de Mario, porque teníamos una cita importante fuera del aula.</p>
 
-Para poner nuestras investigaciones en común, Carlos propuso una dinámica de rotación: dos miembros del grupo se quedaban en la mesa explicando a Zambrano, mientras los otros dos rotábamos por el resto de grupos para aprender sobre sus autores. Lamentablemente, solo nos dio tiempo a escuchar al grupo de Mario, porque teníamos una cita importante fuera del aula.
+        <h4 class="fw-bold text-dark mt-5 mb-3"><i class="bi bi-people-fill text-success me-2"></i>¡Encuentro con la clase de 1ºC!</h4>
+        <p>Nos fuimos al hall de la facultad para reunirnos con ellos. El objetivo principal de este encuentro era invitarles a participar juntos en una actividad de <strong>"narrativa textil"</strong> para la próxima semana (con motivo del Día de la Mujer), en la que reflexionaremos sobre la mujer más importante de nuestras vidas. ¡Aceptaron la invitación sin dudarlo!</p>
 
-¡Nos fuimos al hall de la facultad para reunirnos con la clase de 1ºC! El objetivo principal de este encuentro era invitarles a participar juntos en una actividad de "narrativa textil" para la próxima semana, con motivo del Día de la Mujer, en la que reflexionaremos sobre la mujer más importante de nuestras vidas. Aceptaron la invitación sin dudarlo.
+        <div class="alert alert-success border-0 rounded-4 mt-3">
+          <h6 class="fw-bold text-dark mb-2"><i class="bi bi-controller me-2"></i>Dinámicas para romper el hielo</h6>
+          <ul class="list-unstyled mb-0 small text-dark">
+            <li class="mb-1"><i class="bi bi-cloud-rain-fill me-2"></i>Simulamos el sonido de una tormenta de forma coordinada.</li>
+            <li class="mb-1"><i class="bi bi-magic me-2"></i>Hicimos interpretaciones creativas usando el palo de una escoba.</li>
+            <li><i class="bi bi-hand-index-thumb-fill me-2"></i>Terminamos con un reto de coordinación donde grupos de cinco teníamos que bajar el palo hasta el suelo usando solo dos dedos.</li>
+          </ul>
+        </div>
 
-Para romper el hielo y conocernos mejor, hicimos varios juegos conjuntos: simulamos el sonido de una tormenta, hicimos interpretaciones creativas usando el palo de una escoba, y terminamos con un reto de coordinación donde grupos de cinco teníamos que bajar el palo hasta el suelo usando solo dos dedos. Fue una experiencia preciosa. Salir de las cuatro paredes del aula a las que estamos acostumbrados y convivir con otra clase es un soplo de aire fresco que enriquece un montón la asignatura.`,
+        <p class="mt-4 mb-0 fw-bold">Salir de las cuatro paredes del aula a las que estamos acostumbrados y convivir con otra clase es un soplo de aire fresco que enriquece un montón la asignatura.</p>
+      </div>
+    `,
     fotos: [],
     videos: [
       "./img/video1.MP4", 
@@ -129,21 +211,40 @@ Para romper el hielo y conocernos mejor, hicimos varios juegos conjuntos: simula
       "./img/video4.MP4"
     ]
   },
+
   // ------------------ SESIÓN 5 ------------------
   {
     id: 5,
     semana: "Tercera Semana",
     fecha: "03/03/2026",
     titulo: "Proceso Lógico de Pensamiento y el Poder de la Narrativa Textil",
-    apuntes: `Hoy empezamos la clase enfrentándonos a un reto que, siendo sinceros, nos resultó bastante complicado al principio: ubicar una serie de preguntas sobre la Didáctica dentro de las cuatro dimensiones del Proceso Lógico de Pensamiento (Lenguaje, Cognición/Metacognición, Afectividad y Movimiento). 
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Hoy empezamos la clase enfrentándonos a un reto que, siendo sinceros, nos resultó bastante complicado al principio: ubicar una serie de preguntas sobre la Didáctica dentro de las cuatro dimensiones del <strong>Proceso Lógico de Pensamiento</strong> (Lenguaje, Cognición/Metacognición, Afectividad y Movimiento).</p>
+        
+        <div class="card border-0 bg-primary bg-opacity-10 p-4 rounded-4 my-4">
+          <p class="small mb-0 text-dark">Teníamos que coger 17 dudas como <em>"¿Para qué sirve la didáctica?"</em> o <em>"¿Qué mundo tendríamos si no existiera?"</em> y justificar su dimensión. Por ejemplo, clasificamos <strong>"¿Cómo hacer que se valore?"</strong> en Afectividad porque destaca la importancia de los valores, y <strong>"¿Cómo extrapolar para nuestra vida?"</strong> en Movimiento porque implica acción y aplicación práctica. Nos costó bastante, pero fue un paso necesario para arrancar con nuestro proyecto final.</p>
+        </div>
 
-Teníamos que coger 17 dudas como "¿Para qué sirve la didáctica?" o "¿Qué mundo tendríamos si no existiera?" y justificar su dimensión. Por ejemplo, clasificamos "¿Cómo hacer que se valore?" en Afectividad porque destaca la importancia de los valores, y "¿Cómo extrapolar para nuestra vida?" en Movimiento porque implica acción y aplicación práctica. Nos costó bastante porque muchas preguntas parecían encajar en varias dimensiones a la vez y sentimos que nuestras justificaciones quedaron algo escuetas, pero fue un paso necesario para arrancar con nuestro proyecto final.
+        <h4 class="fw-bold text-dark mt-5 mb-3"><i class="bi bi-scissors text-danger me-2"></i>El Poder de la Narrativa Textil</h4>
+        <p>La clase dio un giro precioso cuando Carlos nos hizo una presentación sobre la "Narrativa Textil". Aprendimos que coser es mucho más que juntar telas; metafóricamente, cada hilo representa una voz, una historia o una vivencia.</p>
+        
+        <ul class="list-unstyled ps-2 mb-4">
+          <li class="mb-2"><i class="bi bi-arrow-right-short text-danger fs-5"></i>Nos explicó sus orígenes como práctica sociopolítica (ayudando a reparar conflictos sociales en Nariño).</li>
+          <li class="mb-2"><i class="bi bi-arrow-right-short text-danger fs-5"></i>Vimos cómo el arte feminista lo ha usado históricamente para narrar experiencias silenciadas.</li>
+          <li class="mb-2"><i class="bi bi-arrow-right-short text-danger fs-5"></i>El objetivo: romper el estereotipo de la "mujer cosiendo sola en casa" para convertirlo en una narrativa colectiva.</li>
+        </ul>
 
-Después, la clase dio un giro precioso. Carlos nos hizo una presentación sobre la "Narrativa Textil". Aprendimos que coser es mucho más que juntar telas; metafóricamente, cada hilo representa una voz, una historia o una vivencia. Nos explicó sus orígenes como práctica sociopolítica (incluso ayudando a reparar conflictos sociales en Nariño, tejiendo solidaridades) y cómo el arte feminista lo ha usado históricamente para narrar experiencias silenciadas.
+        <figure class="text-center my-4">
+          <blockquote class="blockquote fst-italic">
+            <p>"Estoy hecha de retazos, pedacitos coloridos de cada vida que pasa por la mía y que voy cosiendo en el alma."</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">Poema de <cite title="Source Title">Cris Pizzimenti</cite></figcaption>
+        </figure>
 
-El objetivo de la actividad que haremos el jueves en el hall con la clase de 1ºC es, precisamente, romper el estereotipo de la "mujer cosiendo sola en casa" para convertirlo en una narrativa colectiva. Nos encantó el poema "Estoy hecha de retazos" de Cris Pizzimenti, que compara nuestra alma con un tejido formado por pedacitos de las personas y experiencias que nos rodean. Además, ver los propios bordados de Carlos (dedicados a su madre, a su perro, a un amigo...) hizo la explicación súper cercana.
-
-Terminamos la sesión aprendiendo a enhebrar la aguja y dando las primeras puntadas de nuestro bordado, que irá dedicado a la mujer más importante de nuestra vida. Nos vamos con la mente cambiada: hemos dejado de ver la costura como un simple pasatiempo para entenderla como una poderosa forma de expresión artística e histórica.`,
+        <p class="mb-0">Ver los propios bordados de Carlos (dedicados a su madre, a su perro, a un amigo...) hizo la explicación súper cercana. Terminamos la sesión aprendiendo a enhebrar la aguja y dando las primeras puntadas de nuestro bordado, que irá dedicado a la mujer más importante de nuestra vida. Hemos dejado de ver la costura como un simple pasatiempo para entenderla como una <strong>poderosa forma de expresión artística e histórica</strong>.</p>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -153,19 +254,31 @@ Terminamos la sesión aprendiendo a enhebrar la aguja y dando las primeras punta
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
+
   // ------------------ SESIÓN 6 ------------------
   {
     id: 6,
     semana: "Tercera Semana",
     fecha: "05/03/2026",
     titulo: "Narrativa Textil en el Hall: Tejiendo Redes con la Clase C",
-    apuntes: `Hoy hemos vivido una de las experiencias más bonitas y dinámicas del curso: llevamos la narrativa textil al hall de la facultad para compartirla con la clase de 1ºC. Nos organizamos en grupos mixtos de diez personas y nos fuimos distribuyendo por donde quisimos (cerca de la cafetería, la pecera, la biblioteca...). 
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Hoy hemos vivido una de las experiencias más bonitas y dinámicas del curso: llevamos la narrativa textil al hall de la facultad para compartirla con la clase de 1ºC. Nos organizamos en grupos mixtos de diez personas y nos fuimos distribuyendo con total libertad (cerca de la cafetería, la pecera, la biblioteca...).</p>
+        
+        <div class="border-start border-4 border-warning bg-light p-3 rounded-end-3 my-4">
+          <p class="mb-0 text-dark">En cuestión de minutos, transformamos un espacio de tránsito en un <strong>gran taller colaborativo</strong>. Nuestra misión principal era hacer de "guías" y explicarles a los compañeros de 1ºC en qué consistía la narrativa textil. Mientras bordábamos a la mujer más importante de nuestras vidas, el ambiente se llenó de intercambio de ideas y conversaciones enriquecedoras.</p>
+        </div>
 
-En cuestión de minutos, transformamos un espacio de tránsito en un gran taller colaborativo lleno de libertad. Nuestra misión principal era hacer de "guías" y explicarles a los compañeros de 1ºC en qué consistía la narrativa textil, ya que nosotros lo habíamos trabajado en la sesión anterior. Mientras bordábamos a la mujer más importante de nuestras vidas, el ambiente se llenó de intercambio de ideas, conversaciones enriquecedoras y momentos de reflexión.
+        <h5 class="fw-bold text-dark mt-4 mb-3">Rompiendo estereotipos en directo</h5>
+        <p>Fue increíble observar los diferentes procesos. Algunas compañeras traían bordados súper avanzados que sirvieron de inspiración para el resto. Otros grupos decidieron unir sus telas para crear una pieza colectiva.</p>
+        <p>Además, fue muy potente ver cómo se rompían los estereotipos tradicionales asociados a la costura, demostrando que <strong>la creatividad y la expresión de emociones no tienen género.</strong> ¡Hasta tuvimos la visita de los encargados de grabar el TikTok de la clase para inmortalizar el momento!</p>
 
-Fue increíble observar los diferentes procesos: algunas compañeras, como Leonor, traían bordados súper avanzados que sirvieron de inspiración para el resto. Otros grupos decidieron unir sus telas para crear una pieza colectiva. Además, fue muy potente ver cómo se rompían en directo los estereotipos tradicionales asociados a la costura, demostrando que la creatividad y la expresión de emociones no tienen género.
-
-Hasta tuvimos la visita de los encargados de grabar el TikTok de la clase para inmortalizar el momento. Como reflexión final, salir de las cuatro paredes del aula, tener la autonomía de sentarnos donde quisiéramos y relacionarnos con personas fuera de nuestro entorno habitual ha hecho que el aprendizaje sea muchísimo más significativo. Hemos tejido, literalmente, nuevas redes de convivencia.`,
+        <div class="alert alert-secondary border-0 rounded-4 mt-4">
+          <h6 class="fw-bold text-dark mb-2"><i class="bi bi-lightbulb-fill text-warning me-2"></i>Reflexión Final</h6>
+          <p class="small mb-0 text-dark">Salir de las cuatro paredes del aula, tener la autonomía de sentarnos donde quisiéramos y relacionarnos con personas fuera de nuestro entorno habitual ha hecho que el aprendizaje sea muchísimo más significativo. Hemos tejido, literalmente, nuevas redes de convivencia.</p>
+        </div>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -175,26 +288,43 @@ Hasta tuvimos la visita de los encargados de grabar el TikTok de la clase para i
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
-  // ------------------ SESIÓN 7 ------------------
+// ------------------ SESIÓN 7 ------------------
   {
     id: 7,
     semana: "Cuarta Semana",
     fecha: "10/03/2026",
     titulo: "Planificación, Vigotsky y el Grito de Ana Orantes",
-    apuntes: `Comenzamos la asamblea hablando de Vigotsky y de una idea que nos va a acompañar todo el curso: el aprendizaje es un proceso social. Para aprender, pasamos por una "doble formación": primero de forma interpersonal (con la ayuda de otros, como cuando te enseñan a caminar) y luego intrapersonal (cuando interiorizas el aprendizaje y caminas solo). 
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Comenzamos la asamblea hablando de <strong>Vigotsky</strong> y de una idea que nos va a acompañar todo el curso: <em>el aprendizaje es un proceso social</em>. Para aprender, pasamos por una "doble formación": primero de forma interpersonal (con la ayuda de otros) y luego intrapersonal (cuando interiorizas el aprendizaje y caminas solo).</p>
 
-Con esta idea en mente, empezamos a planificar oficialmente nuestro Proyecto Final, que nos llevará unas 4 o 5 semanas. Debemos dar respuesta a las 17 preguntas del día anterior utilizando las cuatro dimensiones del Proceso Lógico de Pensamiento. Decidimos usar la metáfora de "un viaje":
-- Percepción: Usaremos los sentidos (oído para debatir, vista para documentarnos).
-- Atención y Memoria: Para procesar ideas sin distracciones (adiós al móvil) y retener los fallos para no repetirlos.
-- Organización: Trabajaremos en mesas redondas para vernos las caras, idealmente con luz natural en horario de 07:00 a 19:00h para mantener el cuerpo activo.
+        <h5 class="fw-bold text-dark mt-4 mb-3"><i class="bi bi-map-fill text-success me-2"></i>La Metáfora del Viaje: Proyecto Final</h5>
+        <p>Con esta idea en mente, empezamos a planificar oficialmente nuestro Proyecto Final (que nos llevará unas 4 o 5 semanas). Decidimos dar respuesta a las preguntas usando la metáfora de un viaje:</p>
+        
+        <ul class="list-unstyled ps-2 mb-4">
+          <li class="mb-2"><i class="bi bi-eye-fill text-primary me-2"></i><strong>Percepción:</strong> Usaremos los sentidos (oído para debatir, vista para documentarnos).</li>
+          <li class="mb-2"><i class="bi bi-brain text-primary me-2"></i><strong>Atención y Memoria:</strong> Para procesar ideas sin distracciones (adiós al móvil) y retener los fallos para no repetirlos.</li>
+          <li class="mb-2"><i class="bi bi-clock-fill text-primary me-2"></i><strong>Organización:</strong> Mesas redondas para vernos las caras, luz natural y horario de 07:00 a 19:00h para mantener el cuerpo activo.</li>
+        </ul>
 
-Tras el descanso, la clase dio un giro radical y profundamente emocional. Vimos la histórica entrevista de Ana Orantes en Canal Sur. Se nos encogió el corazón y nos llenamos de rabia al escuchar con qué crudeza y tranquilidad relataba 40 años de maltrato físico y psicológico continuo. Su testimonio destapó el inmenso machismo de la época, donde la sociedad, la familia y hasta las instituciones miraban hacia otro lado obligando a las mujeres a callar por el "qué dirán". 
-Lamentablemente, Ana fue asesinada 13 días después de esta entrevista, pero su muerte marcó un antes y un después en la conciencia social y en la normativa española sobre la Violencia de Género. Tuvimos un debate muy intenso sobre el silencio cómplice, el clasismo y la urgencia de educar desde Infantil en el respeto y el consentimiento (nadie puede tocar el cuerpo de otra persona).
-<a href="https://www.youtube.com/watch?v=72Md_DypqRE&t=151s" target="_blank" class="fw-bold text-danger"><i class="bi bi-youtube me-1"></i> Ver entrevista completa de Ana Orantes</a>
+        <hr class="my-5 border-primary opacity-25">
 
-Para cerrar, enlazando con la visibilidad femenina, Carlos nos pidió investigar a mujeres que fueron borradas de la historia o de las artes. Nosotros (unidos al grupo de los Silbones) expusimos el caso de Emily Brontë, quien tuvo que publicar su obra maestra "Cumbres Borrascosas" bajo el seudónimo masculino de Ellis Bell para que la tomaran en serio. Otros compañeros recordaron casos muy duros como el de Rosalind Franklin (a quien le robaron el mérito del ADN) o Marie Curie. 
+        <h4 class="fw-bold text-dark mb-3"><i class="bi bi-megaphone-fill text-danger me-2"></i>El Grito de Ana Orantes y el Silencio Cómplice</h4>
+        <div class="bg-danger bg-opacity-10 p-4 rounded-4 my-3 border-start border-4 border-danger">
+          <p class="text-dark mb-3">Tras el descanso, vimos la histórica entrevista de <strong>Ana Orantes</strong> en Canal Sur. Se nos encogió el corazón y nos llenamos de rabia al escuchar con qué crudeza y tranquilidad relataba 40 años de maltrato físico y psicológico continuo. Su testimonio destapó el inmenso machismo de la época, donde la sociedad y las instituciones miraban hacia otro lado por el "qué dirán".</p>
+          <a href="https://www.youtube.com/watch?v=72Md_DypqRE&t=151s" target="_blank" class="btn btn-danger btn-sm rounded-pill fw-bold px-3 shadow-sm"><i class="bi bi-youtube me-2"></i>Ver entrevista histórica</a>
+        </div>
 
-Como reflexión final, la entrevista de Ana Orantes debería ser obligatoria en todos los institutos. El silencio mata, y como sociedad y futuros docentes tenemos la responsabilidad de no mirar hacia otro lado. Dar voz a las mujeres silenciadas en el pasado es el primer paso para construir aulas más justas en el futuro.`,
+        <p>Ana fue asesinada 13 días después de esta entrevista, pero su muerte marcó un antes y un después en la normativa española. Tuvimos un debate muy intenso sobre el clasismo y la <strong>urgencia de educar desde Infantil en el respeto y el consentimiento</strong> (nadie puede tocar el cuerpo de otra persona).</p>
+
+        <h5 class="fw-bold text-dark mt-4 mb-3">Mujeres Borradas de la Historia</h5>
+        <p>Para cerrar, Carlos nos pidió investigar a mujeres que fueron silenciadas. Nosotros expusimos el caso de <strong>Emily Brontë</strong>, quien tuvo que publicar <em>"Cumbres Borrascosas"</em> bajo un seudónimo masculino. Otros compañeros recordaron a Rosalind Franklin o Marie Curie.</p>
+        
+        <div class="alert alert-secondary border-0 rounded-4 mt-4">
+          <p class="small mb-0 text-dark fw-bold"><i class="bi bi-lightbulb-fill text-warning me-2"></i>Reflexión Final: El silencio mata. Como sociedad y futuros docentes tenemos la responsabilidad de no mirar hacia otro lado. Dar voz a las mujeres silenciadas en el pasado es el primer paso para construir aulas más justas en el futuro.</p>
+        </div>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -204,25 +334,73 @@ Como reflexión final, la entrevista de Ana Orantes debería ser obligatoria en 
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
+
   // ------------------ SESIÓN 8 ------------------
   {
     id: 8,
     semana: "Cuarta Semana",
     fecha: "12/03/2026",
     titulo: "La Emoción del Hilo: Presentación de las Narrativas Textiles",
-    apuntes: `El día de hoy ha sido, sin duda, uno de los más emotivos del curso. Nos hemos reunido en el grupo reducido para reflexionar y presentar el resultado de nuestras narrativas textiles. La gran mayoría de la clase (incluido Carlos) hemos coincidido en dedicar este trabajo a nuestras madres o abuelas, mujeres valientes que han sido pilares fundamentales en nuestro desarrollo. 
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>El día de hoy ha sido, sin duda, uno de los más emotivos del curso. Nos reunimos en grupo reducido para presentar el resultado de nuestras narrativas textiles. La gran mayoría coincidimos en dedicar este trabajo a <strong>nuestras madres o abuelas</strong>, mujeres valientes que han sido pilares fundamentales.</p>
+        
+        <p>Se vivieron momentos de mucha emoción, con lágrimas al contar cómo esas mujeres dejaron atrás sus sueños para vernos crecer. Estas sesiones nos enseñan la importancia de saber expresar nuestros sentimientos públicamente, una cualidad vital para nuestro futuro docente.</p>
 
-Se vivieron momentos de mucha emoción donde incluso hubo quienes derramaron lágrimas al contar cómo esas mujeres dejaron atrás sus sueños para verles crecer, y otros que se emocionaron profundamente solo de escuchar los testimonios ajenos. Estas sesiones nos enseñan la importancia de ser agradecidos y de saber expresar nuestros sentimientos públicamente, una cualidad vital para nuestro futuro como docentes.
+        <h4 class="fw-bold text-dark mt-5 mb-4"><i class="bi bi-chat-heart-fill text-danger me-2"></i>Reflexiones de nuestro equipo</h4>
+        
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 bg-white">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="bg-danger bg-opacity-10 text-danger rounded-circle p-2 me-3"><i class="bi bi-person-fill fs-5"></i></div>
+                  <h6 class="fw-bold text-dark mb-0">Gloria</h6>
+                </div>
+                <p class="small mb-0 fst-italic">"Le dediqué mi bordado a mi madre. Cosí la palabra 'MAMÁ' junto a flores (hay que cuidarla para que no se marchite) y corazones. En el centro añadí unas mariposas que la representan: una mujer fuerte, que a sus 50 años se sacó el FP, que me crio trabajando en dos sitios a la vez y que siempre está ahí para salvarme. Se lo debo todo."</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 bg-white">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-2 me-3"><i class="bi bi-person-fill fs-5"></i></div>
+                  <h6 class="fw-bold text-dark mb-0">Pacheco</h6>
+                </div>
+                <p class="small mb-0 fst-italic">"Yo hice una 'M' por mi madre, Mercedes. Le debo la vida y ha sido mi mayor apoyo en los momentos más difíciles, como cuando sufrí bullying en el colegio. Durante la clase me sentí un poco extraño al hablar de ella desde la alegría mientras otros lloraban. Luego comprendí que estaba simplemente feliz de saber que está a mi lado."</p>
+              </div>
+            </div>
+          </div>
 
-A continuación, compartimos las reflexiones individuales de nuestro grupo:
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 bg-white">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="bg-success bg-opacity-10 text-success rounded-circle p-2 me-3"><i class="bi bi-person-fill fs-5"></i></div>
+                  <h6 class="fw-bold text-dark mb-0">Joselu</h6>
+                </div>
+                <p class="small mb-0 fst-italic">"Al igual que Pacheco, bordé una 'M' dedicada a mi madre. Ella es quien me ha acompañado en toda mi etapa educativa y me ha ayudado con mis tareas desde pequeño. Además, tiene una gran afición por la costura, así que fue la excusa perfecta y el homenaje ideal para agradecerle todo lo que me ha apoyado siempre."</p>
+              </div>
+            </div>
+          </div>
 
-Gloria: "Le dediqué mi bordado a mi madre. Cosí la palabra 'MAMÁ' junto a flores (porque hay que cuidarla para que no se marchite, igual que ella me cuidó a mí) y corazones. En el centro añadí unas mariposas de una tela que ella misma me dio cuando vio que mi dibujo original no se borraba. Esas mariposas la representan: una mujer fuerte, que a sus 50 años se sacó el FP de Educación Infantil, que me crio trabajando en dos sitios a la vez y que siempre está ahí para salvarme, incluso de entregar un bordado feo. Se lo debo todo."
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 bg-white">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="bg-warning bg-opacity-10 text-warning rounded-circle p-2 me-3"><i class="bi bi-person-fill fs-5"></i></div>
+                  <h6 class="fw-bold text-dark mb-0">Nathalie</h6>
+                </div>
+                <p class="small mb-0 fst-italic">"Mi narrativa textil va para mi abuela materna, Reyna del Rosario. Crio a mi madre para que fuera una mujer fuerte e independiente, y ella es mi referente. Esta dinámica nos ayuda a expresar emociones y a entender que las verdaderas heroínas del Día de la Mujer muchas veces viven bajo nuestro propio techo."</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-Pacheco: "Yo hice una 'M' por mi madre, Mercedes. Le debo la vida y ha sido mi mayor apoyo en los momentos más difíciles, como cuando sufrí bullying en el colegio. Durante la clase me sentí un poco extraño porque muchos compañeros lloraban al hablar de sus familiares, y yo hablé de ella desde la alegría. Me sentí algo insensible en el momento, pero luego comprendí que estaba simplemente feliz de saber que está a mi lado. Fue una clase muy bonita que demostró cuánto amor tenemos por nuestras madres."
-
-Joselu: "Al igual que Pacheco, bordé una 'M' dedicada a mi madre. Ella es quien me ha acompañado en toda mi etapa educativa y me ha ayudado con mis tareas y proyectos desde pequeño. Además, tiene una gran afición por la costura, así que esta actividad me pareció la excusa perfecta y el homenaje ideal para agradecerle todo lo que me ha enseñado y apoyado siempre."
-
-Nathalie: "Mi narrativa textil va para mi abuela materna, Reyna del Rosario. Ella crio a mi madre para que fuera una mujer fuerte e independiente, y gracias a eso hoy estoy yo aquí. Ella es mi referente. A la salida de clase comentamos que nos habíamos quedado con ganas de contar más anécdotas, recuerdos grabados a cincel que nos han convertido en quienes somos. Espero recuperar pronto el tiempo perdido con mi abuela y poder viajar juntas. Esta dinámica es perfecta para nuestro futuro en las aulas: nos ayuda a expresar emociones y a entender que las verdaderas heroínas del Día de la Mujer muchas veces viven bajo nuestro propio techo."`,
+      </div>
+    `,
     fotos: [
       "ruta_de_foto_bordado_gloria.jpg", 
       "ruta_de_foto_bordado_pacheco.jpg"
@@ -232,19 +410,36 @@ Nathalie: "Mi narrativa textil va para mi abuela materna, Reyna del Rosario. Ell
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
+
   // ------------------ SESIÓN 9 ------------------
   {
     id: 9,
     semana: "Quinta Semana",
     fecha: "17/03/2026",
     titulo: "Planificación del Tiempo y el Abuso de Poder en las Aulas",
-    apuntes: `Comenzamos la sesión aterrizando nuestra planificación del proyecto, centrándonos en la organización del tiempo. Acordamos trabajar siempre en la franja de 07:00 a 19:00 para aprovechar la luz natural, que activa mucho mejor el cuerpo y la mente. Como en clase solo disponemos de una hora efectiva semanal para el portfolio, hemos decidido usar un planificador y organizarnos para quedar fuera del horario lectivo (desde después de Semana Santa hasta mediados de mayo), trabajando en tramos cortos para no saturarnos y rendir bien.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Comenzamos la sesión aterrizando nuestra planificación del proyecto. Acordamos trabajar siempre en la franja de 07:00 a 19:00 para aprovechar la luz natural. Como en clase solo disponemos de una hora efectiva semanal para el portfolio, hemos decidido usar un planificador y organizarnos para quedar fuera del horario lectivo en tramos cortos para no saturarnos.</p>
 
-Después, la clase tomó un tono mucho más serio al debatir sobre el abuso de poder por parte del profesorado, basándonos en el libro "Enseñar a transgredir" de Bell Hooks. Hablamos de cómo educar también significa poner límites. Surgió una reflexión que nos marcó profundamente: "El silencio nunca es neutral, siempre protege a alguien y no siempre a quien lo necesita".
+        <hr class="my-4 border-primary opacity-25">
 
-Debatimos sobre lo repugnante y peligroso que es que existan docentes que generen miedo, dependencia o que normalicen comentarios inapropiados. Lo que más nos indigna es la complicidad de algunas instituciones (como se vio con casos reales de ciertos catedráticos), que muchas veces prefieren mirar hacia otro lado y silenciar a las víctimas para proteger el prestigio del centro. Como futuros docentes, tenemos la inmensa responsabilidad de no permitir esto jamás y garantizar un trato basado en la igualdad y el respeto absoluto.
+        <h4 class="fw-bold text-dark mb-3"><i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>Abuso de Poder y Complicidad Institucional</h4>
+        <p>La clase tomó un tono mucho más serio al debatir sobre el abuso de poder por parte del profesorado, basándonos en el libro <em>"Enseñar a transgredir"</em> de Bell Hooks. Hablamos de cómo educar también significa poner límites.</p>
+        
+        <figure class="text-center my-4 p-4 bg-light rounded-4 border-start border-4 border-dark">
+          <blockquote class="blockquote fw-bold text-dark">
+            <p>"El silencio nunca es neutral, siempre protege a alguien y no siempre a quien lo necesita."</p>
+          </blockquote>
+        </figure>
 
-Para terminar con un enfoque más positivo, Carlos nos habló sobre la evaluación. Nos recordó que una rúbrica cerrada no siempre puede medir la singularidad y creatividad de cada alumno. Además, nos dio una premisa que nos motiva muchísimo: prefiere trabajos de calidad antes que cantidad o "relleno", y lo mejor de todo es que todos partimos ya con un sobresaliente en la asignatura; nuestro único trabajo ahora es mantenerlo a base de compromiso diario.`,
+        <p>Debatimos sobre lo repugnante y peligroso que es que existan docentes que generen miedo o normalicen comentarios inapropiados. Lo que más nos indigna es la complicidad de algunas instituciones que prefieren mirar hacia otro lado y silenciar a las víctimas para proteger su propio prestigio. Como futuros docentes, tenemos la inmensa responsabilidad de <strong>garantizar un trato basado en la igualdad y el respeto absoluto.</strong></p>
+
+        <h5 class="fw-bold text-dark mt-5 mb-3"><i class="bi bi-award-fill text-warning me-2"></i>Una nueva visión de la Evaluación</h5>
+        <div class="alert alert-success border-0 rounded-4 mt-3">
+          <p class="small mb-0 text-dark">Para terminar con un enfoque más positivo, Carlos nos recordó que una rúbrica cerrada no siempre puede medir la singularidad de cada alumno. Nos dio una premisa que nos motiva muchísimo: prefiere trabajos de calidad antes que cantidad o "relleno". Y lo mejor: <strong>todos partimos ya con un sobresaliente en la asignatura</strong>; nuestro único trabajo ahora es mantenerlo a base de compromiso diario.</p>
+        </div>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -255,70 +450,261 @@ Para terminar con un enfoque más positivo, Carlos nos habló sobre la evaluaci�
     ]
   },
   // ------------------ SESIÓN 10 ------------------
-  {
-    id: 10,
-    semana: "Quinta Semana",
-    fecha: "19/03/2026",
-    titulo: "Planificación del Tiempo y el Abuso de Poder en las Aulas",
-    apuntes: `Aun sin hacer`,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
-  },
-  // ------------------ SESIÓN 11 ------------------
-  {
-    id: 11,
-    semana: "Sexta Semana",
-    fecha: "25/03/2026",
-    titulo: "Planificación del Tiempo y el Abuso de Poder en las Aulas",
-    apuntes: `Aun sin hacer`,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
-  },
-  // ------------------ SESIÓN 12 ------------------
-  {
-    id: 12,
-    semana: "Sexta Semana",
-    fecha: "26/03/2026",
-    titulo: "Planificación del Tiempo y el Abuso de Poder en las Aulas",
-    apuntes: `Aun sin hacer`,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
-  },
+  // ==========================================
+// SESIÓN 10 - 19/03/2026
+// ==========================================
+{
+  id: 10,
+  semana: "Quinta Semana", 
+  fecha: "19/03/2026",
+  titulo: "Tertulia Dialógica de Autores Andaluces y Debate Educativo",
+  apuntes: `
+    <div class="sesion-content text-muted lh-lg">
+      <p>En la clase de hoy hemos podido hacer dos actividades principales. La primera ha sido terminar con la tertulia dialógica que dio comienzo el pasado 26 de febrero, y posteriormente hemos hecho un debate sobre la escuela innovadora frente a la escuela tradicional.</p>
+
+      <hr class="my-4 border-primary opacity-25">
+
+      <h4 class="fw-bold text-dark mb-3"><i class="bi bi-chat-quote-fill text-primary me-2"></i>1. La Tertulia Dialógica</h4>
+      <p>Como sostiene Freire, la acción dialógica no es solo una reproducción de palabras vacías, sino un proceso de transformación y humanización. Aprendemos de un modo conjunto, conectando lo literario con nuestra propia vivencia y creando una conciencia crítica. Frente a la "educación bancaria" pasiva, la tertulia favorece una educación inclusiva y transformadora donde cada opinión importa.</p>
+      
+      <p>Para celebrar el Día de Andalucía, realizamos una tertulia sobre autores andaluces. La dinámica consistió en un circuito: Nathalie y Glori se quedaron como anfitrionas en nuestra mesa, mientras que Pacheco y Joselu fueron rotando por el resto de grupos para compartir e intercambiar conocimientos.</p>
+
+      <h5 class="fw-bold text-dark mt-4 mb-3">Nuestra Autora: María Zambrano</h5>
+      <p>Escogimos un texto de esta filósofa nacida en Vélez-Málaga. Nos pareció clave porque rompe el prejuicio externo de que en Andalucía somos "perezosos". Zambrano fue la primera mujer filósofa en lengua española y participó en las Misiones Pedagógicas.</p>
+      
+      <div class="bg-light p-4 rounded-3 border-start border-4 border-primary my-3">
+        <h6 class="fw-bold text-dark mb-2">Fragmento de <em>Los Sueños y El Tiempo</em> (1960)</h6>
+        <p class="fst-italic small mb-0">«[...] Al ser mirados los sueños desde su forma y no desde su contenido, como es habitual, se descubre la atemporalidad como su a priori, que los separa del estado de la vigilia. [...] Mas sólo la palabra, cumplida actualización de la libertad, puede proporcionar legitimidad poética al soñar.»</p>
+      </div>
+
+      <p>Zambrano distingue dos tipos de sueños: los de la <strong>psique</strong> (pasivos, desordenados, donde la persona es arrastrada) y los de la <strong>persona</strong> (donde aparecen soluciones o descubrimientos que nos ayudan a resolver dilemas de la vida real, teniendo trascendencia). Critica la conciencia moderna, excesivamente racional, recordando que los mitos y la literatura son formas en que el ser humano se busca en el universo.</p>
+
+      <h5 class="fw-bold text-dark mt-5 mb-3 border-bottom pb-2">Lo que aprendimos de los demás grupos</h5>
+      
+      <div class="row g-4 mt-2">
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white">
+            <h6 class="fw-bold text-primary mb-2">Victoria Kent (Málaga)</h6>
+            <p class="small mb-0">Una de las primeras mujeres diputadas y directora general de prisiones en la Segunda República. Defendió reformas humanitarias y abrió paso a la mujer en la política. Destaca su famoso debate parlamentario con Clara Campoamor sobre el voto femenino.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white">
+            <h6 class="fw-bold text-primary mb-2">Julia Uceda (Sevilla)</h6>
+            <p class="small mb-0">En su poema <em>Mis manos, mis labios</em> habla del silencio durante la época franquista para las mujeres en el exilio. Llevaba a Andalucía en la sangre allá donde iba, siendo la primera mujer en ganar el Premio Nacional de Poesía en democracia.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white">
+            <h6 class="fw-bold text-primary mb-2">A. Martínez Ares (Cádiz)</h6>
+            <p class="small mb-0">Autor de comparsas de carnaval. Analizamos la copla <em>La oveja negra</em>, una dura metáfora sobre la decadencia de Andalucía. Relata cómo el resto de España a veces se ríe y critica a la región, pero acude a ella cuando le conviene.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white">
+            <h6 class="fw-bold text-primary mb-2">Juan R. Jiménez (Huelva)</h6>
+            <p class="small mb-0">Premio Nobel de Literatura en 1956. El poema <em>La Soleá</em> representa el canto flamenco y a la Andalucía triste y trabajadora de antaño, haciendo distinción entre la Andalucía alta (Granada) y la baja (Córdoba).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h6 class="fw-bold text-dark mt-3">Federico García Lorca</h6>
+          <p class="small">El poema <em>Canto nocturno de los marineros andaluces</em> narra un viaje sentimental por las provincias (Cádiz, Sevilla, Málaga). Lorca usa el mar y las olas como metáforas del sentimiento de asfixia al no poder expresar su verdadera identidad sexual por culpa de la sociedad de la época, terminando en un tono frío y de olvido.</p>
+        </div>
+        <div class="col-md-6">
+          <h6 class="fw-bold text-dark mt-3">Luis Cernuda</h6>
+          <p class="small">Su poema <em>El Andaluz</em> transmite la intensidad y transparencia de nuestra gente. Refleja cómo en Andalucía nos tratamos como una gran familia frente a los estereotipos externos. Muestra esa relación de amor-odio del resto de España: aman venir de vacaciones, pero sienten cierta envidia de nuestra forma de vivir.</p>
+        </div>
+      </div>
+
+      <hr class="my-5 border-primary opacity-25">
+
+      <h4 class="fw-bold text-dark mb-3"><i class="bi bi-diagram-3-fill text-success me-2"></i>2. Debate: Escuela Innovadora vs. Tradicional</h4>
+      <p>La segunda actividad fue un debate. Por suerte, a nuestro equipo le tocó defender la <strong>escuela innovadora</strong>, lo que nos permitió aplicar toda la teoría vista en Didáctica y Psicología (por ejemplo, cómo el cerebro necesita estímulos novedosos para no olvidar los contenidos).</p>
+      <p>Fue un cara a cara intenso. Compañeros como Sergio defendieron la escuela tradicional argumentando la necesidad de disciplina, mientras que Josué y Víctor (de nuestro bando) contraatacaron con evidencias científicas. Fue especialmente gracioso ver al profesor haciendo de "abogado del diablo" y defendiendo la escuela tradicional, cuando todos sabemos que su metodología es totalmente opuesta.</p>
+      
+      <div class="alert alert-secondary mt-4 border-0 rounded-4">
+        <h6 class="fw-bold text-dark"><i class="bi bi-lightbulb-fill text-warning me-2"></i>Nuestra Conclusión</h6>
+        <p class="small mb-0">Este debate nos enseñó que en educación pocas veces todo es blanco o negro. Aunque defendemos la escuela innovadora, entendemos que ciertos aspectos de la escuela tradicional (como la estructura o la disciplina) siguen teniendo valor. Se trata de buscar un <strong>equilibrio y sentido común</strong>: no innovar por innovar, ni mantener lo antiguo por costumbre, sino construir una escuela donde el alumnado participe, se motive y le encuentre sentido a lo que aprende.</p>
+      </div>
+
+    </div>
+  `
+},
+  // ==========================================
+// SESIÓN 11 - 25/03/2026
+// ==========================================
+{
+  id: 11,
+  semana: "Sexta Semana",
+  fecha: "25/03/2026",
+  titulo: "La Realidad de la Escuela Rural: CEIP San Hilario de Poitiers",
+  apuntes: `
+    <div class="sesion-content text-muted lh-lg">
+      <p>En la sesión de hoy hemos tenido un evento muy especial: ¡una charla con docentes de una escuela rural! Para esta experiencia se han unido las asignaturas de Didáctica y Organización (con el profe Nacho y la profesora María) para aprovechar la oportunidad al máximo.</p>
+
+      <hr class="my-4 border-primary opacity-25">
+
+      <h4 class="fw-bold text-dark mb-3"><i class="bi bi-book-half text-primary me-2"></i>1. Lectura y Análisis de Documentos</h4>
+      <p>La sesión comenzó con la lectura de dos textos fundamentales del autor González (2025) que nos sirvieron para contextualizar la realidad de la escuela rural andaluza:</p>
+      
+      <div class="row g-4 my-2">
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white border-bottom border-4 border-info">
+            <h6 class="fw-bold text-dark mb-2">La fuerza de lo pequeño</h6>
+            <p class="small mb-0">Basado en Comares (Axarquía). Defiende que lo pequeño tiene fuerza transformadora. Las escuelas rurales son el centro social del pueblo. Tienen ventajas como la atención individualizada (aulas unitarias/mixtas), el vínculo con las familias y la conexión directa con el entorno natural (Comunidades de Aprendizaje). Sin embargo, sufren problemas de infraestructura, despoblación y falta de normativa específica.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white border-bottom border-4 border-warning">
+            <h6 class="fw-bold text-dark mb-2">Haciendo visible lo invisible</h6>
+            <p class="small mb-0">Desde la perspectiva de una directora en Almogía (Málaga). Visibiliza la sobrecarga laboral del profesorado, que debe asumir funciones directivas, administrativas y docentes simultáneamente debido a la falta de personal. Critica que la burocracia está pensada para macrco-centros, pero destaca la enorme capacidad de estas escuelas para adaptar metodologías innovadoras a las necesidades reales.</p>
+          </div>
+        </div>
+      </div>
+
+      <h5 class="fw-bold text-dark mt-4 mb-2">Dinámica de puesta en común</h5>
+      <p>Tras la lectura, escribimos individualmente qué significaba para nosotros la escuela rural. Luego, intercambiamos los papeles de forma anónima y los pusimos en común en nuestro grupo.</p>
+      <p><strong>¿En qué coincidimos todos?</strong> En que son colegios alejados de la ciudad, con menos alumnos (lo que favorece la personalización), con gran uso del entorno natural en lugar de tantas pantallas, y con una relación muy estrecha entre docentes y familias.</p>
+      <p><strong>¿Qué nos faltó mencionar?</strong> Las deficiencias en infraestructuras (edificios antiguos, mala calefacción), el peligro de cierre por despoblación, el mal estado de los accesos/carreteras y el enorme papel que juegan como transmisores de cultura y núcleo de la comunidad local.</p>
+
+      <hr class="my-5 border-primary opacity-25">
+
+      <h4 class="fw-bold text-dark mb-3"><i class="bi bi-mic-fill text-success me-2"></i>2. Charla con el equipo docente: Comares</h4>
+      <p>Con toda esta base, bajamos al salón de actos para escuchar a las docentes del <strong>CEIP San Hilario de Poitiers (Comares, "el balcón de la Axarquía")</strong>. Tras ver un vídeo sobre su día a día, nos explicaron la realidad de su centro:</p>
+      
+      <ul class="list-unstyled mb-4">
+        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Aulas Mixtas y Atención a la Diversidad:</strong> Tienen desde Infantil hasta la ESO mezclados. Esto fomenta que los mayores ayuden a los pequeños. Tienen un Aula Específica por el alto porcentaje de alumnado NEAE, lo que permite una atención verdaderamente individualizada.</li>
+        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Los Retos Reales:</strong> Las aulas mixtas dan miedo a los docentes nuevos por su complejidad. Requieren mucha formación en neuroeducación, cambiar la "mirada adulta" (pasar del control a la comprensión) y lidiar con el uso de los móviles, que afecta igual que en la ciudad.</li>
+        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Liderazgo Horizontal:</strong> Al ser pocas docentes, todas las decisiones se discuten en equipo. Adaptan el temario a la realidad, hablando de temas actuales como la educación afectivo-sexual o el pensamiento crítico, que a veces los libros de texto ignoran.</li>
+      </ul>
+
+      <div class="bg-light p-4 rounded-3 border-start border-4 border-success my-4">
+        <h6 class="fw-bold text-dark mb-2"><i class="bi bi-stars text-warning me-2"></i>Iniciativas y Anécdotas que nos marcaron</h6>
+        <p class="small mb-2">Nos encantó la idea del <strong>"Club de los Valientes"</strong>, un espacio donde el alumnado es responsable de gestionar y solucionar sus propios conflictos de forma autónoma.</p>
+        <p class="small mb-0">También nos contaron cómo, en una excursión, a un niño se le olvidó el desayuno y la maestra volvió con él a su casa en el autobús (con el conductor ofreciéndose amablemente) para que no se quedara sin ir. Esto refleja el nivel de humanidad y el vínculo tan fuerte que existe en esta comunidad.</p>
+      </div>
+
+      <p>Por último, nos explicaron que cuando los niños pasan a 3º de la ESO a un instituto más grande en otro pueblo, sufren un "choque cultural" (se asustan con las sirenas o no entienden qué es un "aula de convivencia"), pero al final terminan adaptándose, aunque siempre echan de menos su colegio.</p>
+
+      <hr class="my-5 border-primary opacity-25">
+
+      <h4 class="fw-bold text-dark mb-3"><i class="bi bi-chat-left-quote-fill text-danger me-2"></i>3. Conclusión del Equipo</h4>
+      <div class="alert alert-danger bg-opacity-10 border-0 rounded-4 p-4 text-dark">
+        <p class="mb-3">Después de conocer a fondo esta realidad, hemos comprendido que la escuela rural tiene muchísimas más fortalezas de las que normalmente se visibilizan. A pesar de las dificultades (despoblación, burocracia, infraestructuras), destacan por ofrecer una <strong>educación cercana, personalizada y muy humana</strong>.</p>
+        <p class="mb-3">Hemos comprobado que no son escuelas "inferiores" a las urbanas, sino espacios con un gran potencial transformador, capaces de innovar y adaptarse a las necesidades reales de los niños. Esta experiencia nos ha cambiado la mirada: nos ha hecho reflexionar sobre la importancia de construir colegios basados en la confianza y el sentimiento de comunidad.</p>
+        <p class="mb-0 fw-bold">Escuchar estas experiencias reales nos ha ayudado a entender que ser docente no consiste solo en enseñar contenidos, sino también en acompañar, escuchar, adaptarse y crear oportunidades para que cada alumno y alumna crezca en un entorno donde se sienta verdaderamente valorado.</p>
+      </div>
+
+    </div>
+  `
+},
+  // ==========================================
+// SESIÓN 12 - 26/03/2026
+// ==========================================
+{
+  id: 12,
+  semana: "Sexta Semana",
+  fecha: "26/03/2026",
+  titulo: "TDAH vs Creatividad y el Debate sobre la Eutanasia",
+  apuntes: `
+    <div class="sesion-content text-muted lh-lg">
+      <p>En el día de hoy hemos abordado dos temas profundamente humanos y complejos: la visión del sistema educativo sobre la creatividad y la salud mental, y un duro debate ético sobre el final de la vida y el papel de la escuela en la prevención.</p>
+
+      <hr class="my-4 border-primary opacity-25">
+
+      <h4 class="fw-bold text-dark mb-3"><i class="bi bi-palette-fill text-warning me-2"></i>1. Ken Robinson: TDAH y Creatividad en Infantil</h4>
+      <p>Comenzamos la clase analizando las ideas de Ken Robinson, quien argumenta que el TDAH (Trastorno por Déficit de Atención e Hiperactividad) sufre un problema de sobrediagnóstico. A menudo, los sistemas educativos, por ser demasiado rígidos, confunden la alta energía y la creatividad natural de los niños con un trastorno.</p>
+      
+      <div class="bg-light p-4 rounded-3 border-start border-4 border-warning my-3">
+        <p class="mb-0">Robinson sostenía que muchos niños etiquetados con TDAH <strong>no necesitan medicación, sino más movimiento y estímulos creativos</strong>. Propone un cambio hacia una educación personalizada que fomente el <em>pensamiento divergente</em>, evitando que la escuela "mate" la creatividad (como demuestra el dato de que los niños pasan de tener 150 posibles soluciones a un problema en infantil, a solo 75 a medida que avanzan de curso).</p>
+      </div>
+
+      <hr class="my-5 border-primary opacity-25">
+
+      <h4 class="fw-bold text-dark mb-3"><i class="bi bi-heartbreak-fill text-danger me-2"></i>2. El caso de Noelia Castillo Ramos y el Debate sobre la Eutanasia</h4>
+      <p>A continuación, tratamos en asamblea un caso reciente que ha conmocionado a nivel internacional y ha reabierto el debate sobre la muerte digna: la eutanasia de Noelia Castillo Ramos, una joven de 25 años.</p>
+      
+      <div class="row g-4 my-2">
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white">
+            <h6 class="fw-bold text-dark mb-2">El Contexto</h6>
+            <p class="small mb-0">Noelia solicitó la eutanasia tras quedar parapléjica por un intento de suicidio, el cual derivó del inmenso trauma de una violación múltiple. El proceso se demoró casi dos años porque su padre se oponía alegando problemas de salud mental de su hija, aunque tribunales e informes médicos certificaron que ella estaba en plenas facultades para decidir.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white">
+            <h6 class="fw-bold text-dark mb-2">Sufrimiento Físico vs. Mental</h6>
+            <p class="small mb-0">El debate en clase sacó a la luz una triste realidad social: la medicina y la sociedad suelen validar más el sufrimiento físico (paraplejía, cáncer) porque es medible y visible, cuestionando a veces el dolor psicológico (depresión, trauma), a pesar de que este puede ser igual de intenso, limitante e irreversible.</p>
+          </div>
+        </div>
+      </div>
+
+      <h5 class="fw-bold text-dark mt-4 mb-3">Perspectivas enfrentadas en el aula</h5>
+      <ul class="list-unstyled mb-4 ps-2">
+        <li class="mb-3"><i class="bi bi-caret-right-fill text-danger me-2"></i><strong>Suicidio vs. Eutanasia:</strong> Diferenciamos entre el suicidio (algo que nadie puede impedir al 100%) y la eutanasia, que implica aprobar legalmente el derecho a recibir ayuda médica para morir tras una decisión deliberada, evaluada por profesionales y sin sufrimiento físico añadido.</li>
+        <li class="mb-3"><i class="bi bi-caret-right-fill text-danger me-2"></i><strong>El derecho a descansar:</strong> Mientras algunas personas argumentaban que el suicidio nunca es una opción, otros compañeros defendieron que, cuando una persona padece un dolor irreversible y sin expectativas de mejora (físico o mental), merece poder poner fin a su sufrimiento de forma digna.</li>
+      </ul>
+
+      <h5 class="fw-bold text-dark mt-4 mb-3 border-top pt-3">¿Se debe hablar del suicidio en las aulas?</h5>
+      <p>Surgió la duda de si tratar estos temas en clase podría fomentar la tasa de suicidios. La mayoría concluimos que no funciona así. Al igual que ocurre con la educación sexual, <strong>hablar del tema ayuda a gestionar emociones, reconocer señales de alarma y buscar ayuda</strong>. Nuestro papel como docentes no es eliminar el sufrimiento por completo (no somos médicos), pero sí crear entornos seguros, ofrecer apoyo, acompañamiento y facilitar el acceso a ayuda profesional.</p>
+
+      <hr class="my-5 border-primary opacity-25">
+
+      <h4 class="fw-bold text-dark mb-3"><i class="bi bi-people-fill text-primary me-2"></i>3. Conclusión del Equipo</h4>
+      <div class="alert alert-primary bg-opacity-10 border-0 rounded-4 p-4 text-dark">
+        <p class="mb-3">Como grupo, consideramos que tanto las ideas de Ken Robinson como el duro debate sobre la eutanasia comparten una misma necesidad de fondo: <strong>construir una sociedad y una educación más humanas, capaces de comprender la diversidad y atender las necesidades reales de las personas.</strong></p>
+        <p class="mb-3">Así como Robinson defiende que no debemos etiquetar a los niños, sino ofrecerles espacios donde desarrollarse según sus capacidades, también es fundamental escuchar y no juzgar a quienes atraviesan situaciones de sufrimiento profundo y desgarrador.</p>
+        <p class="mb-0 fw-bold">Entendemos que educar no solo implica transmitir conocimientos, sino fomentar la empatía, el pensamiento crítico y la capacidad de cuidar de los demás. Como futuros docentes, debemos crear entornos donde cada persona se sienta comprendida, valorada y, sobre todo, acompañada en los momentos más difíciles.</p>
+      </div>
+
+    </div>
+  `
+},
   // ------------------ SESIÓN 13 ------------------
   {
     id: 13,
     semana: "Séptima Semana",
     fecha: "07/04/2026",
     titulo: "De la Escuela-Fábrica al Aprendizaje Vital y Role-Play de Evaluación",
-    apuntes: `Hoy hemos hecho un viaje en el tiempo para entender cómo ha evolucionado la educación: pasando de un enfoque centrado en "enseñar" a uno centrado en "aprender". Empezamos diferenciando conceptos clave: la pedagogía es la teoría, mientras que la didáctica es la práctica en el aula. Del mismo modo, los objetivos son lo que el alumno debe "saber", pero las competencias son lo que "sabe hacer" con ese conocimiento en la vida real.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Hoy hemos hecho un viaje en el tiempo para entender cómo ha evolucionado la educación: pasando de un enfoque centrado en "enseñar" a uno centrado en "aprender". Empezamos diferenciando conceptos clave: la pedagogía es la teoría, mientras que la didáctica es la práctica en el aula. Del mismo modo, los objetivos son lo que el alumno debe "saber", pero las <strong>competencias son lo que "sabe hacer" con ese conocimiento en la vida real.</strong></p>
 
-Estudiamos cómo entre los siglos XVIII y XX se diseñó un sistema educativo calcado al modelo de las fábricas: estandarización, separación por edades, asignaturas fragmentadas y un alumnado pasivo basado en la obediencia y la repetición. Por suerte, gracias a informes como los de la UNESCO, PISA o DeSeCo, y a las nuevas pedagogías (crítica, decolonial, feminista...), el modelo empezó a cuestionarse. Hoy buscamos un aprendizaje global, inclusivo y vital, donde el docente ya no es un simple transmisor, sino un guía, y el alumnado es el protagonista activo.
+        <h5 class="fw-bold text-dark mt-4 mb-3">La evolución del modelo educativo</h5>
+        <div class="row g-4 mb-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-secondary bg-opacity-10 p-3 rounded-4">
+              <h6 class="fw-bold text-secondary mb-1"><i class="bi bi-building me-2"></i>La Escuela-Fábrica (S. XVIII-XX)</h6>
+              <p class="small mb-0 text-dark">Un sistema calcado al modelo industrial: estandarización, separación por edades, asignaturas fragmentadas y un alumnado pasivo basado en la obediencia y la repetición.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-success bg-opacity-10 p-3 rounded-4">
+              <h6 class="fw-bold text-success mb-1"><i class="bi bi-tree-fill me-2"></i>El Aprendizaje Vital (Hoy)</h6>
+              <p class="small mb-0 text-dark">Gracias a informes como UNESCO o PISA y a nuevas pedagogías, buscamos un aprendizaje global e inclusivo. El docente es un guía y el alumnado es el protagonista activo.</p>
+            </div>
+          </div>
+        </div>
 
-Para poner a prueba todo esto, especialmente el cambio hacia una evaluación formativa y continua (lejos del simple examen final), Carlos nos propuso un "Role-Play" de evaluación. Nos unimos a Mario, Josué y Natalia. Dividimos los roles: Nathalie, Glori y Pacheco éramos los alumnos, mientras que Joselu, Josué y Mario actuaban de maestros simulando la evaluación de una presentación sobre las emociones. 
+        <h4 class="fw-bold text-dark mt-5 mb-3"><i class="bi bi-controller text-primary me-2"></i>Role-Play: La Evaluación en Acción</h4>
+        <p>Para poner a prueba el cambio hacia una evaluación formativa y continua, Carlos nos propuso un "Role-Play". Nos unimos a Mario, Josué y Natalia. Dividimos los roles: Nathalie, Glori y Pacheco éramos los alumnos, mientras que Joselu, Josué y Mario actuaban de maestros simulando la evaluación de una presentación sobre emociones.</p>
+        
+        <p>Mientras otros grupos usaban sistemas tradicionales o de "caritas", nosotros apostamos por un <strong>enfoque integral</strong>: evaluamos el progreso durante el trabajo, usamos una rúbrica específica e incluimos la coevaluación entre compañeros.</p>
 
-Mientras otros grupos usaban sistemas tradicionales o de "caritas", nosotros apostamos por un enfoque integral: evaluamos el progreso durante el trabajo, usamos una rúbrica específica para la presentación final e incluimos la coevaluación entre compañeros. 
+        <div class="alert alert-warning border-0 rounded-4 mt-3">
+          <h6 class="fw-bold text-dark mb-2"><i class="bi bi-trophy-fill text-warning me-2"></i>¡Ganadores del Role-Play!</h6>
+          <p class="small mb-0 text-dark">Ganamos la dinámica por ser el grupo que más métodos de evaluación completos utilizó. El gran premio (y responsabilidad) es que nuestro equipo será la <strong>comisión oficial encargada de evaluar</strong> el resto de actividades de la asignatura junto al profesor.</p>
+        </div>
 
-¿El resultado? ¡Ganamos la dinámica por ser el grupo que más métodos de evaluación diferentes y completos utilizó! El gran premio (y responsabilidad) es que nuestro equipo, junto con nuestros compañeros aliados, seremos la comisión oficial encargada de evaluar el resto de actividades de la asignatura junto al profesor en las próximas sesiones. 
-
-Como reflexión final, esta clase nos ha dejado muy claro que la educación está viva y cambia según las necesidades de la sociedad. Atrás quedó el modelo de fábrica rígido; el futuro es de las competencias, la inclusión y el aprendizaje con sentido.`,
+        <p class="mt-4 mb-0 fw-bold">Como reflexión final, esta clase nos ha dejado muy claro que la educación está viva. Atrás quedó el modelo de fábrica; el futuro es de las competencias, la inclusión y el aprendizaje con sentido.</p>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -328,31 +714,56 @@ Como reflexión final, esta clase nos ha dejado muy claro que la educación est�
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
+
   // ------------------ SESIÓN 14 ------------------
   {
     id: 14,
     semana: "Séptima Semana",
     fecha: "09/04/2026",
     titulo: "Vigotsky, Bruner y el Modelo Compensatorio Personal",
-    apuntes: `Comenzamos la clase con una base teórica clave. Repasamos a Vigotsky y su idea de que el aprendizaje siempre pasa de lo interpersonal (colectivo, con ayuda de otros) a lo intrapersonal (individual, de forma autónoma), siendo el lenguaje el puente que crea nuestra realidad. También mencionamos a Das, que destaca la unión de la teoría y la práctica en el aprendizaje específico.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Comenzamos la clase con una base teórica clave, repasando a <strong>Vigotsky</strong> y a <strong>Das</strong>. Pero el plato fuerte del día vino con el psicólogo Jerome Bruner y su modelo compensatorio.</p>
 
-Pero el plato fuerte del día vino con la estrategia y el psicólogo Jerome Bruner. Carlos nos explicó la diferencia entre el modelo tradicional y el modelo compensatorio. En el tradicional, si se te da mal algo, te machacan con eso y el resto de tus capacidades sufren un déficit. En cambio, en el modelo compensatorio, el área en la que fallas puede ser equilibrada y apoyada por tus otras áreas fuertes. Siguiendo la metáfora de las tazas: si hay una taza vacía, abrimos camino con las demás para que el líquido se equilibre.
+        <div class="bg-light p-4 rounded-3 border-start border-4 border-info my-4">
+          <h6 class="fw-bold text-dark mb-2">La Metáfora de las Tazas de Bruner</h6>
+          <p class="small mb-0">En el modelo tradicional, si se te da mal algo, te machacan con eso y el resto de tus capacidades sufren un déficit. En el <strong>modelo compensatorio</strong>, el área en la que fallas puede ser equilibrada y apoyada por tus otras áreas fuertes. <em>"Si hay una taza vacía, abrimos camino con las demás para que el líquido se equilibre."</em></p>
+        </div>
 
-Para poner esto en práctica, Carlos nos pidió un ejercicio de introspección individual: elegir un "déficit" o algo que queramos mejorar, y analizar cómo las demás dimensiones del Proceso Lógico de Pensamiento pueden ayudarnos a compensarlo.
+        <p>Carlos nos pidió un ejercicio de introspección: elegir un "déficit" y analizar cómo las demás dimensiones del Proceso Lógico de Pensamiento pueden ayudarnos a compensarlo. Aquí detallamos nuestro análisis grupal:</p>
 
-A continuación, detallamos el análisis de cada miembro del grupo:
-
-Gloria: Expresar emociones y narrar historias (Lenguaje - Nominar)
-"Considero que tengo un déficit al expresar historias o sentimientos, ya que me bloqueo con los detalles. Para compensarlo, usaré la Percepción y la Atención para fijarme en cómo hablan los demás, qué tono y gestos usan. También potenciaré la Lectura y el Lenguaje Musical, ya que leyendo o escuchando canciones de otros aprendo nuevas formas de narrar. A nivel de Organización del Tiempo, dedicaré 5 minutos diarios a escribir cómo ha sido mi día (Escritura) para practicar, y usaré la Planificación para hacerme esquemas mentales antes de hablar. Por último, la Autonomía Social será clave, apoyándome en mi entorno para adquirir nuevas vivencias."
-
-Nathalie: Capacidad de concentración (Atención)
-"Mi objetivo es poder concentrarme más de una hora sin colapsar ni estresarme. Para compensar esta falta de atención, usaré la Planificación dividiendo el tiempo por asignaturas y organizando mi espacio para dejar solo lo necesario en la mesa, evitando distracciones visuales. En cuanto al Lenguaje, escuchar música de fondo (Lenguaje Musical) o escribir mientras escucho (Escritura) me ayuda a anclar el foco. También es vital aplicar Normas: alejar el móvil y ponerme límites claros, además de descansar adecuadamente para que el cansancio no sea una excusa."
-
-Pacheco: Evitar distracciones (Atención)
-"En mi día a día me distraigo con facilidad. Para combatir esto, me apoyaré en la Organización del Tiempo (estudiar en ratos cortos para evitar la fatiga) y la Organización del Espacio (mesa totalmente limpia). Además, la Autonomía Física será mi gran aliada: hacer deporte o caminar antes de una clase difícil liberará tensión y me permitirá estar relajado. Por último, usaré la Autonomía Social pidiendo a mis compañeros que me avisen si ven que me quedo 'mirando a la nada', funcionando como mi alarma externa."
-
-Joselu: Mantener la lectura prolongada (Lenguaje - Lectura)
-"Mi déficit es que me cuesta mantener una lectura prolongada y concentrarme en el contenido. Para compensarlo, usaré la Planificación para elegir textos adecuados a mi nivel y no frustrarme, junto con la Organización del Tiempo (calcular cuánto leeré diariamente y pautar descansos mediante el Lenguaje Lógico-Matemático) y la Organización del Espacio (buscar un lugar calmado y bien iluminado). En cuanto a la Afectividad, me impondré Normas y horarios fijos, apoyándome en el Valor de la disciplina. Por último, aplicaré mi Autonomía Física desplazándome activamente a bibliotecas para buscar mis propias lecturas."`,
+        <div class="row g-4 mt-2">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white">
+              <h6 class="fw-bold text-danger mb-1">Gloria</h6>
+              <span class="badge bg-danger bg-opacity-10 text-danger mb-2">Déficit: Expresar historias (Nominar)</span>
+              <p class="small mb-0">"Usaré la Percepción y Atención para fijarme en cómo hablan los demás (tono, gestos). Potenciaré la Lectura y el Lenguaje Musical para aprender nuevas formas de narrar. A nivel de Organización, dedicaré 5 minutos diarios a escribir cómo ha sido mi día para practicar y hacerme esquemas previos."</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white">
+              <h6 class="fw-bold text-primary mb-1">Nathalie</h6>
+              <span class="badge bg-primary bg-opacity-10 text-primary mb-2">Déficit: Concentración (Atención)</span>
+              <p class="small mb-0">"Usaré la Planificación dividiendo el tiempo y organizando el espacio para dejar solo lo necesario. El Lenguaje Musical (música de fondo) y la Escritura me ayudan a anclar el foco. Es vital aplicar Normas (alejar el móvil) y descansar adecuadamente para que el cansancio no sea excusa."</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white">
+              <h6 class="fw-bold text-warning mb-1">Pacheco</h6>
+              <span class="badge bg-warning bg-opacity-10 text-warning mb-2">Déficit: Evitar distracciones (Atención)</span>
+              <p class="small mb-0">"Me apoyaré en la Organización del Tiempo (estudiar en ratos cortos) y del Espacio (mesa limpia). La Autonomía Física será clave: hacer deporte antes de estudiar para liberar tensión. Por último, usaré la Autonomía Social pidiendo a mis compañeros que me avisen si me quedo 'mirando a la nada'."</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white">
+              <h6 class="fw-bold text-success mb-1">Joselu</h6>
+              <span class="badge bg-success bg-opacity-10 text-success mb-2">Déficit: Lectura prolongada</span>
+              <p class="small mb-0">"Usaré la Planificación para elegir textos a mi nivel y no frustrarme. Aplicaré Lógico-Matemático para pautar descansos, Afectividad (disciplina y normas) y Organización de Espacio (lugar bien iluminado). También aplicaré mi Autonomía Física desplazándome a bibliotecas."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -362,33 +773,48 @@ Joselu: Mantener la lectura prolongada (Lenguaje - Lectura)
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
+
   // ------------------ SESIÓN 15 ------------------
   {
     id: 15,
     semana: "Octava Semana",
     fecha: "14/04/2026",
     titulo: "Dimensiones Educativas, Currículum Oculto y Evaluación del Día del Libro",
-    apuntes: `Comenzamos la clase analizando los diferentes contextos en los que se desarrolla la Didáctica, desmontando la idea de que solo existe dentro de cuatro paredes. Carlos nos explicó tres dimensiones clave :
-- Formal: La escuela tradicional. Cuenta con un diseño estructurado, normativa, competencias y un título final.
-- No Formal: Actividades estructuradas pero fuera del sistema reglado (un seminario, jornadas de puertas abiertas).
-- Informal: La vida cotidiana. Aquí el profesor hizo un apunte crucial: a menudo aprendemos más de situaciones espontáneas y vitales que de la enseñanza reglada.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Comenzamos la clase analizando los diferentes contextos en los que se desarrolla la Didáctica, desmontando la idea de que solo existe dentro de cuatro paredes. Carlos nos explicó tres dimensiones clave:</p>
+        
+        <ul class="list-unstyled ps-2 mb-4">
+          <li class="mb-2"><i class="bi bi-bank text-primary me-2"></i><strong>Formal:</strong> La escuela tradicional, con normativa, competencias y un título final.</li>
+          <li class="mb-2"><i class="bi bi-calendar2-event text-success me-2"></i><strong>No Formal:</strong> Actividades estructuradas fuera del sistema reglado (seminarios, talleres).</li>
+          <li class="mb-2"><i class="bi bi-house-heart-fill text-danger me-2"></i><strong>Informal:</strong> La vida cotidiana. A menudo aprendemos más de situaciones espontáneas que de la enseñanza reglada.</li>
+        </ul>
 
-Relacionado con esto, profundizamos en la diferencia entre el Currículum Explícito (lo que dicta la ley: objetivos, metodologías, evaluaciones) y el Currículum Oculto . Este último es todo lo que transmitimos sin darnos cuenta: nuestros valores, cómo organizamos las mesas o si mandamos callar a un alumno tras haber predicado sobre la libertad de expresión. La teoría siempre debe concordar con nuestras conductas.
+        <div class="bg-light p-4 rounded-3 border-start border-4 border-warning my-4">
+          <h6 class="fw-bold text-dark mb-2">El Currículum Oculto</h6>
+          <p class="small mb-0">Profundizamos en la diferencia entre el Currículum Explícito (lo que dicta la ley) y el Oculto. Este último es <strong>todo lo que transmitimos sin darnos cuenta</strong>: nuestros valores, cómo organizamos las mesas o si mandamos callar a un alumno tras haber predicado sobre la libertad de expresión. La teoría siempre debe concordar con nuestras conductas.</p>
+        </div>
 
-Surgió entonces un debate muy reflexivo impulsado por Charles: "¿Puede haber didáctica formal sin aprendizaje?". Algunos compañeros como Mariam y Laura aportaron que, incluso en un día donde parece que no haces nada, estás aprendiendo de forma inconsciente. El aprendizaje no siempre es un contenido académico; la vida misma, incluso estar tirado mirando el móvil, te enseña tu propio "quehacer".
+        <p>El momento emotivo del día lo puso Mariam. Le dedicó su bordado a su madre e incluyó un muffin, contándonos cómo su madre le cedía su comida diciendo que no tenía hambre cuando no tenían dinero para más. Su historia nos recordó el inmenso sacrificio que hay detrás de que muchos estemos hoy en la universidad.</p>
 
-El momento emotivo del día lo puso Mariam, quien se había incorporado más tarde y quiso compartir su narrativa textil. Le dedicó el bordado a su madre e incluyó un muffin. Nos contó cómo su madre le cedía su comida diciendo que no tenía hambre, cuando la realidad es que no tenían dinero para más. Su historia nos recordó el inmenso sacrificio que hay detrás de que muchos estemos hoy en la universidad.
+        <h4 class="fw-bold text-dark mt-5 mb-3"><i class="bi bi-clipboard-check-fill text-success me-2"></i>Comisión Evaluadora: Día del Libro y Pueblo Gitano</h4>
+        <p>Pasamos a la acción con nuestro papel como Comisión. Teníamos que evaluar las propuestas del resto de la clase estableciendo una rúbrica basada en cinco pilares:</p>
+        
+        <ol class="small text-dark mb-4">
+          <li>Originalidad y creatividad.</li>
+          <li>Planificación realista del tiempo.</li>
+          <li>Fusión lógica entre el Día del Libro y la cultura gitana.</li>
+          <li>Coherencia con los objetivos marcados.</li>
+          <li>Inclusión real del pueblo gitano (evitando estereotipos y valorando si usaban cultura escrita).</li>
+        </ol>
 
-Para terminar, pasamos a la acción con nuestro papel como Comisión Evaluadora. Teníamos que diseñar los criterios para valorar las propuestas del resto de la clase para el Día del Libro y el Pueblo Gitano. Establecimos una rúbrica basada en:
-1. Originalidad y creatividad.
-2. Planificación realista del tiempo.
-3. Fusión lógica entre el Día del Libro y la cultura gitana.
-4. Coherencia con los objetivos marcados.
-5. Inclusión real del pueblo gitano (evitando estereotipos y valorando si usaban cultura escrita, que es muy escasa).
+        <p>Tras escuchar todas las presentaciones, deliberamos y dimos un feedback constructivo a cada equipo. El <strong>Grupo 4 se llevó el primer puesto</strong> y será el encargado de ejecutar su actividad el 23 de abril.</p>
 
-Tras escuchar todas las presentaciones (de 3 a 5 minutos por grupo), deliberamos y dimos un feedback constructivo a cada equipo. El Grupo 4 se llevó el primer puesto y será el encargado de ejecutar su actividad el 23 de abril.
-
-Como reflexión final, esta sesión nos ha abierto los ojos. Hemos comprendido que la educación no es neutra (siempre depende de políticas educativas) y que nuestro rol como evaluadores va mucho más allá de poner una nota: se trata de analizar, justificar y ayudar a mejorar a nuestros compañeros.`,
+        <div class="alert alert-secondary border-0 rounded-4 mt-4">
+          <p class="small mb-0 text-dark fw-bold"><i class="bi bi-lightbulb-fill text-warning me-2"></i>Reflexión Final: Hemos comprendido que la educación no es neutra (siempre depende de políticas educativas) y que nuestro rol como evaluadores va mucho más allá de poner una nota: se trata de analizar, justificar y ayudar a mejorar a nuestros compañeros.</p>
+        </div>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -398,25 +824,73 @@ Como reflexión final, esta sesión nos ha abierto los ojos. Hemos comprendido q
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
-  // ------------------ SESIÓN 16 ------------------
+// ------------------ SESIÓN 16 ------------------
   {
     id: 16,
     semana: "Octava Semana",
     fecha: "16/04/2026",
     titulo: "Cartas a Nuestro 'Yo' de 5 Años: Un Viaje a la Infancia",
-    apuntes: `Hoy hicimos una asamblea muy especial y significativa. La actividad consistía en compartir un relato o una carta dirigida a nuestro "yo" de 5 años. Fue un momento de escucha activa, muchísimo respeto y pura emoción. 
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Hoy hicimos una asamblea muy especial y significativa. La actividad consistía en compartir un relato o una carta dirigida a nuestro "yo" de 5 años. Fue un momento de escucha activa, muchísimo respeto y pura emoción.</p>
 
-Pudimos conocer a nuestros compañeros desde su lado más vulnerable. Nos emocionó mucho escuchar a Sergio recordar con nostalgia sus tardes de fútbol, o a Elena, que no pudo contener las lágrimas al leer su carta. Los relatos de María y Natalia destacaron por el papel fundamental de sus madres, y el de Víctor nos cautivó por la profundidad de sus detalles. Escucharnos nos hizo darnos cuenta de que, aunque cada historia es única, compartimos muchas más emociones y miedos de los que pensamos.
+        <div class="border-start border-4 border-danger bg-light p-3 rounded-end-3 my-4">
+          <p class="mb-0 text-dark">Pudimos conocer a nuestros compañeros desde su lado más vulnerable. Nos emocionó mucho escuchar a Sergio recordar con nostalgia sus tardes de fútbol, o a Elena, que no pudo contener las lágrimas al leer su carta. Los relatos de María y Natalia destacaron por el papel fundamental de sus madres, y el de Víctor nos cautivó por la profundidad de sus detalles. <strong>Escucharnos nos hizo darnos cuenta de que compartimos muchas más emociones y miedos de los que pensamos.</strong></p>
+        </div>
 
-A continuación, compartimos las cartas y reflexiones de nuestro grupo:
+        <h4 class="fw-bold text-dark mt-5 mb-4"><i class="bi bi-envelope-paper-heart-fill text-danger me-2"></i>Cartas de nuestro equipo</h4>
+        
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 bg-white">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="bg-danger bg-opacity-10 text-danger rounded-circle p-2 me-3"><i class="bi bi-person-fill fs-5"></i></div>
+                  <h6 class="fw-bold text-dark mb-0">Gloria</h6>
+                </div>
+                <p class="small mb-0 fst-italic">"Hola Glorita. Gracias por jugar con mamá a las cocinitas y no tener en cuenta sus gritos, porque también es su primera vez viviendo. Me encanta que lleves tu mochila de Spiderman y que sepas que no hace falta que te rescate un príncipe azul para ser una superheroína. Recuerda siempre la frase de papá: 'Si no pasasen cosas malas, no disfrutarías tanto las cosas buenas'. Escribir esto me ha hecho reconectar con mi niña interior."</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 bg-white">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-2 me-3"><i class="bi bi-person-fill fs-5"></i></div>
+                  <h6 class="fw-bold text-dark mb-0">Pacheco</h6>
+                </div>
+                <p class="small mb-0 fst-italic">"Hola, pequeño Pachequín. Te escribo para darte las gracias por no rendirte cuando las cosas se pusieron feas en el colegio y sufriste bullying. Ese coraje es lo que me ha hecho ser quien soy hoy. Gracias por aguantar la incertidumbre de no saber qué hacer tras Bachillerato; hoy estoy rodeado de gente impresionante en la universidad gracias a que seguiste caminando."</p>
+              </div>
+            </div>
+          </div>
 
-Gloria: "Hola Glorita. Gracias por ser una pequeña observadora; aunque te digan que estás en tu mundo, fijarte en los detalles te ayudará mucho. Gracias por jugar con la 'Pai' (mamá) a las cocinitas y no tener en cuenta sus gritos, porque también es su primera vez viviendo. Me encanta que no seas la 'niña buena' de la tele, que lleves tu mochila de Spiderman y que sepas que no hace falta que te rescate un príncipe azul para ser una superheroína. Gracias por cuidar de mamá cuando tiene migrañas y de papá cuando viene cansado del trabajo. Recuerda siempre la frase de papá: 'Si no pasasen cosas malas, no disfrutarías tanto las cosas buenas'. Escribir esto me ha hecho reconectar con mi niña interior y recordar que no debo perder nunca esa sensibilidad y curiosidad."
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 bg-white">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="bg-warning bg-opacity-10 text-warning rounded-circle p-2 me-3"><i class="bi bi-person-fill fs-5"></i></div>
+                  <h6 class="fw-bold text-dark mb-0">Nathalie</h6>
+                </div>
+                <p class="small mb-0 fst-italic">"Hola Nathalie. Disfruta cada segundo con tu 'Abu' y tus tíos, porque dentro de unos años no podrás visitarlos tan a menudo. Sigue jugando al fútbol y haciendo gimnasia; te dejarán amistades preciosas. Y, sobre todo, dales muchos abrazos a tus padres y a tu hermana, porque ellos también están viviendo por primera vez y necesitan tu cariño. No te cargues los problemas del mundo a la espalda."</p>
+              </div>
+            </div>
+          </div>
 
-Pacheco: "Hola, pequeño Pachequín. Te escribo para darte las gracias por no rendirte cuando las cosas se pusieron feas en el colegio y sufriste bullying. Ese coraje es lo que me ha hecho ser quien soy hoy. Gracias por aprender a escuchar a mamá y entender que es tu mejor amiga. Sigue dedicándole tiempo a tus mascotas, porque cuando no estén los echarás muchísimo de menos. Y gracias por darle una oportunidad al deporte, aunque ahora te dé pereza, me ha cambiado la vida. Gracias por aguantar la incertidumbre de no saber qué hacer tras Bachillerato; hoy estoy rodeado de gente impresionante en la universidad gracias a que seguiste caminando."
-
-Nathalie: "Hola Nathalie. Disfruta cada segundo con tu 'Abu' y tus tíos, porque dentro de unos años no podrás visitarlos tan a menudo. Deja de quejarte de sus sopas de verdura y sigue yendo a sus fiestas de pijamas. Sigue jugando al fútbol y haciendo gimnasia; te dejarán amistades preciosas. Y, sobre todo, dales muchos abrazos a tus padres y a tu hermana, porque ellos también están viviendo por primera vez y necesitan tu cariño. No te cargues los problemas del mundo a la espalda y no tengas miedo de expresar tus sentimientos. Gracias por mantener tu esencia bonita y valiente."
-
-Joselu: "A mi 'yo' de 5 años le aconsejaría, simplemente, que fuera él mismo. Que hiciera lo que sintiese en cada momento porque todo error acaba siendo un aprendizaje. Le diría que se quitase esa vergüenza tonta por el 'qué dirán' y que viviera más tranquilo, sabiendo que siempre hay muchas opciones para un mismo camino, así que no hay que frustrarse si una puerta se cierra. Al final, me agradecería a mí mismo haber hecho todo lo que hice, porque me ha convertido en quien soy hoy, alguien con quien realmente me siento muy satisfecho."`,
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 bg-white">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="bg-success bg-opacity-10 text-success rounded-circle p-2 me-3"><i class="bi bi-person-fill fs-5"></i></div>
+                  <h6 class="fw-bold text-dark mb-0">Joselu</h6>
+                </div>
+                <p class="small mb-0 fst-italic">"A mi 'yo' de 5 años le aconsejaría, simplemente, que fuera él mismo. Que hiciera lo que sintiese en cada momento porque todo error acaba siendo un aprendizaje. Le diría que se quitase esa vergüenza tonta por el 'qué dirán' y que viviera más tranquilo, sabiendo que siempre hay muchas opciones para un mismo camino. Al final, me agradecería a mí mismo haber hecho todo lo que hice."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -426,29 +900,59 @@ Joselu: "A mi 'yo' de 5 años le aconsejaría, simplemente, que fuera él mismo.
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
+
   // ------------------ SESIÓN 17 ------------------
   {
     id: 17,
     semana: "Novena Semana",
     fecha: "21/04/2026",
     titulo: "Metodologías, Tipos de Evaluación y Rúbricas en Acción",
-    apuntes: `Comenzamos la clase resolviendo dudas sobre nuestro proyecto y hablando de la importancia de evitar el plagio y citar en formato APA (7ª edición). A raíz de unas preguntas, Carlos nos recordó que la didáctica es diversa y tiene muchos contextos: formal (la escuela), no formal (seminarios, actividades extraescolares) e informal (nuestro día a día, donde muchas veces aprendemos más que en un aula).
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Comenzamos la clase resolviendo dudas sobre nuestro proyecto y hablando de la importancia de evitar el plagio y citar en formato APA. A raíz de unas preguntas, Carlos nos recordó que la didáctica es diversa y tiene muchos contextos: formal (la escuela), no formal (seminarios) e informal (nuestro día a día, donde muchas veces aprendemos más que en un aula).</p>
 
-Entramos de lleno en la teoría de la Metodología. Comprendimos que toda metodología tiene un porqué, y criticamos que muchas veces a los maestros no se les valora lo suficiente, cuando su práctica requiere la misma precisión que la de un cirujano. Repasamos metodologías clave para salir del modelo tradicional:
-- Gamificación: No es jugar por jugar, es incorporar las mecánicas del juego al aprendizaje.
-- Flipped Classroom (Aula Invertida): El alumno prepara la teoría en casa y en clase se hace la práctica.
-- Aprendizaje Basado en Proyectos (ABP): Trabajar de forma cooperativa hacia un fin común.
-- Visible Thinking: Rutinas de Harvard para hacer visible el pensamiento de los alumnos.
+        <h4 class="fw-bold text-dark mt-4 mb-3"><i class="bi bi-tools text-primary me-2"></i>Metodologías Activas</h4>
+        <p>Comprendimos que toda metodología tiene un porqué, y criticamos que muchas veces a los maestros no se les valora lo suficiente, cuando su práctica requiere la misma precisión que la de un cirujano. Repasamos metodologías clave para salir del modelo tradicional:</p>
+        
+        <ul class="list-unstyled ps-2 mb-4">
+          <li class="mb-2"><i class="bi bi-controller text-danger me-2"></i><strong>Gamificación:</strong> No es jugar por jugar, es incorporar las mecánicas del juego al aprendizaje.</li>
+          <li class="mb-2"><i class="bi bi-arrow-repeat text-success me-2"></i><strong>Flipped Classroom (Aula Invertida):</strong> El alumno prepara la teoría en casa y en clase se hace la práctica.</li>
+          <li class="mb-2"><i class="bi bi-diagram-3-fill text-info me-2"></i><strong>ABP:</strong> Trabajar de forma cooperativa hacia un fin común.</li>
+          <li class="mb-2"><i class="bi bi-eye-fill text-warning me-2"></i><strong>Visible Thinking:</strong> Rutinas para hacer visible el pensamiento de los alumnos.</li>
+        </ul>
 
-Después, profundizamos en la Evaluación. Un buen docente no puede basarse solo en un examen sumativo (cuantitativo y finalista). Hay que evaluar el proceso (formativa), al principio (diagnóstica) y contar con múltiples voces: Heteroevaluación (del profe al alumno), Autoevaluación y Coevaluación (entre compañeros). Nos marcó mucho el ejemplo del Test de Cooper en Educación Física: una prueba puramente capacitista que no tiene en cuenta las dificultades o el asma de un alumno, evaluando solo el resultado y no el esfuerzo o el progreso.
+        <div class="bg-light p-4 rounded-3 border-start border-4 border-success my-4">
+          <h6 class="fw-bold text-dark mb-2">Una Evaluación Real y Justa</h6>
+          <p class="small mb-0">Un buen docente no puede basarse solo en un examen sumativo (cuantitativo y finalista). Hay que evaluar el proceso (formativa), al principio (diagnóstica) y contar con múltiples voces: Heteroevaluación, Autoevaluación y Coevaluación. Nos marcó mucho el ejemplo del <strong>Test de Cooper en E.F.</strong>: una prueba puramente capacitista que evalúa solo el resultado y no el esfuerzo o el progreso del alumno.</p>
+        </div>
 
-Tras el descanso, nos pusimos el sombrero de Comisión Evaluadora. Nos dividimos por parejas para supervisar y dar feedback al resto de grupos sobre sus propuestas para el Día del Libro y el Pueblo Gitano:
+        <h4 class="fw-bold text-dark mt-5 mb-3"><i class="bi bi-search text-warning me-2"></i>Comisión Evaluadora en Acción</h4>
+        <p>Tras el descanso, nos dividimos por parejas para supervisar y dar feedback al resto de grupos sobre sus propuestas para el Día del Libro y el Pueblo Gitano:</p>
+        
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
+              <h6 class="fw-bold text-dark mb-2">Gloria y Josué (G1 y G3)</h6>
+              <p class="small mb-0">El G1 destacó por usar a Camarón cantando a Lorca. El G3 presentó una actividad brillante fusionando temas: un teatro de poemas gitanos donde la clase debe adivinar la obra.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
+              <h6 class="fw-bold text-dark mb-2">Pacheco y Mario (G2)</h6>
+              <p class="small mb-0">Han mejorado mucho sus recursos, aunque les dimos feedback para que definan un objetivo general más claro y fomenten que todo su grupo participe por igual.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
+              <h6 class="fw-bold text-dark mb-2">Nathalie, Natalia y Joselu (G4 y G5)</h6>
+              <p class="small mb-0">El G4 tuvo un trabajo en equipo impecable. El G5 planteó crear una historia conjunta ("Érase una vez..."), aunque notamos que algunos miembros hablaban mucho más que otros.</p>
+            </div>
+          </div>
+        </div>
 
-- Gloria y Josué (Grupos 1 y 3): El Grupo 1 (Víctor y Margot) destacó por usar a Camarón cantando a Lorca y plantear un debate para romper estereotipos gitanos. El Grupo 3 (Melania y Esther) presentó una actividad brillante fusionando ambos temas: los alumnos deben preparar un teatro basado en poemas gitanos y el resto debe adivinar de qué poema se trata.
-- Pacheco y Mario (Grupo 2): (Alba y Elena). Han mejorado mucho sus recursos, aunque les falta definir un objetivo general claro y fomentar que todo su grupo participe por igual.
-- Nathalie, Natalia y Joselu (Grupos 4 y 5): En el Grupo 4 (Navas y Angy) el trabajo en equipo fue impecable, asegurándose de que todos entendieran cada parte del proyecto. El Grupo 5 (Irene y Diana) planteó crear una historia conjunta bajo la premisa "Érase una vez en un pueblo gitano...", aunque notamos que algunos miembros del grupo hablaban mucho más que otros.
-
-Como reflexión final, esta sesión ha sido oro puro. Hemos conectado la teoría (metodologías y evaluación formativa) con la práctica real, supervisando y guiando a nuestros compañeros. Entender que evaluar no es poner una nota para castigar, sino una herramienta para mejorar el proceso, es el mayor aprendizaje que nos llevamos hoy.`,
+        <p class="mt-4 mb-0 fw-bold">Reflexión final: Entender que evaluar no es poner una nota para castigar, sino una herramienta para mejorar el proceso, es el mayor aprendizaje que nos llevamos hoy.</p>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -458,25 +962,55 @@ Como reflexión final, esta sesión ha sido oro puro. Hemos conectado la teoría
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
+
   // ------------------ SESIÓN 18 ------------------
   {
     id: 18,
     semana: "Novena Semana",
     fecha: "23/04/2026",
     titulo: "Día del Libro: Flamenco, Teatros y el Juego de las Sillas",
-    apuntes: `Hoy celebramos el Día del Libro de una forma única, liderada por el Grupo 4 (Ale Navas y Angy). Al entrar, el aula estaba transformada: sillas agrupadas mirando hacia fuera y el equipo organizador vestido de negro con detalles flamencos (peinetas, flores, mantillos). Además, trajeron material para que toda la clase nos metiéramos en el papel.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Hoy celebramos el Día del Libro de una forma única, liderada por el Grupo 4 (Ale Navas y Angy). Al entrar, el aula estaba transformada: sillas agrupadas mirando hacia fuera y el equipo organizador vestido de negro con detalles flamencos (peinetas, flores, mantoncillos). Además, trajeron material para que toda la clase nos metiéramos en el papel.</p>
 
-Comenzamos con una versión del clásico juego de las sillas al ritmo de música flamenca. Nos dividimos en grupos (Joselu y Gloria en uno; Pacheco y Nathalie en otro). Fue un momento súper divertido y lúdico, dejándonos anécdotas graciosas como la caída de Martina tras un rápido movimiento de Elena para conseguir su silla, coronándose como ganadora de esa ronda.
+        <h4 class="fw-bold text-dark mt-4 mb-3"><i class="bi bi-music-note-list text-danger me-2"></i>El Juego de las Sillas Literario</h4>
+        <p>Comenzamos con una versión del clásico juego de las sillas al ritmo de música flamenca. Fue un momento súper divertido y lúdico, dejándonos anécdotas graciosas como la caída de Martina tras un rápido movimiento de Elena para conseguir su silla, coronándose como ganadora de esa ronda.</p>
+        
+        <p>Conforme íbamos siendo eliminados, nos entregaban un fragmento literario para interpretarlo teatralmente con un objetivo claro: fomentar el orgullo de la cultura gitana desde el respeto.</p>
 
-Conforme íbamos siendo eliminados, nos entregaban un fragmento literario para interpretarlo teatralmente con un objetivo claro: fomentar el orgullo de la cultura gitana desde el respeto.
-- El equipo de Joselu y Gloria trabajó con "Camelamos naquerar" de José Heredia Maya. Representamos una obra donde unos personajes "payos" pasaban del prejuicio a la comprensión, dejando atrás los estereotipos y aprendiendo a no generalizar actitudes.
-- El equipo de Pacheco y Nathalie interpretó un texto de "La Colmena" de Camilo José Cela. Aunque al principio nos pareció muy complejo, decidimos no cambiarlo y logramos transmitir un mensaje claro sobre la ruptura de barreras culturales.
+        <h5 class="fw-bold text-dark mt-4 mb-3">Interpretaciones Teatrales</h5>
+        <div class="row g-4 mb-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-danger bg-opacity-10 p-3 rounded-4 border-start border-4 border-danger">
+              <h6 class="fw-bold text-danger mb-1">Joselu y Gloria</h6>
+              <p class="small mb-0 text-dark">Trabajaron con <em>"Camelamos naquerar"</em> de José Heredia Maya. Representamos una obra donde unos personajes "payos" pasaban del prejuicio a la comprensión, aprendiendo a no generalizar actitudes.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-info bg-opacity-10 p-3 rounded-4 border-start border-4 border-info">
+              <h6 class="fw-bold text-info mb-1">Pacheco y Nathalie</h6>
+              <p class="small mb-0 text-dark">Interpretamos un texto de <em>"La Colmena"</em> de Camilo José Cela. Aunque al principio nos pareció complejo, logramos transmitir un mensaje claro sobre la ruptura de barreras culturales.</p>
+            </div>
+          </div>
+        </div>
 
-El resto de la clase también hizo teatros impresionantes: Elena se metió totalmente en su papel de Gonzalo; Laura y Leal representaron una fuerte defensa contra la discriminación; y Margot y Diana adaptaron a Jane Austen con un toque flamenco genial. Al final, cada grupo leyó su fragmento y todas las piezas del puzzle encajaron dando sentido a las obras.
+        <p>El resto de la clase también hizo teatros impresionantes: Elena se metió totalmente en su papel de Gonzalo; Laura y Leal representaron una fuerte defensa contra la discriminación; y Margot y Diana adaptaron a Jane Austen con un toque flamenco genial.</p>
 
-Como Comisión Evaluadora, aprovechamos para dejar definida la rúbrica oficial con la que calificaremos a todos los grupos. Los criterios son: Objetivo, Participación activa, Corrección de errores, Relación entre las temáticas, Recursos empleados, Organización de tiempos y Evaluación interna. Usaremos una escala visual y clara: ¡Excelente! 😀 – ¡Muy bien! 🙂 – Bien 👍 – Mejorable 😬 – Insuficiente 🙁.
+        <div class="alert alert-warning border-0 rounded-4 mt-5 p-4">
+          <h6 class="fw-bold text-dark mb-3"><i class="bi bi-ui-checks text-warning me-2"></i>Rúbrica Oficial de la Comisión</h6>
+          <p class="small text-dark mb-3">Aprovechamos para dejar definida la rúbrica oficial con la que calificaremos a todos los grupos basándonos en: Objetivo, Participación activa, Corrección de errores, Relación entre temáticas, Recursos empleados, Organización de tiempos y Evaluación interna. Usaremos esta escala visual:</p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center">
+            <span class="badge bg-white text-dark border shadow-sm fs-6 px-3 py-2">¡Excelente! 😀</span>
+            <span class="badge bg-white text-dark border shadow-sm fs-6 px-3 py-2">¡Muy bien! 🙂</span>
+            <span class="badge bg-white text-dark border shadow-sm fs-6 px-3 py-2">Bien 👍</span>
+            <span class="badge bg-white text-dark border shadow-sm fs-6 px-3 py-2">Mejorable 😬</span>
+            <span class="badge bg-white text-dark border shadow-sm fs-6 px-3 py-2">Insuficiente 🙁</span>
+          </div>
+        </div>
 
-Como reflexión final, fue una experiencia muy enriquecedora que unió literatura, respeto a la diversidad y diversión. El hecho de que el grupo organizador nos pidiera feedback al terminar demuestra su gran implicación. Hemos comprobado que cuando el aprendizaje es participativo, el mensaje de igualdad llega con muchísima más fuerza.`,
+        <p class="mt-4 mb-0 fw-bold">Reflexión final: Fue una experiencia muy enriquecedora. Hemos comprobado que cuando el aprendizaje es participativo y lúdico, el mensaje de igualdad llega con muchísima más fuerza.</p>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -492,21 +1026,47 @@ Como reflexión final, fue una experiencia muy enriquecedora que unió literatur
     semana: "Décima Semana",
     fecha: "28/04/2026",
     titulo: "Acción del Proyecto, Prevención de Plagios y Reyertas de Lorca",
-    apuntes: `Empezamos la sesión directamente en fase de "acción" con nuestro Proyecto. Carlos nos avisó de dos cosas importantes: cuidado con las faltas de asistencia (son motivo de suspenso directo) y cuidado con el plagio o el abuso de la Inteligencia Artificial. Quería ver identidad propia y normas APA.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Empezamos la sesión directamente en fase de "acción" con nuestro Proyecto. Carlos nos avisó de dos cosas importantes: cuidado con las faltas de asistencia (son motivo de suspenso directo) y <strong>cuidado con el plagio o el abuso de la Inteligencia Artificial</strong>. Quería ver identidad propia y normas APA.</p>
 
-Nos dividimos las preguntas para avanzar más rápido:
-- Joselu: Investigó si la calificación es una parte finalista de la didáctica. Encontró que no tiene por qué serlo; aunque puede ser un resumen numérico administrativo, su verdadero valor reside en su función formativa y de mejora continua.
-- Pacheco: Abordó la Afectividad y cómo aplicar y valorar la didáctica. Apoyándose en autores como Chevallard (transposición didáctica) y Díaz-Barriga, concluyó que la didáctica se valora cuando los conocimientos complejos se reconstruyen de forma pedagógica para que el aprendizaje sea riguroso, accesible y útil en la vida real.
-- Gloria: Investigó qué opinan diferentes autorías. Encontró a Comenio (el padre de la Didáctica Magna, quien defendía ir de lo simple a lo complejo apoyándose en la experiencia) y a Skinner (conductismo). 
+        <h5 class="fw-bold text-dark mt-4 mb-3"><i class="bi bi-search text-primary me-2"></i>División de la Investigación</h5>
+        <div class="row g-3 mb-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4 border-top border-4 border-primary">
+              <h6 class="fw-bold text-dark mb-1">Joselu</h6>
+              <p class="small mb-0">Investigó si la calificación es finalista. Concluyó que, aunque es un resumen numérico, su verdadero valor reside en su función formativa y de mejora continua.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4 border-top border-4 border-success">
+              <h6 class="fw-bold text-dark mb-1">Pacheco</h6>
+              <p class="small mb-0">Abordó la Afectividad apoyándose en Chevallard. La didáctica se valora cuando los conocimientos complejos se reconstruyen para ser accesibles y útiles en la vida real.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4 border-top border-4 border-warning">
+              <h6 class="fw-bold text-dark mb-1">Gloria</h6>
+              <p class="small mb-0">Investigó a diferentes autores. Encontró a Comenio (el padre de la Didáctica Magna, defensor de ir de lo simple a lo complejo) y a Skinner (conductismo).</p>
+            </div>
+          </div>
+        </div>
 
-En medio de nuestra búsqueda, Carlos nos llamó al orden: se había dado cuenta de que, por tirar de IA, todos los grupos estaban mencionando a los mismos autores (Vygotsky, Comenio...). Nos animó a buscar sobre la Escuela de Frankfurt, el socioconstructivismo y, muy importante, a darle visibilidad a mujeres pedagogas. Nos pidió también ampliar más cada reflexión.
+        <div class="alert alert-warning border-0 rounded-4 my-4">
+          <h6 class="fw-bold text-dark mb-2"><i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>El Toque de Atención</h6>
+          <p class="small mb-0 text-dark">En medio de nuestra búsqueda, Carlos nos llamó al orden: por tirar de IA, todos los grupos estaban mencionando a los mismos autores. Nos animó a buscar sobre la Escuela de Frankfurt, el socioconstructivismo y, muy importante, a <strong>darle visibilidad a mujeres pedagogas.</strong></p>
+        </div>
 
-En la segunda mitad de la clase, fue el turno del Grupo 3 para su actividad del Día del Libro. Nos explicaron el origen del Orgullo Gitano y nos repartieron poemas del "Romancero Gitano" de Lorca para interpretarlos teatralmente. Luego, intercambiaron los poemas para que tuviéramos que adivinar qué obra correspondía a qué poema.
+        <hr class="my-5 border-primary opacity-25">
 
-Tuvimos un fallo técnico graciosísimo: nos tocó un poema muy difícil ("Reyerta"), no entendíamos nada y fuimos incapaces de adivinar la obra del grupo de Víctor y Margot... ¡hasta que Víctor nos avisó de que el poema seguía por detrás de la hoja! Nos morimos de vergüenza y de risa.
-Luego nos tocó actuar a nosotros: Gloria y Natalia hicieron de ancianas lloronas, Pacheco se tiró al suelo a rodar haciéndose el muerto, Joselu entró como cura (Ángel negro) a echarle agua bendita, y Josué cerró la escena como Guardia Civil preguntando por los altercados.
+        <h4 class="fw-bold text-dark mb-3"><i class="bi bi-masks text-danger me-2"></i>Teatro y Romancero Gitano</h4>
+        <p>En la segunda mitad, el Grupo 3 nos explicó el origen del Orgullo Gitano y nos repartieron poemas de Lorca para interpretarlos. Tuvimos un fallo técnico graciosísimo: nos tocó el poema <em>"Reyerta"</em>, no entendíamos nada y fuimos incapaces de adivinar la obra... <strong>¡hasta que Víctor nos avisó de que el poema seguía por detrás de la hoja!</strong> Nos morimos de vergüenza y de risa.</p>
+        
+        <p>Luego nos tocó actuar: Gloria y Natalia hicieron de ancianas lloronas, Pacheco se tiró al suelo a rodar haciéndose el muerto, Joselu entró como cura a echar agua bendita y Josué cerró la escena como Guardia Civil.</p>
 
-Como Comisión Evaluadora, realizamos la evaluación del grupo. Aunque hubo confusión con su sistema de autoevaluación (parecía más bien heteroevaluación), la actividad fue brillante. Como reflexión, nos encanta cómo estas clases nos enseñan que aprender no es solo memorizar teoría, sino debatirla, construirla con el grupo y hasta tirarse al suelo a interpretar a Lorca.`,
+        <p class="mt-4 mb-0 fw-bold">Reflexión final: Como Comisión Evaluadora valoramos la actividad como brillante. Nos encanta cómo estas clases nos enseñan que aprender no es solo memorizar teoría, sino debatirla, construirla con el grupo y hasta tirarse al suelo a interpretar a Lorca.</p>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -516,31 +1076,80 @@ Como Comisión Evaluadora, realizamos la evaluación del grupo. Aunque hubo conf
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
+
   // ------------------ SESIÓN 20 ------------------
   {
     id: 20,
     semana: "Décima Semana",
     fecha: "30/04/2026",
     titulo: "Cronología del Proyecto y Nuestras Huellas Sonoras",
-    apuntes: `Empezamos la clase haciendo un balance global de la asignatura. Carlos nos recordó por qué estamos aquí: podíamos haber elegido la evaluación tradicional con un examen finalista, pero escogimos este camino (la evaluación continua). Repasamos nuestra evolución desde que empezamos el 13 de marzo (planificación, aprendizajes específicos, fase de acción) hasta la futura asamblea final de mayo. Nos advirtió que el proyecto final exige unas 96 horas de dedicación por persona, por lo que demanda esfuerzo, profundidad y, sobre todo, cero plagios. 
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Empezamos la clase haciendo un balance global de la asignatura. Carlos nos recordó por qué estamos aquí: escogimos la evaluación continua. Nos advirtió que el proyecto final exige unas <strong>96 horas de dedicación por persona</strong>, por lo que demanda esfuerzo, profundidad y cero plagios.</p>
 
-Tras esta puesta a punto, Carlos introdujo la "Tarea 7: Huellas Sonoras". Nos dio 20 minutos para buscar una canción que nos transportara a un momento clave de nuestra historia educativa y analizarla. Fue precioso ver cómo casi toda la clase coincidía en canciones (como "Madre Tierra" de Chayanne) que nos traían recuerdos de fin de curso o graduaciones. Reflexionamos sobre cómo de pequeños superábamos los errores mucho más rápido, mientras que ahora nos quedamos dándole vueltas a todo.
+        <h4 class="fw-bold text-dark mt-4 mb-3"><i class="bi bi-music-note-beamed text-info me-2"></i>Tarea 7: Huellas Sonoras</h4>
+        <p>Carlos nos dio 20 minutos para buscar una canción que nos transportara a un momento clave de nuestra historia educativa. Reflexionamos sobre cómo de pequeños superábamos los errores mucho más rápido, mientras que ahora nos quedamos dándole vueltas a todo.</p>
+        
+        <h5 class="fw-bold text-dark mt-5 mb-4">Las Huellas de nuestro equipo</h5>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 bg-white">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="bg-danger bg-opacity-10 text-danger rounded-circle p-2 me-3"><i class="bi bi-person-fill fs-5"></i></div>
+                  <h6 class="fw-bold text-dark mb-0">Gloria</h6>
+                </div>
+                <span class="badge bg-danger bg-opacity-10 text-danger mb-2">"Como una Ola" (Rocío Jurado)</span>
+                <p class="small mb-0 fst-italic">"Era la alarma para salir al patio en mi colegio. Me genera muchísima nostalgia. Didácticamente, había un vínculo fuerte basado en la gestión del tiempo y la organización. Como docente, mantendría la dinámica de usar música alegre para gestionar las transiciones en el aula."</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 bg-white">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-2 me-3"><i class="bi bi-person-fill fs-5"></i></div>
+                  <h6 class="fw-bold text-dark mb-0">Pacheco</h6>
+                </div>
+                <span class="badge bg-primary bg-opacity-10 text-primary mb-2">"M de Madre"</span>
+                <p class="small mb-0 fst-italic">"En mi colegio religioso, en mayo esta canción sonaba de fondo mientras hacíamos juegos. El vínculo pasaba de lo académico a lo puramente emocional, formando identidad de centro. Como docente mantendría este clima festivo, añadiendo un espacio de reflexión final más dialógico."</p>
+              </div>
+            </div>
+          </div>
 
-A continuación, compartimos las huellas sonoras de nuestro grupo:
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 bg-white">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="bg-success bg-opacity-10 text-success rounded-circle p-2 me-3"><i class="bi bi-person-fill fs-5"></i></div>
+                  <h6 class="fw-bold text-dark mb-0">Joselu</h6>
+                </div>
+                <span class="badge bg-success bg-opacity-10 text-success mb-2">"La Canción de los Ríos de España"</span>
+                <p class="small mb-0 fst-italic">"Me lleva directo a Primaria. Es un recurso audiovisual brillante que funciona como andamiaje para explicar un contenido duro. Es una estrategia mucho más dinámica que una clase magistral. Como docente, me encantaría seguir usando y actualizando este recurso."</p>
+              </div>
+            </div>
+          </div>
 
-Gloria: "Como una Ola" (Rocío Jurado)
-"Esta canción era la alarma para salir al patio en mi colegio y fue la protagonista del vídeo del 25º aniversario del centro. Me genera muchísima nostalgia y me recuerda a un ambiente relajado y divertido. A nivel didáctico, había un vínculo fuerte basado en la gestión del tiempo y la organización (sabíamos cuándo entrar y salir). Se percibía una estrategia activa y cooperativa, especialmente al grabar el vídeo todos juntos. Como futura docente, solo cambiaría la canción por una más moderna, pero mantendría la dinámica de usar música alegre para gestionar las transiciones en el aula."
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 bg-white">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="bg-warning bg-opacity-10 text-warning rounded-circle p-2 me-3"><i class="bi bi-person-fill fs-5"></i></div>
+                  <h6 class="fw-bold text-dark mb-0">Nathalie</h6>
+                </div>
+                <span class="badge bg-warning bg-opacity-10 text-warning mb-2">"I Wanna Dance With Somebody"</span>
+                <p class="small mb-0 fst-italic">"Mi padre me la ponía en bucle en el coche para llevarme al cole. El análisis didáctico se enmarca en la educación informal (ámbito familiar). El vínculo es pura afectividad. Quiero llevar este valor emocional al aula, los pequeños gestos son los que realmente se graban en la memoria."</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-Pacheco: "M de Madre"
-"En mi colegio religioso, en cuanto llegaba mayo todo cambiaba. Esta canción sonaba de fondo mientras nos saltábamos las clases para hacer juegos y actividades en el patio. Me transmite la nostalgia de una época sencilla. A nivel didáctico, el vínculo pasaba de lo académico a lo puramente emocional y comunitario, formando una identidad de centro. Es una estrategia de enseñanza activa y experiencial donde se fomentan valores. Si pudiera viajar en el tiempo como docente, mantendría este clima festivo, pero añadiría un espacio de reflexión final más dialógico para que los alumnos fueran 100% los protagonistas del mensaje."
-
-Joselu: "La Canción de los Ríos de España"
-"Mi canción me lleva directo a Primaria. La usábamos para aprendernos los nombres de los ríos de forma melódica. Me transmite la felicidad de una etapa sin complicaciones. Didácticamente, es un recurso audiovisual brillante que funciona como andamiaje para ayudar al profesor a explicar un contenido duro. Es una estrategia activa, mucho más dinámica que una clase magistral aburrida. Como docente, me encantaría seguir usando este recurso, simplemente actualizando el formato o creando nuevas canciones para abarcar todavía más temario."
-
-Nathalie: "I Wanna Dance With Somebody" (Whitney Houston)
-"Mi padre me ponía esta canción en bucle en el coche para llevarme al cole o a los exámenes, a pesar de que yo le decía que no me gustaba (solo por llevarle la contraria). Hoy me la pongo para limpiar o estudiar. Recuerdo que me la puso la primera vez que me enseñó a conducir. El análisis didáctico se enmarca en la educación informal (ámbito familiar): mi tutor legal ejerciendo de educador mediante el diálogo. El vínculo pedagógico es pura cercanía y afectividad. Como futura docente, quiero llevar este valor emocional al aula, demostrando que los pequeños gestos y canciones de acompañamiento son los que realmente se graban en la memoria de los alumnos."
-
-Como reflexión final, esta sesión nos ha hecho entender que las actividades no son ejercicios aislados, sino piezas de nuestro crecimiento. La música tiene el inmenso poder de transportarnos, y compartir estos recuerdos ha creado un clima de empatía y confianza brutal en clase.`,
+        <div class="alert alert-secondary border-0 rounded-4 mt-4">
+          <p class="small mb-0 text-dark fw-bold"><i class="bi bi-lightbulb-fill text-warning me-2"></i>Reflexión Final: Las actividades no son ejercicios aislados, sino piezas de nuestro crecimiento. La música tiene el inmenso poder de transportarnos, y compartir estos recuerdos ha creado un clima de empatía y confianza brutal en clase.</p>
+        </div>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -550,22 +1159,40 @@ Como reflexión final, esta sesión nos ha hecho entender que las actividades no
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
+
   // ------------------ SESIÓN 21 ------------------
   {
     id: 21,
     semana: "Undécima Semana",
     fecha: "05/05/2026",
     titulo: "La Fábrica de Cuentos, Trabajo a Medias y ¿Cómo educar a Alvarito?",
-    apuntes: `Comenzamos el día poniéndonos nuestra gorra de la Comisión Evaluadora para valorar la propuesta del Día del Libro del Grupo 1 (Margot y Víctor). Empezaron mostrando un corto de El Ministerio del Tiempo sobre Lorca seguido de un debate. Siendo sinceros, aunque la temática gitana estaba bien implementada, a esta primera parte le faltó fuerza para captar la atención real de la clase.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <h4 class="fw-bold text-dark mb-3"><i class="bi bi-clipboard-check-fill text-success me-2"></i>Comisión Evaluadora: Grupo 1</h4>
+        <p>Empezamos el día valorando la propuesta del Día del Libro del Grupo 1 (Margot y Víctor). Tras un inicio algo flojo con un corto de El Ministerio del Tiempo, remontaron de forma brillante con su actividad principal: <strong>"La Fábrica de los Cuentos"</strong>.</p>
+        <p>Nos dieron fragmentos aislados a cada miembro para crear una historia por separado y luego montar un teatro conjunto. Encajó perfectamente y nos entregaron hojas de autoevaluación, un detalle excelente que sumó muchos puntos en nuestra rúbrica.</p>
 
-Sin embargo, remontaron de forma brillante con su actividad principal: "La Fábrica de los Cuentos". Nos dieron temáticas y fragmentos aislados a cada miembro del grupo; teníamos que crear una historia por separado y luego ponerlas en común para montar un teatro conjunto. Fue súper entretenido y encajó perfectamente con la temática. Además, nos entregaron hojas de autoevaluación (tanto para nuestro grupo como para ellos como docentes), un detalle excelente que sumó muchos puntos en nuestra rúbrica.
+        <div class="bg-light p-4 rounded-3 border-start border-4 border-warning my-4">
+          <h6 class="fw-bold text-dark mb-2"><i class="bi bi-people-fill text-warning me-2"></i>Trabajo a Medias</h6>
+          <p class="small mb-0">Hoy nos tocó trabajar bajo mínimos en la fase de acción de nuestro proyecto porque <strong>solo estábamos dos miembros del grupo en clase</strong>. Nos centramos en el bloque de Afectividad y en plantear los escenarios de "Y si..." del Proceso Lógico de Pensamiento. Dejamos el terreno preparado para ponerlo en común cuando estemos todos.</p>
+        </div>
 
-Después, Carlos nos dio tiempo para seguir avanzando en la "fase de acción" de nuestro proyecto final. Hoy nos tocó trabajar bajo mínimos porque solo estábamos dos miembros del grupo en clase. Nos centramos en responder las preguntas del bloque de Afectividad y en plantear los escenarios de "Y si..." del Proceso Lógico de Pensamiento. Avanzamos lo que pudimos a menor escala, resolvimos dudas con Carlos y dejamos el terreno preparado para ponerlo en común cuando estemos todos.
+        <hr class="my-5 border-primary opacity-25">
 
-Tras el descanso, entramos en un debate interesantísimo a raíz del artículo "¿Cómo educar a Alvarito?". Una profesora se pregunta cómo manejar a un alumno disruptivo, lo que nos llevó a cuestionarnos: ¿el ser humano es disruptivo por naturaleza? ¿Qué daño hacen etiquetas como "retrasados" o "problemáticos" en la escuela? 
-Aunque no terminamos de leerlo, llegamos a una conclusión clara: no hay un único camino o receta mágica para que los niños aprendan. Es el sistema educativo (con la inversión de recursos necesaria) el que debe adaptarse al alumno, y no el alumno al sistema. 
+        <h4 class="fw-bold text-dark mb-3"><i class="bi bi-person-raised-hand text-danger me-2"></i>Debate: ¿Cómo educar a Alvarito?</h4>
+        <p>Tras el descanso, entramos en un debate interesantísimo a raíz de este artículo donde una profesora se pregunta cómo manejar a un alumno disruptivo. Esto nos llevó a cuestionarnos:</p>
+        
+        <ul class="list-unstyled ps-2 mb-4">
+          <li class="mb-2"><i class="bi bi-question-circle-fill text-primary me-2"></i>¿El ser humano es disruptivo por naturaleza?</li>
+          <li class="mb-2"><i class="bi bi-tag-fill text-primary me-2"></i>¿Qué daño hacen etiquetas como "retrasados" o "problemáticos" en la escuela?</li>
+        </ul>
 
-Para profundizar en esto, Carlos nos recomendó apuntar a dos autores clave de la pedagogía crítica: Jurjo Torres y Henry Giroux.`,
+        <div class="alert alert-info border-0 rounded-4 mt-4">
+          <h6 class="fw-bold text-dark mb-2">Conclusión del Equipo</h6>
+          <p class="small mb-0 text-dark">No hay un único camino o receta mágica para que los niños aprendan. <strong>Es el sistema educativo (con la inversión de recursos necesaria) el que debe adaptarse al alumno, y no el alumno al sistema.</strong> Para profundizar en esto, Carlos nos recomendó apuntar a dos autores clave de la pedagogía crítica: Jurjo Torres y Henry Giroux.</p>
+        </div>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -575,31 +1202,50 @@ Para profundizar en esto, Carlos nos recomendó apuntar a dos autores clave de l
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
-  // ------------------ SESIÓN 22 ------------------
+ // ------------------ SESIÓN 22 ------------------
   {
     id: 22,
     semana: "Undécima Semana",
     fecha: "07/05/2026",
     titulo: "El Cáncer y la Muerte en el Aula: Charla con Mónica (Cudeca)",
-    apuntes: `Hoy hemos tenido una de las sesiones más impactantes, crudas y necesarias de todo el curso. Nos ha visitado Mónica, psicooncóloga con 20 años de experiencia que actualmente trabaja en Cudeca (cuidados paliativos). El tema principal fue cómo abordar el cáncer y la muerte con nuestros futuros alumnos.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <div class="alert alert-secondary border-0 rounded-4 mb-4">
+          <p class="mb-0 text-dark">Hoy hemos tenido una de las sesiones más impactantes, crudas y necesarias de todo el curso. Nos ha visitado <strong>Mónica</strong>, psicooncóloga con 20 años de experiencia que trabaja en Cudeca (cuidados paliativos). El tema principal: cómo abordar el cáncer y la muerte con nuestros futuros alumnos.</p>
+        </div>
 
-Mónica nos dejó claro que los niños siempre manifiestan su sufrimiento a través de la conducta (llamadas de atención, rebeldía, apatía). Cuando esto ocurre, nuestro deber como docentes es observar y preguntar, creando un espacio de total seguridad. Surgieron preguntas durísimas y muy reales que Mónica fue respondiendo magistralmente:
+        <p>Mónica nos dejó claro que los niños siempre manifiestan su sufrimiento a través de la conducta (llamadas de atención, rebeldía, apatía). Nuestro deber como docentes es observar, preguntar y crear un espacio de total seguridad. Surgieron preguntas durísimas y muy reales:</p>
 
-- ¿Y si le oculto la realidad al niño?
-El peor error. Por el egocentrismo infantil, si a un niño le falta información, se la inventa, y casi siempre asume que es culpa suya. Mónica nos contó el desgarrador caso de un padre que, al morir su mujer de cáncer, le dijo a su hijo que "la había quemado un rayo". El niño vivió aterrorizado y sufriendo acoso escolar por culpa de esa mentira, hasta que Mónica intervino para hacer un ritual de despedida real. La verdad, adaptada a su edad, siempre sana más que la mentira.
+        <div class="row g-4 my-3">
+          <div class="col-12">
+            <div class="card border-0 shadow-sm rounded-4 p-3 bg-white border-start border-4 border-danger">
+              <h6 class="fw-bold text-dark mb-1">¿Y si le oculto la realidad al niño?</h6>
+              <p class="small mb-0">El peor error. Por el egocentrismo infantil, si falta información, se la inventa, asumiendo casi siempre que es culpa suya. Mónica contó el caso de un padre que dijo que a su mujer "la había quemado un rayo". El niño vivió aterrorizado y sufrió acoso escolar. <strong>La verdad, adaptada a su edad, siempre sana más que la mentira.</strong></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white border-start border-4 border-info">
+              <h6 class="fw-bold text-dark mb-1">¿Qué le digo si viene llorando porque su madre va a morir?</h6>
+              <p class="small mb-0">No hay que dar falsas esperanzas ni quedarse mudo. A veces, la simple presencia física es suficiente. Un abrazo y dejar que exprese todo lo que siente es nuestro mayor salvavidas.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-white border-start border-4 border-warning">
+              <h6 class="fw-bold text-dark mb-1">¿Qué ocurre si me pongo a llorar con él?</h6>
+              <p class="small mb-0">Emocionarse no es malo, humaniza y crea un vínculo precioso. Pero hay que encontrar el equilibrio: el docente no puede derrumbarse hasta el punto de que sea el niño quien termine consolándolo. Somos su sostén.</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card border-0 shadow-sm rounded-4 p-3 bg-white border-start border-4 border-success">
+              <h6 class="fw-bold text-dark mb-1">¿Qué hago si un niño de mi clase tiene cáncer?</h6>
+              <p class="small mb-0">Mariam contó el caso de su primo, a quien aislaban por miedo a contagiarle un resfriado. Mónica subrayó la importancia de educar a la clase para normalizarlo, ajustar objetivos académicos y reforzarle positivamente por su valentía.</p>
+            </div>
+          </div>
+        </div>
 
-- ¿Qué le digo a un alumno que viene llorando porque su madre va a morir?
-No hay que dar falsas esperanzas ni quedarse mudo. A veces, la simple presencia física es suficiente. Un abrazo y dejar que exprese absolutamente todo lo que siente es nuestro mayor salvavidas para ellos.
-
-- ¿Qué ocurre si como docente me pongo a llorar con el alumno?
-Elena hizo esta interesantísima pregunta. Mónica nos explicó que emocionarse no es malo; de hecho, humaniza y crea un vínculo precioso. Sin embargo, hay que encontrar el equilibrio: el docente no puede derrumbarse hasta el punto de que sea el niño quien termine consolándolo. Somos su sostén.
-
-- ¿Qué hago si un niño de mi clase tiene cáncer?
-Mariam contó la experiencia de su primo pequeño, a quien la clase aislaba, no por asco, sino por miedo a contagiarle un resfriado y hacerle daño. Mónica subrayó la importancia de educar al resto de la clase para normalizar la situación, ajustar los objetivos académicos de ese alumno y reforzarle positivamente por su inmensa valentía.
-
-También hablamos de que el docente no está solo (es un trabajo en red con familias y sanitarios) y de cómo la muerte sigue siendo el gran tema tabú de nuestra sociedad (incluso alejamos los cementerios de las ciudades). Mónica nos animó a empezar trabajando la pérdida desde cosas pequeñas (un juguete, una mascota) o con películas como El Rey León.
-
-Como reflexión final, esta clase ha sido un golpe de realidad espectacular. Nos ha enseñado que la muerte y la enfermedad no pueden ser temas tabú en la escuela. Saber escuchar, no mentir y ser un ancla emocional es una responsabilidad inmensa, pero vital para nuestra futura profesión. Agradecemos muchísimo que la asignatura nos traiga estas experiencias "fuera del guion" que nos preparan para la vida real.`,
+        <p class="mt-4 mb-0 fw-bold">Reflexión final: Esta clase ha sido un golpe de realidad espectacular. Nos ha enseñado que la muerte y la enfermedad no pueden ser temas tabú en la escuela. Saber escuchar, no mentir y ser un ancla emocional es una responsabilidad inmensa. Agradecemos muchísimo estas experiencias "fuera del guion" que nos preparan para la vida real.</p>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -609,23 +1255,35 @@ Como reflexión final, esta clase ha sido un golpe de realidad espectacular. Nos
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
+
   // ------------------ EDICIÓN ESPECIAL: TUTORÍA ------------------
   {
     id: 23,
     semana: "🌟 Edición Especial",
     fecha: "11/05/2026",
     titulo: "Tutoría de Seguimiento y Reorientación",
-    apuntes: `Hoy solicitamos una tutoría con Carlos para evaluar cómo iba nuestro progreso en la asignatura y asegurarnos de que el portfolio iba por el buen camino. Fue una sesión súper productiva que nos dio un subidón de motivación.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Hoy solicitamos una tutoría con Carlos para evaluar nuestro progreso. Fue una sesión súper productiva que nos dio un subidón de motivación.</p>
+        
+        <h4 class="fw-bold text-dark mt-4 mb-3"><i class="bi bi-star-fill text-warning me-2"></i>Feedback del Proyecto</h4>
+        <ul class="list-unstyled ps-2 mb-4">
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Cuestiones formales:</strong> Debemos incorporar un índice de contenidos y uno específico para tablas y figuras.</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Identidad:</strong> Le encantó que mezclemos vivencias y emociones con la teoría; nos dijo que prefiere leer nuestra identidad grupal antes que corregir proyectos sistemáticos e idénticos.</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Despliegue creativo:</strong> Se quedó muy sorprendido con la revista, el vídeo de Minecraft y nuestra propuesta de la página web. Nos animó a dejar bien registrado nuestro proceso de diseño.</li>
+        </ul>
 
-Al revisar nuestro trabajo, Carlos nos dio un par de pautas formales importantes: debemos incorporar un índice de contenidos y, además, un índice específico para las tablas y figuras. Al margen de eso, le encantó el enfoque que le estamos dando al diario. Nos confesó que le parece un acierto enorme que mezclemos las vivencias personales y las emociones con la teoría; nos dijo que eso es precisamente lo que busca, ya que prefiere leer la identidad de cada grupo antes que corregir doce proyectos idénticos y sistemáticos. 
+        <h5 class="fw-bold text-dark mt-4 mb-3">Nuevos Retos y Autorías</h5>
+        <p>Le comentamos la intención de vincular una autoría científica a cada pregunta del Proceso Lógico. Carlos nos dio el visto bueno pero nos lanzó un reto: <strong>buscar teorías y autores más modernos.</strong> Vygotsky es un pilar, pero el proyecto ganará calidad aportando corrientes actuales.</p>
 
-Aprovechamos para explicarle con detalle todo nuestro despliegue creativo: lo que montamos para la Actividad 1 (la revista y el vídeo de Minecraft) y nuestra propuesta final para el portfolio (diseñar esta página web interactiva incluyendo vídeos reflexivos). Se quedó muy sorprendido y valoró enormemente que hayamos apostado por una idea tan innovadora y currada, alejándonos del típico e impersonal documento de Canva. Nos animó a dejar bien registrado en la web cómo se nos ocurrieron estas ideas y cómo ha sido todo nuestro proceso de diseño.
+        <div class="bg-light p-4 rounded-3 border-start border-4 border-primary my-4">
+          <h6 class="fw-bold text-dark mb-2">La Metáfora del Viaje a Sevilla</h6>
+          <p class="small mb-0 fst-italic">Le confesamos nuestro miedo a estar desviándonos de la planificación inicial. Carlos nos tranquilizó: "Si tú organizas un viaje para ir a Sevilla, pero por imprevistos o decisiones del camino terminas en Huelva, el viaje sigue siendo un éxito. Lo único que tienes que hacer es explicar los motivos del cambio". Nos aclaró que no hace falta rehacer la planificación original; basta con justificar de forma reflexiva el cambio.</p>
+        </div>
 
-Luego entramos en el terreno de las dudas sobre la fase de "acción". Le comentamos nuestra intención de vincular una autoría científica a cada una de las preguntas del Proceso Lógico de Pensamiento para darles más peso. Carlos nos dio el visto bueno, pero nos lanzó un reto: que busquemos teorías y autores más modernos. Vygotsky es un pilar indiscutible de la didáctica, pero el proyecto ganará mucha más calidad si aportamos perspectivas de corrientes más actuales.
-
-Para cerrar, le confesamos nuestro miedo a estar desviándonos de la planificación inicial. Carlos nos tranquilizó con una metáfora genial: "Si tú organizas un viaje para ir a Sevilla, pero por imprevistos o decisiones del camino terminas en Huelva, el viaje sigue siendo un éxito. Lo único que tienes que hacer es explicar los motivos del cambio (que en Huelva hay playa, que un amigo os dejaba una casa...)". Nos aclaró que no hace falta rehacer la planificación original; basta con justificar de forma reflexiva el porqué de los cambios. Esto nos quitó un peso enorme de encima.
-
-Nos fuimos de la tutoría con las ideas clarísimas, el proyecto reorientado y con la enorme satisfacción de saber que nuestro esfuerzo y creatividad están siendo muy valorados por el profesor.`,
+        <p class="mb-0 fw-bold">Nos fuimos con las ideas clarísimas, el proyecto reorientado y la enorme satisfacción de saber que nuestro esfuerzo y creatividad están siendo valorados.</p>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -635,24 +1293,30 @@ Nos fuimos de la tutoría con las ideas clarísimas, el proyecto reorientado y c
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
+
   // ------------------ SESIÓN 23 ------------------
   {
     id: 24,
     semana: "Duodécima Semana",
     fecha: "12/05/2026",
     titulo: "Normativa Andaluza, Vínculos en Clase y el Susto con Turnitin",
-    apuntes: `Empezamos la clase repasando los criterios de evaluación que vimos en la tutoría y recordando que este jueves tenemos el ejercicio de valoración. Carlos pidió un voluntario para resumir en qué consiste nuestro proyecto, y nuestro compañero Joselu tomó la iniciativa. Explicó a la perfección todo nuestro viaje: la planificación, los "¿y si...?", los aprendizajes específicos y, finalmente, la fase de acción. Escucharlo en voz alta nos dio muchísima satisfacción al ver que este método, en el que tú eres tu propio jefe, por fin cobra todo el sentido.
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Empezamos la clase recordando los criterios de evaluación. Joselu tomó la iniciativa para resumir en voz alta en qué consiste nuestro proyecto: planificación, los "¿y si...?", aprendizajes y acción. Escucharlo nos dio muchísima satisfacción al ver que este método por fin cobra todo el sentido.</p>
 
-Después, pasamos a repasar teoría pura. Vimos la Normativa en Andalucía (centrándonos en el currículo del 9 de mayo de 2023) y entendimos la diferencia entre Competencias Clave (transversales a todas las materias) y Competencias Específicas (antiguos contenidos, evaluables a través de descriptores operativos). También repasamos la organización de los centros: el Consejo Escolar, la Comisión de Coordinación Pedagógica y los servicios de apoyo.
+        <h4 class="fw-bold text-dark mt-4 mb-3"><i class="bi bi-journal-bookmark-fill text-info me-2"></i>Teoría y Normativa</h4>
+        <p>Vimos la Normativa en Andalucía y entendimos la diferencia entre Competencias Clave (transversales) y Competencias Específicas (antiguos contenidos, evaluables por descriptores). También repasamos la organización de los centros.</p>
+        <p>Tomando nota de la tutoría sobre usar autorías modernas (después de quedarnos descolocados sabiendo que Rousseau decía que la moralidad se traspasaba por la leche materna), Nathalie y Joselu se fueron a buscar artículos contemporáneos en Jábega sobre didáctica crítica.</p>
 
-Carlos nos insistió en la necesidad de usar autorías modernas para nuestro proyecto, ya que clásicos como Comenio o Rousseau se quedan muy anticuados para la realidad actual (¡nos dejó descolocados al contar que Rousseau decía que la moralidad se traspasaba por la alimentación de la madre!). Tomando nota de esto, Nathalie y Joselu se fueron a la biblioteca a buscar artículos contemporáneos en Jábega y Google Scholar, centrándose en la didáctica crítica y la Escuela de Frankfurt.
+        <h5 class="fw-bold text-dark mt-4 mb-3">Vínculos y Emociones en el Aula</h5>
+        <p>Carlos lanzó 7 preguntas al azar para valorar el ambiente de la clase. Fue un momento precioso: Nerea agradeció a Margot su ayuda; Samuel destacó el apoyo de Pallarés y Gabriel; y Diana confesó estar sorprendida por el nulo ambiente competitivo. Para terminar, el grupo de Irene realizó su actividad, pero nos dio impotencia verla frustrada porque su equipo apenas había participado.</p>
 
-A la vuelta del descanso, vivimos un momento precioso. Carlos lanzó 7 preguntas al azar para valorar el ambiente de la clase. Nerea le agradeció a Margot su ayuda para abrirse; Samuel destacó la amistad y el apoyo de Pallarés y Gabriel en los días malos; Diana confesó que esperaba un ambiente universitario competitivo y se ha encontrado todo lo contrario. Como deseo conjunto, Estela pidió que todos logremos ser los grandes docentes que soñamos ser. 
-
-Para terminar, el grupo de Irene realizó su actividad del Día del Libro. Al salir de clase, hablamos con ella y la notamos muy indignada y frustrada; se había esforzado muchísimo, pero el resto de su equipo apenas había participado. Entendimos perfectamente su impotencia.
-
-Reflexión final y nota sobre Turnitin:
-Queremos dejar constancia de un imprevisto que nos generó mucha indignación al final del día. Pasamos este portfolio por Turnitin para comprobarlo y nos devolvió porcentajes altísimos (y diferentes para cada miembro). Queremos dejar clarísimo que todo lo que hay escrito aquí son apuntes, vivencias y reflexiones 100% personales redactadas a lo largo de 14 semanas. Nos asusta que una herramienta automática pueda desvalorizar un trabajo tan íntimo, humano y propio como este. Por la tarde, canalizamos esa energía haciendo unos buenos apuntes unificando las diapositivas de Carlos con este diario para prepararnos para la prueba del jueves.`,
+        <div class="alert alert-danger border-0 rounded-4 mt-5 p-4 shadow-sm">
+          <h6 class="fw-bold text-danger mb-2"><i class="bi bi-shield-exclamation text-danger me-2"></i>Reflexión Crítica: El Susto con Turnitin</h6>
+          <p class="small text-dark mb-0">Queremos dejar constancia de un imprevisto que nos generó mucha indignación. Pasamos este portfolio por Turnitin para comprobarlo y nos devolvió porcentajes altísimos. Queremos dejar clarísimo que todo lo que hay escrito aquí son <strong>apuntes, vivencias y reflexiones 100% personales</strong> redactadas a lo largo de 14 semanas. Nos asusta e indigna que una herramienta automática pueda desvalorizar un trabajo tan íntimo, humano y propio como este.</p>
+        </div>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -662,19 +1326,47 @@ Queremos dejar constancia de un imprevisto que nos generó mucha indignación al
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
   },
+
   // ------------------ SESIÓN 24 ------------------
   {
     id: 25,
     semana: "Duodécima Semana",
     fecha: "14/05/2026",
     titulo: "El Ejercicio Reflexivo: ¿Un Examen Tradicional Encubierto?",
-    apuntes: `Hoy tocó enfrentarse al esperado "ejercicio reflexivo", aunque tuvimos una baja en el equipo: Joselu no pudo asistir porque tenía clases de camión. La prueba consistió en 15 preguntas tipo test y una pregunta de desarrollo a elegir entre dos opciones: planificar siguiendo el Proceso Lógico de Pensamiento o planificar un aula basada en el ABP (Aprendizaje Basado en Proyectos).
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Hoy tocó enfrentarse al esperado "ejercicio reflexivo", aunque tuvimos una baja en el equipo: Joselu no pudo asistir por sus clases de camión. La prueba consistió en 15 preguntas tipo test y una pregunta de desarrollo a elegir (planificar usando el Proceso Lógico de Pensamiento o basándose en el ABP).</p>
 
-Las sensaciones dentro del grupo fueron una auténtica montaña rusa. En la parte del test, Pacheco y Glori sintieron que les había salido bastante bien, mientras que a Nathalie le costó un poco más. Sin embargo, en la parte de desarrollo se invirtieron los papeles. Nathalie y Pacheco eligieron la opción 2 (ABP); Nathalie salió con la sensación de haberlo bordado y Pacheco también quedó muy satisfecho, aunque reconoció que le supuso más esfuerzo que el test. Por su parte, Glori eligió la opción 1 y salió contenta, pero al hablar con los compañeros fuera del aula se preocupó bastante al ver que cada persona lo había enfocado de una manera totalmente distinta.
+        <h4 class="fw-bold text-dark mt-4 mb-3"><i class="bi bi-bar-chart-fill text-primary me-2"></i>Sensaciones de la Montaña Rusa</h4>
+        <div class="row g-3 mb-4">
+          <div class="col-md-4">
+            <div class="card border-0 bg-light shadow-sm p-3 rounded-4 h-100">
+              <h6 class="fw-bold text-dark mb-1">Nathalie</h6>
+              <p class="small mb-0">Le costó un poco más el tipo test, pero eligió la Opción 2 (ABP) en el desarrollo y salió con la sensación de haberlo bordado.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 bg-light shadow-sm p-3 rounded-4 h-100">
+              <h6 class="fw-bold text-dark mb-1">Pacheco</h6>
+              <p class="small mb-0">Sintió que el test le salió bastante bien. En el desarrollo también escogió la Opción 2 (ABP), quedando muy satisfecho aunque le supuso un gran esfuerzo.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 bg-light shadow-sm p-3 rounded-4 h-100">
+              <h6 class="fw-bold text-dark mb-1">Glori</h6>
+              <p class="small mb-0">Test controlado. Eligió la Opción 1 de desarrollo y salió contenta, aunque luego se preocupó al ver que cada persona fuera del aula lo había enfocado de manera totalmente distinta.</p>
+            </div>
+          </div>
+        </div>
 
-Al terminar, Carlos nos avisó de que revisará los ejercicios y enviará un correo antes del domingo a aquellas personas que hayan estado "más flojas" para tener una tutoría con ellas. 
+        <p>Al terminar, Carlos nos avisó de que enviará un correo antes del domingo a aquellas personas que hayan estado "más flojas" para tener una tutoría con ellas.</p>
 
-Como reflexión final, tenemos que ser sinceros y críticos: este ejercicio nos ha parecido un examen tradicional encubierto. Resulta bastante contradictorio que el profesor haya insistido todo el curso en que "nuestras acciones tienen que concordar con nuestras palabras" y en huir del modelo estandarizado, para luego ponernos un tipo test lleno de preguntas trampa. Aunque recalcó que no cuenta para nota, la realidad es que evaluaba los contenidos de una forma mucho más teórica y clásica de lo que esperábamos, alejándose de esa evaluación formativa y libre que hemos defendido todos estos meses.`,
+        <div class="alert alert-dark border-0 rounded-4 mt-5 p-4 shadow-sm bg-dark text-white">
+          <h6 class="fw-bold text-warning mb-2"><i class="bi bi-lightning-charge-fill text-warning me-2"></i>Reflexión Crítica: ¿Examen Encubierto?</h6>
+          <p class="small text-white-50 mb-0">Tenemos que ser sinceros y críticos: este ejercicio nos ha parecido un examen tradicional encubierto. Resulta bastante contradictorio que el profesor haya insistido todo el curso en huir del modelo estandarizado y en que la teoría concuerde con la práctica, para luego ponernos un tipo test lleno de preguntas trampa. Aunque no cuente para nota, evaluaba los contenidos de una forma teórica y clásica, alejándose de esa evaluación formativa y libre que hemos defendido todos estos meses.</p>
+        </div>
+      </div>
+    `,
     fotos: [
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -683,7 +1375,7 @@ Como reflexión final, tenemos que ser sinceros y críticos: este ejercicio nos 
       "https://www.youtube.com/embed/dQw4w9WgXcQ", 
       "https://www.youtube.com/embed/dQw4w9WgXcQ"
     ]
-  },
+  }
 ];
 
 // ==========================================
@@ -713,7 +1405,7 @@ const episodiosVlog = [
   // ---- TEMPORADA 3 (Caps 13-18) ----
   { cap: 13, titulo: 'Ojú la nubecita', thumb: driveThumb('16jej8Be8SpHfb7obtvVhHw6Aq9cqyS8B'), videoUrl: driveEmbed('16jej8Be8SpHfb7obtvVhHw6Aq9cqyS8B') },
   { cap: 14, titulo: 'El del examen', thumb: driveThumb('17bx0IxWMF2AahsZj6z-082nJtYulwVBM'), videoUrl: driveEmbed('17bx0IxWMF2AahsZj6z-082nJtYulwVBM') },
-  { cap: 15, titulo: 'Próximamente', thumb: SOON_THUMB, videoUrl: null },
+  { cap: 15, titulo: 'San Hilario de Poitiers', thumb: driveThumb('1HEhhMVS0jtbNIUMxr6id-VixxMY4khOp'), videoUrl: driveEmbed('1HEhhMVS0jtbNIUMxr6id-VixxMY4khOp') },
   { cap: 16, titulo: 'El de el voluntariado', thumb: driveThumb('1B4dBMUzbjDvp6Sl9BOdoLcK4hVnGQLfD'), videoUrl: driveEmbed('1B4dBMUzbjDvp6Sl9BOdoLcK4hVnGQLfD') },
   { cap: 17, titulo: 'Próximamente', thumb: SOON_THUMB, videoUrl: null },
   { cap: 18, titulo: 'Próximamente', thumb: SOON_THUMB, videoUrl: null }
