@@ -1484,12 +1484,13 @@ document.addEventListener('DOMContentLoaded', () => {
     div.className = 'col-12 col-sm-6 col-md-4 col-lg-3';
     
     const hasVideo = ep.videoUrl && ep.videoUrl.trim() !== '';
+    const safeTitle = ep.titulo.replace(/"/g, '&quot;');
     div.innerHTML = `
       <div class="vlog-card shadow-sm ${hasVideo ? '' : 'opacity-50'}"
            style="${hasVideo ? 'cursor:pointer;' : 'cursor:default;'}"
-           ${hasVideo ? `onclick="abrirVlog('${ep.videoUrl}', '${ep.titulo}', ${ep.cap})"` : ''}>
+           ${hasVideo ? `data-video-url="${ep.videoUrl}" data-video-titulo="${safeTitle}" data-video-cap="${ep.cap}"` : ''}>
         <div class="vlog-thumbnail">
-          <img src="${ep.thumb}" alt="${ep.titulo}" onerror="this.src='${SOON_THUMB}'">
+          <img src="${ep.thumb}" alt="${safeTitle}" onerror="this.src='${SOON_THUMB}'">
           <div class="play-btn-overlay">
             <i class="bi ${hasVideo ? 'bi-play-circle-fill' : 'bi-clock-fill'}"
                style="${hasVideo ? '' : 'font-size:2rem;opacity:0.5;'}"></i>
@@ -1512,6 +1513,19 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       containerT3.appendChild(div);
     }
+  });
+
+  // Delegated click listener para los vlog-cards (evita problemas con comillas en títulos)
+  [containerT1, containerT2, containerT3].forEach(container => {
+    container.addEventListener('click', e => {
+      const card = e.target.closest('[data-video-url]');
+      if (card) {
+        const url   = card.dataset.videoUrl;
+        const titulo = card.dataset.videoTitulo;
+        const cap   = parseInt(card.dataset.videoCap, 10);
+        abrirVlog(url, titulo, cap);
+      }
+    });
   });
 
   // D) Función para abrir la sesión en el Modal
