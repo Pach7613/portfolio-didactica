@@ -245,14 +245,6 @@ const sesionesDelPDF = [
         <p class="mb-0">Ver los propios bordados de Carlos (dedicados a su madre, a su perro, a un amigo...) hizo la explicación súper cercana. Terminamos la sesión aprendiendo a enhebrar la aguja y dando las primeras puntadas de nuestro bordado, que irá dedicado a la mujer más importante de nuestra vida. Hemos dejado de ver la costura como un simple pasatiempo para entenderla como una <strong>poderosa forma de expresión artística e histórica</strong>.</p>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 
   // ------------------ SESIÓN 6 ------------------
@@ -279,14 +271,6 @@ const sesionesDelPDF = [
         </div>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 // ------------------ SESIÓN 7 ------------------
   {
@@ -325,14 +309,6 @@ const sesionesDelPDF = [
         </div>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 
   // ------------------ SESIÓN 8 ------------------
@@ -401,14 +377,6 @@ const sesionesDelPDF = [
 
       </div>
     `,
-    fotos: [
-      "ruta_de_foto_bordado_gloria.jpg", 
-      "ruta_de_foto_bordado_pacheco.jpg"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 
   // ------------------ SESIÓN 9 ------------------
@@ -440,14 +408,6 @@ const sesionesDelPDF = [
         </div>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
   // ------------------ SESIÓN 10 ------------------
   // ==========================================
@@ -705,14 +665,6 @@ const sesionesDelPDF = [
         <p class="mt-4 mb-0 fw-bold">Como reflexión final, esta clase nos ha dejado muy claro que la educación está viva. Atrás quedó el modelo de fábrica; el futuro es de las competencias, la inclusión y el aprendizaje con sentido.</p>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 
   // ------------------ SESIÓN 14 ------------------
@@ -764,14 +716,6 @@ const sesionesDelPDF = [
         </div>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 
   // ------------------ SESIÓN 15 ------------------
@@ -815,14 +759,6 @@ const sesionesDelPDF = [
         </div>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 // ------------------ SESIÓN 16 ------------------
   {
@@ -891,14 +827,6 @@ const sesionesDelPDF = [
         </div>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 
   // ------------------ SESIÓN 17 ------------------
@@ -953,14 +881,6 @@ const sesionesDelPDF = [
         <p class="mt-4 mb-0 fw-bold">Reflexión final: Entender que evaluar no es poner una nota para castigar, sino una herramienta para mejorar el proceso, es el mayor aprendizaje que nos llevamos hoy.</p>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 
   // ------------------ SESIÓN 18 ------------------
@@ -1011,14 +931,6 @@ const sesionesDelPDF = [
         <p class="mt-4 mb-0 fw-bold">Reflexión final: Fue una experiencia muy enriquecedora. Hemos comprobado que cuando el aprendizaje es participativo y lúdico, el mensaje de igualdad llega con muchísima más fuerza.</p>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
   // ------------------ SESIÓN 19 ------------------
   {
@@ -1067,14 +979,6 @@ const sesionesDelPDF = [
         <p class="mt-4 mb-0 fw-bold">Reflexión final: Como Comisión Evaluadora valoramos la actividad como brillante. Nos encanta cómo estas clases nos enseñan que aprender no es solo memorizar teoría, sino debatirla, construirla con el grupo y hasta tirarse al suelo a interpretar a Lorca.</p>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 
   // ------------------ SESIÓN 20 ------------------
@@ -1150,14 +1054,6 @@ const sesionesDelPDF = [
         </div>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 
   // ------------------ SESIÓN 21 ------------------
@@ -1193,14 +1089,6 @@ const sesionesDelPDF = [
         </div>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
  // ------------------ SESIÓN 22 ------------------
   {
@@ -1246,14 +1134,6 @@ const sesionesDelPDF = [
         <p class="mt-4 mb-0 fw-bold">Reflexión final: Esta clase ha sido un golpe de realidad espectacular. Nos ha enseñado que la muerte y la enfermedad no pueden ser temas tabú en la escuela. Saber escuchar, no mentir y ser un ancla emocional es una responsabilidad inmensa. Agradecemos muchísimo estas experiencias "fuera del guion" que nos preparan para la vida real.</p>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 
   // ------------------ EDICIÓN ESPECIAL: TUTORÍA ------------------
@@ -1284,14 +1164,6 @@ const sesionesDelPDF = [
         <p class="mb-0 fw-bold">Nos fuimos con las ideas clarísimas, el proyecto reorientado y la enorme satisfacción de saber que nuestro esfuerzo y creatividad están siendo valorados.</p>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 
   // ------------------ SESIÓN 23 ------------------
@@ -1317,14 +1189,6 @@ const sesionesDelPDF = [
         </div>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   },
 
   // ------------------ SESIÓN 24 ------------------
@@ -1367,14 +1231,6 @@ const sesionesDelPDF = [
         </div>
       </div>
     `,
-    fotos: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    ],
-    videos: [
-      "https://www.youtube.com/embed/dQw4w9WgXcQ", 
-      "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    ]
   }
 ];
 
