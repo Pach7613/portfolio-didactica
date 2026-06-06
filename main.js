@@ -1231,6 +1231,337 @@ const sesionesDelPDF = [
         </div>
       </div>
     `,
+  },
+  // ------------------ SESIÓN 25 ------------------
+  {
+    id: 26,
+    semana: "Decimotercera Semana",
+    fecha: "18/05/2026",
+    titulo: "¡Excursión a Comares! El corazón de la Escuela Rural",
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>¡Llegó el gran día! A las 8:00 nos vimos en el hall para coger el autobús rumbo a Comares. Tuvimos la suerte de sentarnos todo el equipo junto: Nathalie con Mario, Pacheco con Joselu y Glori con Irene. El viaje fue entre charlas, juegos y alguna siesta (sobre todo de Nathalie). Aunque las curvas marearon un poco a Glori, llegamos enseguida al "balcón de la Axarquía".</p>
+
+        <h4 class="fw-bold text-dark mt-4 mb-3"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Bienvenidos al CEIP San Hilario de Poitiers</h4>
+        <p>Al llegar nos esperaban los alumnos y la directora. Como agradecimiento por la visita, Mario y Glori le entregaron el bordado que había hecho Carlos. Les encantó y nos dijeron que lo colgarían en el centro.</p>
+        
+        <div class="bg-light p-4 rounded-3 border-start border-4 border-info my-3">
+          <p class="small mb-0 text-dark">Nos sorprendió muchísimo ver que <strong>nuestra clase de la universidad tenía más alumnos que todo el centro escolar junto</strong>. También nos llamó la atención el tamaño reducido del gimnasio y detalles únicos como ¡tener un futbolín en el pasillo!</p>
+        </div>
+
+        <h5 class="fw-bold text-dark mt-5 mb-3">Dinámicas en el Gimnasio (Pegatina Verde)</h5>
+        <ul class="list-unstyled ps-2 mb-4">
+          <li class="mb-3">
+            <i class="bi bi-box-seam-fill text-primary me-2"></i><strong>Tertulia Dialógica Sorpresa:</strong> De una caja sacaban objetos al azar (una rosa, un mapa de Francia...) y teníamos que adivinar un cuadro. Casi acertamos el <em>"Campo de Amapolas"</em> de Monet, pero Víctor sí que adivinó rapidísimo <em>"La persistencia de la memoria"</em> de Dalí. Fue increíble ver cómo esos cuadros generaban debates sobre la incapacidad de elegir el destino o la relatividad del tiempo.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-controller text-success me-2"></i><strong>Pausa Activa:</strong> Para despejar la mente y ejercitar el cuerpo, los alumnos de Comares nos pusieron vídeos de <em>Just Dance</em> (¡Macarena y Waka Waka incluidos!). Fue divertidísimo.
+          </li>
+        </ul>
+
+        <h5 class="fw-bold text-dark mt-5 mb-3 border-bottom pb-2">Guía por el Centro: Aulas Multiedad</h5>
+        <p>Nos explicaron cómo adaptan los contenidos (no usan libros de texto) porque tienen niños de diferentes edades en la misma clase. En infantil, tenían su nombre en mayúsculas pegado a la mesa junto a los números. En la clase de 4º a 6º, nos explicaron el sistema de <strong>roles del aula</strong>. Fue muy tierno ver que, ya sea en la ciudad o en el campo, los niños siguen siendo niños con sus bromas y juegos.</p>
+
+        <h4 class="fw-bold text-dark mt-5 mb-3"><i class="bi bi-compass-fill text-warning me-2"></i>Ruta por el Pueblo y Grupos Interactivos</h4>
+        <p>Subimos caminando hacia el centro del pueblo, parando en el mosaico de "Bienvenidos a Comares". Tuvimos tiempo libre para explorar y nuestro equipo descubrió un rincón precioso llamado <strong>"La casa de la amistad"</strong> con un pequeño mirador.</p>
+
+        <p>Al volver a la plaza, los alumnos de Comares organizaron una gymkana de <strong>Grupos Interactivos</strong>:</p>
+        <div class="row g-3 mb-4">
+          <div class="col-md-6"><div class="p-3 border rounded-3 bg-white shadow-sm small"><i class="bi bi-1-circle text-primary me-2"></i>Juego de memoria y repetición de movimientos.</div></div>
+          <div class="col-md-6"><div class="p-3 border rounded-3 bg-white shadow-sm small"><i class="bi bi-2-circle text-primary me-2"></i>Clásico juego del "Ni sí, ni no".</div></div>
+          <div class="col-md-6"><div class="p-3 border rounded-3 bg-white shadow-sm small"><i class="bi bi-3-circle text-primary me-2"></i>Gestos y mímica para interpretar emociones (desde cansancio hasta orgullo).</div></div>
+          <div class="col-md-6"><div class="p-3 border rounded-3 bg-white shadow-sm small"><i class="bi bi-4-circle text-primary me-2"></i>Tren de masajes narrativos (hormigas, huevo roto, amasar pizza...).</div></div>
+          <div class="col-12"><div class="p-3 border rounded-3 bg-white shadow-sm small"><i class="bi bi-5-circle text-primary me-2"></i>Adivinanzas de palabras sin poder nombrarlas.</div></div>
+        </div>
+
+        <div class="alert alert-dark border-0 rounded-4 mt-5 p-4 shadow-sm bg-dark text-white">
+          <h6 class="fw-bold text-warning mb-2"><i class="bi bi-heart-fill text-danger me-2"></i>Nuestra Reflexión Final</h6>
+          <p class="small text-white-50 mb-3">La vuelta fue tranquila, con el cansancio feliz de quien ha vivido un gran día (y Nathalie durmiendo de nuevo, claro). Queremos agradecer de corazón al CEIP San Hilario de Poitiers por habernos acogido como a una familia.</p>
+          <p class="small text-white-50 mb-0">A veces, este tipo de salidas enseñan mucho más que una clase tradicional, porque permiten aprender desde la observación y el contacto directo. Ver cómo alumnado de diferentes edades comparte espacios, aprende de forma cooperativa y participa en la vida del centro nos ha ayudado a entender que <strong>existen muchas formas de educar, y que todas son válidas cuando se ponen las necesidades de las personas en el centro.</strong> Nos marchamos de Comares con nuevas ideas para nuestro futuro como docentes.</p>
+        </div>
+      </div>
+    `,
+  },
+  // ------------------ SESIÓN 26 ------------------
+  {
+    id: 27,
+    semana: "Decimotercera Semana",
+    fecha: "21/05/2026",
+    titulo: "El Valor del Feedback y la Realidad de los Voluntariados",
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Esta sesión empezó hablando del ejercicio reflexivo de la semana pasada. El profe Carlos nos dio una noticia que fue un alivio inmenso: el ejercicio no influía en la nota, sino que era una herramienta para tener una idea de los conocimientos que habíamos adquirido y poder reforzar a quienes lo necesitaran. A Joselu, por ejemplo, le había enviado un correo para hablar con él, y al saber esto se quedó mucho más tranquilo.</p>
+        
+        <div class="alert alert-success border-0 rounded-4 my-4 p-4 shadow-sm">
+          <h6 class="fw-bold text-success mb-2"><i class="bi bi-star-fill text-warning me-2"></i>El Feedback a nuestro Grupo</h6>
+          <p class="small text-dark mb-0">Tuvimos muy buenas valoraciones. Glori se puso súper contenta al ver que Carlos la calificó con un <strong>"supera lo esperado"</strong>, destacando que se había expresado bastante bien aunque tuviera difusa la parte de movimiento. Fue un momento de paz mental enorme.</p>
+        </div>
+
+        <div class="bg-light p-4 rounded-3 border-start border-4 border-primary my-4">
+          <h6 class="fw-bold text-dark mb-2">Opinión: Nathalie, Pacheco y Joselu</h6>
+          <p class="small mb-0">Al tener este feedback nos dimos cuenta de que, aunque hayamos trabajado de forma diferente durante la asignatura, hemos aprendido mucho temario. Además, <strong>la nota no fue numérica ni finalista, sino palabras para valorar el trabajo.</strong> Este detalle nos demostró que todo lo que el profe nos ha enseñado concuerda 100% con sus acciones.</p>
+        </div>
+
+        <hr class="my-5 border-primary opacity-25">
+
+        <h4 class="fw-bold text-dark mb-4"><i class="bi bi-backpack-fill text-danger me-2"></i>Experiencias en los Voluntariados</h4>
+        <p>La segunda parte de la clase fue un viaje por las realidades de diferentes colegios a través de las vivencias de nuestros compañeros:</p>
+
+        <div class="row g-4 mb-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
+              <h6 class="fw-bold text-primary mb-1">CEIP Miraflores de los Ángeles</h6>
+              <p class="text-primary-subtle small fw-bold mb-2">Nathalie, Mario y Glori</p>
+              <p class="small mb-0">Estuvieron con 2º de Primaria llevando actividades. Destacaron la variedad del alumnado y cómo lo que funcionaba en una clase (más tranquila) no servía en la otra (más revoltosa). Agradecieron muchísimo la cercanía e integración por parte del centro.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
+              <h6 class="fw-bold text-success mb-1">CEIP Los Manantiales</h6>
+              <p class="text-success-subtle small fw-bold mb-2">Laura, Navas y Natalia</p>
+              <p class="small mb-0">Un inicio caótico (les regañaron el primer día sin motivo), pero terminaron adaptándose súper bien. Al ir 3 días en semana, tuvieron la perspectiva de ver cómo cambian las dinámicas según el día. Natalia incluso pudo desarrollar clases sola con la metodología Montessori.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
+              <h6 class="fw-bold text-warning mb-1">CEIP La Campiña</h6>
+              <p class="text-warning-subtle small fw-bold mb-2">Joselu</p>
+              <p class="small mb-0">Rotó por diferentes cursos y en el recreo todos los niños iban a contarle "chismes". Nos indignó mucho una anécdota que contó: a niños de 4-5 años les hacen una prueba certificada por la UMA tan complicada (diferenciar rápido "va" y "pa") que terminan llorando y agobiados. Si no la pasan, repiten. Al propio Carlos le pareció un uso incorrecto.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
+              <h6 class="fw-bold text-danger mb-1">CEIP Bergamín</h6>
+              <p class="text-danger-subtle small fw-bold mb-2">Carmen y Estela</p>
+              <p class="small mb-0">Vivencias muy bonitas. Tuvieron la oportunidad de participar en la Comisión provincial de Comunidades de Aprendizaje y nos enseñaron un vídeo precioso de los stands de cine en los que colaboraron.</p>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4 border-start border-4 border-info">
+              <h6 class="fw-bold text-info mb-1">CEIP Nuestra Señora de la Luz</h6>
+              <p class="text-info-subtle small fw-bold mb-2">Claudia y Angy</p>
+              <p class="small mb-3">Angy estuvo en el <strong>Aula Específica</strong>. Le avisaron de que un niño había roto la nariz a una maestra, pero ella siguió adelante y se ganó tanto la confianza de los alumnos que preguntaban por ella cuando no iba.</p>
+              <p class="small mb-0">Claudia lidió en 4º con una niña con problemas en casa que se obsesionó con ella (incluso criticando cómo vestía). Lo más impactante fue el caso de un niño de Siria (Cruz Roja) que no quería estudiar; gracias a las palabras y la ayuda de Angy, decidió quedarse en la escuela. Por otro lado, criticaron duramente la falta de implicación de la tutora, a quien solo le importaba cumplir los saberes básicos ignorando el caos en el aula.</p>
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
+              <h6 class="fw-bold text-dark mb-1">CEIP Adelaida de la Calle / CEIP Ricardo León</h6>
+              <p class="text-secondary small fw-bold mb-2">Margot, Nerea, Martina y Leonor</p>
+              <p class="small mb-0">En el Ricardo León notaron mucha diversidad y problemas de conducta. Un detalle durísimo que destacaron: los niños llamaban "ligón" a quien hablaba con alguien del sexo opuesto, una costumbre normalizada porque en sus casas, si la madre hablaba con otro hombre, sufría maltrato. Una realidad que golpea fuerte.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-dark border-0 rounded-4 mt-5 p-4 shadow-sm bg-dark text-white">
+          <h6 class="fw-bold text-warning mb-2"><i class="bi bi-lightbulb-fill text-warning me-2"></i>Nuestra Reflexión Final</h6>
+          <p class="small text-white-50 mb-3">Esta sesión nos permitió reflexionar sobre nuestro proceso de aprendizaje. Las valoraciones positivas del ejercicio reflexivo nos ayudaron a comprobar que, aunque la metodología ha sido diferente, hemos adquirido muchísimos conocimientos, reforzando la idea de una <strong>evaluación más humana y formativa</strong>.</p>
+          <p class="small text-white-50 mb-0">Por otro lado, la puesta en común de los voluntariados ha sido espectacular. Nos ha permitido observar la importancia de la adaptación, la inclusión y la empatía. Impactan mucho las situaciones tan complejas de contexto familiar que se viven, lo que nos hace desarrollar una mirada mucho más crítica. Nos ha ayudado a comprender la dura pero preciosa realidad de la profesión docente y el impacto que podemos tener en la vida de un estudiante.</p>
+        </div>
+      </div>
+    `,
+  },
+  // ------------------ EDICIÓN ESPECIAL ------------------
+  {
+    id: 28,
+    semana: "Décimo-cuarta Semana",
+    fecha: "18/05/2026",
+    titulo: "Edición Especial: Planificación y Acción Unificada",
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Como ya mencionamos en nuestra planificación, hay días en los que íbamos a quedar fuera del horario universitario para poder completar todo el proyecto. Esta edición especial está creada con el propósito de unificar toda la planificación y la acción que hemos ido desarrollando poco a poco en nuestro documento de trabajo.</p>
+        
+        <div class="row justify-content-center my-4">
+          <div class="col-md-8 text-center">
+            <a href="https://canva.link/uzmd38nltuv03lg" target="_blank" class="card p-3 rounded-4 shadow-sm text-decoration-none bg-primary bg-opacity-10 border border-primary-subtle transition-all">
+              <div class="d-flex align-items-center justify-content-center gap-3 text-primary">
+                <i class="bi bi-link-45deg fs-2"></i>
+                <div>
+                  <h6 class="fw-bold mb-0">Acceder al Proyecto Unificado en Canva</h6>
+                  <span class="small opacity-75">Visualiza el documento completo de planificación y acción</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <hr class="my-5 border-primary opacity-25">
+
+        <div class="text-center mb-4">
+          <span class="badge bg-primary rounded-pill px-3 py-2 text-uppercase tracking-wide mb-2">Fase 1</span>
+          <h4 class="fw-bold text-dark">La Planificación: Antes de que salga el viaje</h4>
+          <p class="small text-muted">Estructura y organización interna del equipo bajo la metáfora del viaje.</p>
+        </div>
+
+        <p class="mb-4">Al principio comenzamos a planificar haciendo textos más largos, pero finalmente decidimos hacerlo de manera más esquemática. Separar el desarrollo apartado por apartado nos ha facilitado concentrarnos en cómo planificar cada área concreta y visualizarla mejor:</p>
+
+        <div class="row g-4 mb-5">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm rounded-4 p-4">
+              <h5 class="fw-bold text-dark mb-3"><i class="bi bi-brain text-primary me-2"></i>1. Proceso Cognitivo y Metacognitivo</h5>
+              <ul class="small ps-3 text-muted mb-0">
+                <li class="mb-2"><strong>Percepción:</strong> Activación de los sentidos. El <em>oído</em> para escuchar las explicaciones del profesor y los puntos de vista del grupo; la <em>vista</em> para leer las preguntas y documentarnos en didáctica; y el <em>tacto</em> para manipular herramientas físicas como el ordenador.</li>
+                <li class="mb-2"><strong>Atención:</strong> Imprescindible para captar las opiniones del equipo y mantener la concentración activa (evitando distracciones como el uso del móvil).</li>
+                <li class="mb-2"><strong>Memoria:</strong> Ligada a los anteriores para recordar la información clave recogida y los puntos críticos del proceso, evitando repetir errores del pasado.</li>
+                <li class="mb-2"><strong>Espacio:</strong> Organización sentados en círculo (los 4 de cara a cara) con portátiles y folios, en un entorno tranquilo, silencioso y bien iluminado.</li>
+                <li><strong>Tiempo:</strong> Franja diurna (7:00 h a 19:00 h) guiados por un planificador semanal. Las fases de acción se desarrollan fuera del horario de clase en tramos reducidos para evitar la saturación.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm rounded-4 p-4">
+              <h5 class="fw-bold text-dark mb-3"><i class="bi bi-chat-quote-fill text-purple me-2" style="color: #6f42c1;"></i>2. Lenguajes</h5>
+              <ul class="small ps-3 text-muted mb-0">
+                <li class="mb-2"><strong>Nominar:</strong> Denominar autores, fuentes, conceptos clave y el rol de cada uno para comprender su importancia y frecuencia de uso.</li>
+                <li class="mb-2"><strong>Lectura:</strong> Documentación y contraste de referencias mediante fuentes fiables (Google Académico y libros de la biblioteca de la facultad).</li>
+                <li class="mb-2"><strong>Escritura:</strong> Redacción conjunta y digital (fuente Times New Roman 12, negro) reescribiendo varias veces y siguiendo estrictamente la normativa APA 7ª Edición.</li>
+                <li class="mb-2"><strong>Lógico-Matemático:</strong> Cálculo y control del tiempo disponible, estimación de la duración de tareas, presupuestos de materiales y extensión del trabajo.</li>
+                <li class="mb-2"><strong>Musical:</strong> Uso de música al gusto para la concentración y música clásica para momentos de relajación.</li>
+                <li><strong>Plástico:</strong> Diseño visual mediante esquemas, mapas conceptuales, infografías, manualidades y edición de vídeo/sonido.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm rounded-4 p-4">
+              <h5 class="fw-bold text-dark mb-3"><i class="bi bi-heart-fill text-danger me-2"></i>3. Afectividad</h5>
+              <ul class="small ps-3 text-muted mb-0">
+                <li class="mb-2"><strong>Normas, actitudes y comportamientos:</strong> Reglamento propio para asegurar un orden y equidad. Si un miembro aporta más en una determinada área por dificultad de reparto, el resto compensará aportando más en las demás.</li>
+                <li class="mb-2"><strong>Valores:</strong> Educación y respeto mutuo como pilares para propiciar debates sanos, resolviendo los conflictos que surjan de manera estrictamente asertiva.</li>
+                <li><strong>Valor de la diferencia:</strong> Aprovechar la diversidad de valores y trasfondos de los miembros para enriquecer los diferentes puntos de vista del proyecto.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm rounded-4 p-4">
+              <h5 class="fw-bold text-dark mb-3"><i class="bi bi-activity text-success me-2"></i>4. Movimiento</h5>
+              <ul class="small ps-3 text-muted mb-0">
+                <li class="mb-2"><strong>Autonomía Física:</strong> Desplazamiento para asistir a clase, reuniones de grupo y compra de materiales. Importancia del deporte para despejar la mente y de un buen descanso.</li>
+                <li class="mb-2"><strong>Autonomía Personal:</strong> Aportación de creatividad e ideas propias de cada uno, evitando o no abusando de la Inteligencia Artificial.</li>
+                <li class="mb-2"><strong>Autonomía Social:</strong> Relación sana intragrupal e intergrupal, manteniendo un respeto fundamental hacia la figura del profesor como guía.</li>
+                <li><strong>Autonomía Moral:</strong> Actuar de forma éticamente correcta, responsabilidad en los plazos de entrega y honestidad intelectual evitando el plagio mediante el uso de APA.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-light p-4 rounded-4 my-4 border border-secondary-subtle">
+          <h5 class="fw-bold text-dark mb-3"><i class="bi bi-shield-exclamation text-warning me-2"></i>El Plan de Contingencia: ¿Y si...?</h5>
+          <p class="small text-muted mb-4">Escenarios hipotéticos planteados para resguardar el proyecto ante imprevistos:</p>
+          
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="p-3 bg-white rounded-3 shadow-sm">
+                <strong class="text-dark small d-block mb-1">¿Y si ocurre un segundo apagón de luz prolongado?</strong>
+                <span class="small text-muted">Mantendremos un borrador físico a mano con esquemas, mapas mentales y palabras clave para seguir avanzando sin electricidad.</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 bg-white rounded-3 shadow-sm">
+                <strong class="text-dark small d-block mb-1">¿Y si un miembro falta mucho a clase o trabaja menos?</strong>
+                <span class="small text-muted">Se hablará de forma directa con el profesor para buscar alternativas de colaboración o aclarar su marco de evaluación específico.</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 bg-white rounded-3 shadow-sm">
+                <strong class="text-dark small d-block mb-1">¿Y si se borra el progreso de Drive o Canva?</strong>
+                <span class="small text-muted">Mantendremos copias de seguridad cruzadas en la nube, discos locales y en el grupo de WhatsApp para evitar una pérdida total cerca de la entrega.</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 bg-white rounded-3 shadow-sm">
+                <strong class="text-dark small d-block mb-1">¿Y si alguien falta el día de la exposición final?</strong>
+                <span class="small text-muted">Al trabajar de forma cooperativa, el resto del equipo redistribuirá su parte. El progreso diario registrado con el profesor respaldará su nota equitativa.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-5 border-primary opacity-25">
+
+        <div class="text-center mb-4">
+          <span class="badge bg-success rounded-pill px-3 py-2 text-uppercase tracking-wide mb-2">Fase 2</span>
+          <h4 class="fw-bold text-dark">La Acción: El viaje en desarrollo</h4>
+          <p class="small text-muted">Clasificación de los interrogantes y fundamentación científica de las grandes preguntas.</p>
+        </div>
+
+        <p>En lugar de responder de forma aislada, englobamos las 17 preguntas dentro de las dimensiones del Proceso Lógico de Pensamiento para darles un sentido conjunto y profundo. En la tutoría acordamos que responderlas con garantías requiere de <strong>múltiples autorías modernas</strong> que aporten diferentes perspectivas.</p>
+
+        <div class="card border-0 bg-white shadow-sm rounded-4 p-4 mt-4">
+          <h5 class="fw-bold text-dark mb-3 border-bottom pb-2">
+            <span class="badge bg-danger rounded-circle p-2 me-2" style="width: 10px; height: 10px; display: inline-block;"></span>
+            Dimensión: Proceso Cognitivo y Metacognitivo
+          </h5>
+          <p class="small text-muted mb-3">Preguntas integradas en este bloque: <em>¿Qué es la didáctica?, ¿Quiénes la imparten?, ¿Cuál es su objetivo y finalidad?, ¿Existe una o distintas maneras de hacerla?</em> y la que desarrollamos a continuación:</p>
+
+          <div class="bg-light p-4 rounded-4 border-start border-4 border-danger">
+            <h6 class="fw-bold text-dark mb-3 fs-6">¿La calificación es una parte finalista de la didáctica?</h6>
+            
+            <p class="small mb-3">La relación entre la calificación y la didáctica cuenta con diferentes interpretaciones teóricas y pedagógicas:</p>
+            
+            <div class="card border-0 bg-white p-3 rounded-3 shadow-sm mb-3">
+              <p class="small text-dark mb-0">
+                <i class="bi bi-quote fs-4 text-danger lh-1 align-middle me-1"></i>
+                Según <strong>Arroyo González (2019)</strong>, la calificación final que acredita la labor del discente, sumada al seguimiento formativo del proceso de aprendizaje, forma parte intrínseca de la evaluación didáctica. Desde este prisma, queda incluida dentro de la disciplina.
+              </p>
+            </div>
+
+            <p class="small mb-0">No obstante, existen corrientes que defienden que la calificación no debe limitarse a un carácter puramente finalista o administrativo (como un resumen numérico concluyente para cerrar un expediente). Su auténtico valor emerge cuando cumple una <strong>función formativa</strong>, sirviendo como un indicador que permite valorar resultados históricos para favorecer la mejora continua tanto del aprendizaje del alumno como de la propia práctica de enseñanza del docente.</p>
+          </div>
+        </div>
+
+      </div>
+    `,
+  },
+  // ------------------ SESIÓN 27 ------------------
+  {
+    id: 29,
+    semana: "Última Semana",
+    fecha: "26/05/2026",
+    titulo: "La Última Semana: Emociones, Estrés y Presentaciones Finales",
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        
+        <div class="alert alert-info border-0 rounded-4 mb-4 shadow-sm">
+          <h6 class="fw-bold text-info-emphasis mb-2"><i class="bi bi-calendar-heart-fill me-2"></i>Emociones a flor de piel</h6>
+          <p class="small text-dark mb-0">Esta es nuestra última semana de curso, nuestra última semana en 1º de carrera. Es una semana difícil porque implica terminar el primer año y despedirnos de las personas con las que hemos compartido tan buenos momentos. Desde el primer día hubo un gran ambiente. Como dijo Víctor en la primera sesión: <strong>"venir a clase no es una rutina, es un placer"</strong>. Es duro decir adiós (es cierto que nos veremos en septiembre, pero, ¿y si no?).</p>
+        </div>
+
+        <p>Por otro lado, ha sido una semana muy estresante: el examen de TIC, la presentación final de Organización y hoy, la <strong>presentación final de Didáctica</strong>. Llevamos preparándonos todo el curso para esto: grabando vídeo blogs casi todos los días, llevando el proyecto y el portfolio al día, y trabajando durísimo para conseguir que esta página web saliese como queríamos, además de preparar un montón de materiales.</p>
+
+        <hr class="my-5 border-primary opacity-25">
+
+        <h4 class="fw-bold text-dark mb-4"><i class="bi bi-easel2-fill text-primary me-2"></i>Arrancan las Presentaciones Finales</h4>
+        <p>Esta sesión empezó con el grupo de Irene. Cuando llegue nuestro turno explicaremos a fondo nuestra presentación, pero de momento nos pusimos nuestra gorra de Comisión Evaluadora para valorar a nuestras compañeras.</p>
+
+        <div class="card border-0 bg-light shadow-sm rounded-4 p-4 mt-3 border-start border-4 border-warning">
+          <h6 class="fw-bold text-dark mb-3">El Grupo de Irene</h6>
+          <ul class="list-unstyled ps-2 mb-4 small text-dark">
+            <li class="mb-3">
+              <i class="bi bi-card-text text-warning me-2 fs-5 align-middle"></i>
+              <strong>La Cartulina:</strong> Prepararon un mural que iba pasando por toda la clase. En él se podían ver las autorías más relevantes, su conclusión final de lo que era la didáctica y las dificultades del proyecto.
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-bricks text-warning me-2 fs-5 align-middle"></i>
+              <strong>Los Ladrillitos:</strong> Una dinámica donde iban construyendo físicamente todas sus vivencias y lo aprendido en la asignatura.
+            </li>
+          </ul>
+          
+          <div class="bg-white p-3 rounded-3 shadow-sm border border-secondary-subtle">
+            <h6 class="fw-bold text-success mb-2 small"><i class="bi bi-clipboard-check-fill me-1"></i>Valoración de la Comisión Evaluadora</h6>
+            <p class="small mb-0 text-muted">Nos gustó mucho esta actividad y nos recordó sutilmente a la nuestra. Se nota que se lo habían currado (aunque unos miembros del equipo trabajaron más que otros) y que realizaron múltiples investigaciones. Nos pareció una presentación un tanto <em>magistral</em>, pero que incluía todos los aspectos que se debían tratar.</p>
+          </div>
+        </div>
+
+      </div>
+    `,
   }
 ];
 
