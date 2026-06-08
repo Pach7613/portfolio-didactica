@@ -1369,8 +1369,8 @@ const sesionesDelPDF = [
   // ------------------ EDICIÓN ESPECIAL ------------------
   {
     id: 28,
-    semana: "Décimo-cuarta Semana",
-    fecha: "18/05/2026",
+    semana: "🌟 Edición Especial",
+    fecha: "22/05/2026",
     titulo: "Edición Especial: Planificación y Acción Unificada",
     apuntes: `
       <div class="sesion-content text-muted lh-lg">
@@ -1560,6 +1560,170 @@ const sesionesDelPDF = [
           </div>
         </div>
 
+      </div>
+    `,
+  },
+  // ------------------ SESIÓN 28 ------------------
+  {
+    id: 30,
+    semana: "Última Semana",
+    fecha: "28/05/2026",
+    titulo: "La Última Semana: Emociones, Estrés y Presentaciones Finales II",
+    apuntes:`
+    `
+  },
+  // ------------------ EDICIÓN ESPECIAL: EVALUACIONES ------------------
+  {
+    id: 31,
+    semana: "🌟 Edición Especial",
+    fecha: "29/05/2026",
+    titulo: "Comisión Evaluadora: Valoración de las Exposiciones Finales",
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        <p>Para poder evaluar todas las exposiciones creamos un Google Forms en el que detallamos la nota final que pensamos que se merece cada equipo. Desde este formulario pudimos agilizar el proceso y tener más rápidamente la calificación numérica final con un breve feedback.</p>
+
+        <div class="row justify-content-center my-4 g-3">
+          <div class="col-md-6 text-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5XrNtCldiNtprnVJcI37PPULs-mrdjx4YyjX25E1FB6iKkQ/viewform" target="_blank" class="btn btn-outline-primary w-100 rounded-pill py-2 shadow-sm fw-bold">
+              <i class="bi bi-ui-checks me-2"></i>Ver Formulario de Evaluación
+            </a>
+          </div>
+          <div class="col-md-6 text-center">
+            <a href="https://docs.google.com/spreadsheets/d/1ggTfp4k8FlZWoSUdG6XWLxgvUHwYy0T7rj7BZu2eWXE/edit?gid=1180434045#gid=1180434045" target="_blank" class="btn btn-outline-success w-100 rounded-pill py-2 shadow-sm fw-bold">
+              <i class="bi bi-file-earmark-spreadsheet-fill me-2"></i>Ver Calificaciones (Excel)
+            </a>
+          </div>
+        </div>
+
+        <hr class="my-5 border-primary opacity-25">
+
+        <div class="text-center mb-5">
+          <h4 class="fw-bold text-dark"><i class="bi bi-clipboard-data-fill text-warning me-2"></i>Conclusiones de la Comisión</h4>
+          <p class="small text-muted">A continuación detallamos la reflexión final a la que hemos llegado con cada equipo.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-primary">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold text-dark mb-0">Maestros en acción</h6>
+                <span class="badge bg-primary fs-6">8.325</span>
+              </div>
+              <p class="small mb-0">No han trabajado cooperativamente; hay miembros que han trabajado más (Irene y Ángel) y otros mucho menos (Carlos Suárez). Aún así, la idea era muy completa, incluyendo dificultades y vivencias personales que mostraban una gran evolución durante el curso.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-light shadow-sm p-4 rounded-4 border-top border-4 border-secondary">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold text-dark mb-0">Profequerones (Nosotros)</h6>
+                <span class="badge bg-secondary fs-6">9.2</span>
+              </div>
+              <p class="small mb-0 fst-italic">Como es nuestro equipo, no opinamos nuestra propia nota (está en la autoevaluación). Sin embargo, el equipo de Los Silbones determinó que nos merecemos esta calificación.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-success">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold text-dark mb-0">Guardianes del conocimiento</h6>
+                <span class="badge bg-success fs-6">9.325</span>
+              </div>
+              <p class="small mb-0">Explicaron muy bien la didáctica con una actividad activa que incluía a la clase y al profesor. Se ha visto trabajo cooperativo, esfuerzo e investigación profunda llevada de forma muy clara al aula.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-danger">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold text-dark mb-0">Maestras en acción</h6>
+                <span class="badge bg-danger fs-6">8.075</span>
+              </div>
+              <p class="small mb-0">Han trabajado mucho en el bordado y la investigación. Todas merecen la nota excepto Noemí, cuya presencia e implicación fue escasa. Por lo demás, han crecido y mejorado mucho como equipo.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-warning">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold text-dark mb-0">Las semillas de la educación</h6>
+                <span class="badge bg-warning text-dark fs-6">8.93</span>
+              </div>
+              <p class="small mb-0">Idea original y creativa: describir el curso a través de una canción. Tras el emotivo vídeo (donde Alba derramó lágrimas), hicieron un teatro sobre la didáctica. Cumplieron objetivos con participación activa de todos.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-info">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold text-dark mb-0">Los sembradores de ideas</h6>
+                <span class="badge bg-info text-dark fs-6">9.0125</span>
+              </div>
+              <p class="small mb-0">Idea brillante usando un hilo para narrar experiencias y teoría. Integraron a la clase y excluyeron a algunos a propósito para reflejar los fallos del sistema. Fue tan emotiva que hubo lágrimas (incluso de Angy). Muchísimo trabajo creativo e investigador.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-purple" style="border-color: #6f42c1 !important;">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold text-dark mb-0">LadyGirls Powers</h6>
+                <span class="badge fs-6" style="background-color: #6f42c1;">8.225</span>
+              </div>
+              <p class="small mb-0">Se notó el esfuerzo y las dificultades que superaron. Tuvieron una idea simple pero única, sabiendo darle un toque cómico genial lanzando purpurina.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-dark">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold text-dark mb-0">Detectives del Conocimiento</h6>
+                <span class="badge bg-dark fs-6">8.16</span>
+              </div>
+              <p class="small mb-0">Evaluados por nosotros. Pese a ser solo 3, estuvieron a la altura de cualquiera. Trajeron una maqueta del recorrido de Jimmy mostrando su evolución y ejemplificaron muy bien lo que se debe y no se debe hacer.</p>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card h-100 border-0 bg-danger bg-opacity-10 shadow-sm p-4 rounded-4 border-start border-4 border-danger">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold text-danger mb-0">Didactitiza</h6>
+                <span class="badge bg-danger fs-6">9.0625</span>
+              </div>
+              <p class="small mb-0 text-dark"><strong>El equipo que más emocionó a la clase.</strong> Con su vídeo (que hizo llorar al 90% de nosotros) explicaron vivencias y teoría haciéndonos sentir parte del proceso. Repartieron tarjetas dedicadas a cada persona. Supieron ganarse al público llegando al corazón y cumpliendo todos los objetivos. Presentación excelente.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold text-dark mb-0">Didacti-K</h6>
+                <span class="badge bg-secondary fs-6">8.2875</span>
+              </div>
+              <p class="small mb-0">Narraron su experiencia como un trayecto espacial. No fue muy original (hubo grupos muy parecidos), pero lograron narrar vivencias y teoría usando la metáfora del meteorito. Podría haber estado mejor.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold text-dark mb-0">Chispa Educativa</h6>
+                <span class="badge bg-secondary fs-6">8.3375</span>
+              </div>
+              <p class="small mb-0">Viaje por el mar. Tampoco fue una idea muy original, pero fueron capaces de integrar la teoría y llegar a una conclusión sólida sobre la didáctica, aunque con margen de mejora.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold text-dark mb-0">Red educadora</h6>
+                <span class="badge bg-secondary fs-6">7.2125</span>
+              </div>
+              <p class="small mb-0">Usaron la metáfora de una receta. Faltó originalidad y el uso de IA para la imagen del recetario no gustó (otros grupos hicieron manualidades). Aún así, la conclusión teórica fue sólida.</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     `,
   }
