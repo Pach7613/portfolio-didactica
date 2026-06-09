@@ -1520,7 +1520,7 @@ const sesionesDelPDF = [
       </div>
     `,
   },
-  // ------------------ SESIÓN 27 ------------------
+ // ------------------ SESIÓN 27 ------------------
   {
     id: 29,
     semana: "Última Semana",
@@ -1531,52 +1531,286 @@ const sesionesDelPDF = [
         
         <div class="alert alert-info border-0 rounded-4 mb-4 shadow-sm">
           <h6 class="fw-bold text-info-emphasis mb-2"><i class="bi bi-calendar-heart-fill me-2"></i>Emociones a flor de piel</h6>
-          <p class="small text-dark mb-0">Esta es nuestra última semana de curso, nuestra última semana en 1º de carrera. Es una semana difícil porque implica terminar el primer año y despedirnos de las personas con las que hemos compartido tan buenos momentos. Desde el primer día hubo un gran ambiente. Como dijo Víctor en la primera sesión: <strong>"venir a clase no es una rutina, es un placer"</strong>. Es duro decir adiós (es cierto que nos veremos en septiembre, pero, ¿y si no?).</p>
+          <p class="small text-dark mb-2">Esta semana es nuestra última semana de curso, nuestra última semana en 1º de carrera. Es una semana difícil porque implica que ya vamos a terminar el primer año y eso nos entristece por tantos buenos momentos compartidos en esta clase. Desde el primer día hubo un ambiente increíble y pudimos entablar amistad rápidamente, recordando lo que dijo Víctor en la primera sesión: <strong>“venir a clase no es una rutina, es un placer”</strong>. Es duro despedirse (es cierto que nos veremos en septiembre, pero, ¿y si no?).</p>
+          <p class="small text-dark mb-0">Por otro lado, ha sido una semana muy estresante: el examen de TIC, la presentación final de Organización el viernes y hoy, la gran <strong>presentación final de Didáctica</strong>. Llevamos preparándonos todo el curso, grabando videoblogs, construyendo la web interactiva e invirtiendo mucho tiempo y ganas en los materiales.</p>
         </div>
 
-        <p>Por otro lado, ha sido una semana muy estresante: el examen de TIC, la presentación final de Organización y hoy, la <strong>presentación final de Didáctica</strong>. Llevamos preparándonos todo el curso para esto: grabando vídeo blogs casi todos los días, llevando el proyecto y el portfolio al día, y trabajando durísimo para conseguir que esta página web saliese como queríamos, además de preparar un montón de materiales.</p>
+        <p>La sesión comenzó con el profesor Carlos muy emocionado. Concordamos con él en que ha sido la asignatura en la que más hemos trabajado y nos da lástima que acabe, lo que demuestra lo bien que lo hemos pasado.</p>
+
+        <h4 class="fw-bold text-dark mt-5 mb-3"><i class="bi bi-person-workspace text-primary me-2"></i>1. Vivencias de Voluntariado e Historia de Vida</h4>
+        <p>La clase comenzó escuchando a Isabel y Laura hablando de sus voluntariados. Isa nos contó cómo disfrutó rotando por las aulas y observando la capacidad de los docentes. Por su parte, Laura compartió un testimonio muy humano: empezó con niños de 5 años y al principio se sintió muy desmotivada e insegura, comparándose con Diana. Llegó a pensar que no valía para ser maestra, pero con las semanas ganó confianza y se dio cuenta de que la enseñanza es su verdadera vocación y solo requería un tiempo de adaptación.</p>
+
+        <div class="card border-0 bg-light shadow-sm rounded-4 p-4 my-4 border-start border-4 border-primary">
+          <h5 class="fw-bold text-dark mb-3"><i class="bi bi-mic-fill text-primary me-2"></i>Charla de José Antonio Rojas: La voz de la experiencia</h5>
+          <p class="small text-muted">José Antonio, un joven con TDAH a quien la medicación le supuso un "robo de identidad", nos habló de pedagogía desde sus vivencias en centros de menores (residenciales para entornos vulnerables/maltrato y terapéuticos para infracciones). Nos dejó varias lecciones que nos marcaron profundamente:</p>
+          
+          <figure class="p-3 bg-white rounded-3 border-start border-3 border-dark my-3">
+            <blockquote class="blockquote small text-dark fw-bold mb-0">
+              "El poder de la palabra en los docentes en situación de privilegio destruye o construye."
+            </blockquote>
+          </figure>
+          
+          <p class="small text-muted">Explicó de forma muy gráfica cómo lo que se le dice a un niño vulnerable puede construirle (la palabra huele bien) o terminar de hundirle (la palabra echa peste). Detalló cómo los niños de hogares problemáticos tienden a culparse a sí mismos, lo que deriva en conductas disruptivas en el aula:</p>
+          <ul class="small text-muted ps-3 mb-3">
+            <li>Si un alumno "da mucho por culo" o molesta, a menudo es por falta de atención, pidiendo en el aula el caso que no le dan en su hogar.</li>
+            <li>Si muestra desconfianza, es porque siente que los adultos (sus referentes) le han fallado. Para salir de ahí, debe pasar por la <strong>"metamorfosis del odio"</strong>: aprender a valorarse y quererse a sí mismo para poder querer y cuidar al resto.</li>
+          </ul>
+
+          <p class="small text-muted">Hizo pasar una caja sorpresa con dos espejos (uno con aumento y otro sin él) para recordarnos el <em>síndrome de la amapola alta</em> en la educación estandarizada: si un niño destaca, el sistema intenta cortarle las alas en vez de dejarlo crecer libre. Nos recordó que cada alumno viene con una historia diferente y una perspectiva única. Como nota divertida, un llavero de guindilla que venía en la caja no tenía que estar ahí, pero intentamos buscarle un significado pedagógico y nos echamos unas buenas risas colectivas.</p>
+        </div>
 
         <hr class="my-5 border-primary opacity-25">
 
-        <h4 class="fw-bold text-dark mb-4"><i class="bi bi-easel2-fill text-primary me-2"></i>Arrancan las Presentaciones Finales</h4>
-        <p>Esta sesión empezó con el grupo de Irene. Cuando llegue nuestro turno explicaremos a fondo nuestra presentación, pero de momento nos pusimos nuestra gorra de Comisión Evaluadora para valorar a nuestras compañeras.</p>
+        <h4 class="fw-bold text-dark mb-3"><i class="bi bi-book-half text-danger me-2"></i>2. Actividad del Día del Libro y Pueblo Gitano (Equipo 2)</h4>
+        <p>El equipo de Elena y Alba organizó una dinámica en dos partes. En la primera, dentro del aula, nos repartieron un poema gitano para inventar una historia. Nuestro equipo decidió apostar por la máxima creatividad y estructuramos el relato completamente a base de rimas humorísticas:</p>
 
-        <div class="card border-0 bg-light shadow-sm rounded-4 p-4 mt-3 border-start border-4 border-warning">
-          <h6 class="fw-bold text-dark mb-3">El Grupo de Irene</h6>
-          <ul class="list-unstyled ps-2 mb-4 small text-dark">
-            <li class="mb-3">
-              <i class="bi bi-card-text text-warning me-2 fs-5 align-middle"></i>
-              <strong>La Cartulina:</strong> Prepararon un mural que iba pasando por toda la clase. En él se podían ver las autorías más relevantes, su conclusión final de lo que era la didáctica y las dificultades del proyecto.
-            </li>
-            <li class="mb-2">
-              <i class="bi bi-bricks text-warning me-2 fs-5 align-middle"></i>
-              <strong>Los Ladrillitos:</strong> Una dinámica donde iban construyendo físicamente todas sus vivencias y lo aprendido en la asignatura.
-            </li>
-          </ul>
-          
-          <div class="bg-white p-3 rounded-3 shadow-sm border border-secondary-subtle">
-            <h6 class="fw-bold text-success mb-2 small"><i class="bi bi-clipboard-check-fill me-1"></i>Valoración de la Comisión Evaluadora</h6>
-            <p class="small mb-0 text-muted">Nos gustó mucho esta actividad y nos recordó sutilmente a la nuestra. Se nota que se lo habían currado (aunque unos miembros del equipo trabajaron más que otros) y que realizaron múltiples investigaciones. Nos pareció una presentación un tanto <em>magistral</em>, pero que incluía todos los aspectos que se debían tratar.</p>
+        <div class="bg-light p-4 rounded-4 text-center my-4 border border-danger border-opacity-25 shadow-sm">
+          <p class="fst-italic text-dark mb-1">"Manuel conoce a Lole y Lole enamoró a Manuel."</p>
+          <p class="fst-italic text-dark mb-1">"Manuel la seguía día y noche en el coche y le dio una flor sin reproches."</p>
+          <p class="fst-italic text-dark mb-1">"La Lole se arregló y Manuel se declaró."</p>
+          <p class="fst-italic text-dark mb-1">"Cuando se declaró, ella lo rechazó."</p>
+          <p class="fst-italic text-dark mb-0">"Y Manuel sin ningún reparo acabó derrotado."</p>
+        </div>
+
+        <p>Después, salimos al patio para realizar la segunda actividad: un "Quién es quién" literario para adivinar autores del pueblo gitano mediante preguntas. Como Comisión Evaluadora, registramos las siguientes valoraciones para el Grupo de Elena y Alba:</p>
+
+        <div class="row g-3 my-3">
+          <div class="col-md-4">
+            <div class="p-3 bg-white border shadow-sm rounded-4 h-100">
+              <strong class="text-dark small d-block mb-1">Glori (¡Muy bien! 🙂)</strong>
+              <span class="small text-muted d-block lh-sm">Actividad muy creativa e inclusiva. Supieron corregir errores reduciendo de 7 actividades iniciales a 2 bien organizadas. Recursos muy completos (físicos y TIC). Faltó rastro de evaluación.</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 bg-white border shadow-sm rounded-4 h-100">
+              <strong class="text-dark small d-block mb-1">Nathalie (¡Muy bien! 🙂)</strong>
+              <span class="small text-muted d-block lh-sm">Cumplieron el objetivo dando visibilidad a la cultura escrita gitana. Fomentaron el trabajo en equipo y respeto. Margen de mejora: incorporar estrategias de evaluación.</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 bg-white border shadow-sm rounded-4 h-100">
+              <strong class="text-dark small d-block mb-1">Pacheco (Bien 👍)</strong>
+              <span class="small text-muted d-block lh-sm">Relación adecuada y original con la creación de historias. Gran capacidad de adaptación temporal. En la segunda actividad se podría haber reforzado más la parte literaria.</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 bg-white border shadow-sm rounded-4 h-100">
+              <strong class="text-dark small d-block mb-1">Joselu (¡Excelente! 😀)</strong>
+              <span class="small text-muted d-block lh-sm">Unión excelente de efemérides. Propuesta muy dinámica y participativa que implicó a toda la clase. Gestión de tiempos impecable al reajustar el plan inicial.</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 bg-white border shadow-sm rounded-4 h-100">
+              <strong class="text-dark small d-block mb-1">Natalia (¡Muy bien! 🙂)</strong>
+              <span class="small text-muted d-block lh-sm">Aproximación respetuosa y dinámica a la cultura gitana. Recursos audiovisuales enriquecedores. Ambiente excelente de compañerismo en el patio.</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 bg-white border shadow-sm rounded-4 h-100">
+              <strong class="text-dark small d-block mb-1">Josué / Mario (Bien 👍 / ¡Excelente! 😀)</strong>
+              <span class="small text-muted d-block lh-sm">Coinciden en la gran variedad de recursos empleados, la excelente adaptación metodológica y la alta participación de toda la clase.</span>
+            </div>
           </div>
         </div>
 
+        <hr class="my-5 border-primary opacity-25">
+
+        <h4 class="fw-bold text-dark mb-3"><i class="bi bi-easel2-fill text-success me-2"></i>3. Las Exposiciones Finales de Proyectos</h4>
+        <p><strong>El Grupo de Irene</strong> abrió la ronda con una cartulina explicativa sobre autorías relevantes (Bernardo Toro y el individualismo, Freire y Adela Cortina con la autonomía del cuidado). Como síntesis pedagógica, usaron unos ladrillitos para representar cómo construían sus vivencias hasta convertirse en docentes transformadores. Una propuesta muy completa, aunque con un tono algo magistral.</p>
+
+        <div class="card border-0 bg-dark text-white p-4 rounded-4 my-4 shadow">
+          <h5 class="fw-bold text-warning mb-3"><i class="bi bi-rocket-takeoff-fill me-2"></i>¡Nuestro turno: PROFEQUERONES en Acción!</h5>
+          <p class="small text-white-50">Nuestra propuesta consistió en tematizar la puerta como una cápsula del tiempo y vestirnos con la camiseta del Málaga CF (haciendo honor a nuestro nombre "Profequerones", por los boquerones de la afición). Decidimos reproducir nuestro tráiler de Didaflix al principio para enganchar a la clase y presentar la web interactiva antes de quedarnos sin tiempo.</p>
+          
+          <h6 class="fw-bold text-white small mt-3 mb-2"><i class="bi bi-box-seam text-warning me-2"></i>Los objetos de nuestra Caja del Tiempo:</h6>
+          <div class="row g-2 text-white-50 small mb-4">
+            <div class="col-md-6">● <strong>Libro Proyecto Roma:</strong> Las bases del grupo y la confianza mutua.</div>
+            <div class="col-md-6">● <strong>Gafetes de roles:</strong> Afrontar nuestros puntos débiles.</div>
+            <div class="col-md-6">● <strong>Folleto Aula-Cerebro:</strong> Nuestra revista impresa y el diseño en Minecraft.</div>
+            <div class="col-md-6">● <strong>Bandera de Andalucía:</strong> Diálogo y tertulia dialógica (Freire).</div>
+            <div class="col-md-6">col-md-6 ● <strong>Ovillo de lana:</strong> Convivencia y narrativa textil.</div>
+            <div class="col-md-6">● <strong>Zapatito de miniJoselu:</strong> Emoción pura con la carta a nuestros 5 años.</div>
+            <div class="col-md-6">● <strong>Fotos grupales:</strong> Contextos formal, no formal e informal (Kárate, Disney, familia).</div>
+            <div class="col-md-6">● <strong>Muñeco con turbante:</strong> Charla de Cudeca y validación emocional.</div>
+            <div class="col-md-6">● <strong>Abanico de hojas:</strong> Rol evaluador en el Día del Libro (Vygotsky).</div>
+            <div class="col-md-6">● <strong>Proyector de cartón roto:</strong> Debate sobre Ana Orantes y el problema real (Dewey).</div>
+            <div class="col-md-6">● <strong>Código Spotify:</strong> Waka Waka, pausas activas y comunidad en Comares.</div>
+          </div>
+
+          <p class="small text-white-50">Para la parte teórica de la Acción, estructuramos el discurso desde Comenio y Hamilton hasta Freire, Vygotsky, López Melero y Mora, demostrando que la didáctica es un proceso vivo. Cerramos con una dinámica repartiendo sobres con las letras D-I-D-Á-C-T-I-C-A para pegarlas en un tablón formando la frase: <em>“El arte de aprender haciendo”</em>. Pacheco cerró invitando a todos (incluido Carlos) a completar nuestra evaluación 360º al grito conjunto de: <strong>¡Porque el Proyecto Roma no se construyó en un día!</strong></p>
+          
+          <p class="small text-warning fw-bold mb-0">Nota sobre el proceso: Nos alargamos más de los 17 minutos fijados. Al terminar, las expresiones de Carlos nos hicieron salir frustrados y preocupados (¡Pacheco y Joselu salieron llorando!). Sin embargo, al hablar con él nos aclaró con total cercanía que la presentación le había encantado, y que simplemente se había mostrado más serio para priorizar el tiempo con los grupos que veía más desanimados o con aspectos críticos que corregir. ¡Qué alivio!</p>
+        </div>
+
+        <p class="mt-4">El resto de las exposiciones mantuvieron un listón muy alto:</p>
+        <ul class="text-muted small lh-lg">
+          <li><strong>Guardianes del conocimiento:</strong> Despertaron la curiosidad de inmediato con un teatro sobre cómo se encontraban al inicio del curso, haciendo participar al profesor para demostrar que la didáctica consiste en adaptarnos a los ritmos del alumnado.</li>
+          <li><strong>Maestras en acción:</strong> Presentaron un precioso bordado de una flor donde cada pétalo simbolizaba una parte vital del curso (cooperación, espacio seguro, dificultades), fundamentando su marco teórico en el socioconstructivismo.</li>
+          <li><strong>Las semillas de la educación:</strong> Fusionaron de forma excelente la práctica y la teoría proyectando un videoclip musical con todo el avance del cuatrimestre, seguido de una representación teatral sobre sus dificultades.</li>
+        </ul>
+
+        <hr class="my-5 border-primary opacity-25">
+
+        <h4 class="fw-bold text-dark mb-3"><i class="bi bi-award-fill text-primary me-2"></i>4. Matriz de Autoevaluación Final del Equipo</h4>
+        <p class="small mb-3">En el aula nos otorgamos un "muy bien", pero analizando fríamente la constancia, el desarrollo del código interactivo y el esfuerzo volcado, consideramos que nuestro trabajo es de <strong>Excelente (9,5)</strong>. Otorgamos al profesor Carlos un 9,5 por su guía continua.</p>
+
+        <div class="table-responsive my-4 shadow-sm rounded-4">
+          <table class="table table-white table-hover align-middle mb-0 small">
+            <thead class="table-dark">
+              <tr>
+                <th>Integrante</th>
+                <th class="text-center">Nota</th>
+                <th>Justificación Pedagógica y de Rendimiento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="fw-bold text-dark">Glori</td>
+                <td class="text-center"><span class="badge bg-success">9,5</span></td>
+                <td>Trabajo constante transcribiendo lo ocurrido en las sesiones y agilizando las reflexiones del grupo. Como encargada de material, gestionó con total eficiencia los recursos creativos necesarios para los proyectos y participó de forma independiente en el aula.</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-dark">Pacheco</td>
+                <td class="text-center"><span class="badge bg-success">9,5</span></td>
+                <td>Aportó sus conocimientos de programación y desarrollo de código para dar forma interactiva a la web del portafolio. Desempeñó con competencia el rol de portavoz, superando la timidez y la vergüenza inicial. Demostró una alta autonomía técnica.</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-dark">Joselu</td>
+                <td class="text-center"><span class="badge bg-success">9,5</span></td>
+                <td>Clave en la comprensión y estructuración del Proyecto Roma. Su capacidad de análisis ayudó al equipo a avanzar con efectividad. Asumió el rol de secretario de manera totalmente independiente, garantizando las entregas en el campus virtual en tiempo y forma.</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-dark">Nathalie</td>
+                <td class="text-center"><span class="badge bg-success">9,5</span></td>
+                <td>Despliegue absoluto de creatividad en los diseños. Asumió la coordinación del equipo de forma impecable, organizando y delegando tareas de manera equilibrada para optimizar el rendimiento. Participación muy activa en los debates y asambleas del aula.</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-primary">Grupal</td>
+                <td class="text-center"><span class="badge bg-primary">9,5</span></td>
+                <td><strong>Rendimiento Cohesivo:</strong> El trabajo en equipo, la resolución de problemas ante los imprevistos de la fase de acción y la comprensión cualitativa de los contenidos han sido excelentes. Este portafolio refleja un compromiso real con la asignatura, demostrando que la teoría trabajada se ha transformado en un aprendizaje significativo para nuestro futuro docente.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="alert alert-secondary border-0 rounded-4 mt-5 p-4 shadow-sm bg-dark text-white">
+          <h6 class="fw-bold text-warning mb-2"><i class="bi bi-lightbulb-fill text-warning me-2"></i>Reflexión de Cierre de Curso</h6>
+          <p class="small text-white-50 mb-2">Esta última semana ha estado marcada por una hermosa mezcla de emociones, estrés y profunda satisfacción. La charla de José Antonio Rojas nos recordó la inmensa responsabilidad ética que recae sobre nuestras palabras como futuros maestros: tenemos el poder de destruir o de construir la realidad de un alumno vulnerable.</p>
+          <p class="small text-white-50 mb-0">A lo largo de todas las experiencias vividas en este cuatrimestre, hemos aprendido que el conocimiento no se construye en el aislamiento, sino en la convivencia, el diálogo y el respeto mutuo. Nos marchamos de 1º de carrera con una visión de la Didáctica mucho más humana, crítica y flexible, preparados para diseñar aulas donde cada voz importe y cada historia sea valorada.</p>
+        </div>
       </div>
     `,
   },
-  // ------------------ SESIÓN 28 ------------------
+// ------------------ SESIÓN 28 ------------------
   {
     id: 30,
     semana: "Última Semana",
     fecha: "28/05/2026",
-    titulo: "La Última Semana: Emociones, Estrés y Presentaciones Finales II",
-    apuntes:`
+    titulo: "El Gran Cierre: Metáforas, Emoción y Despedida",
+    apuntes: `
+      <div class="sesion-content text-muted lh-lg">
+        
+        <div class="alert alert-dark border-0 rounded-4 mb-4 shadow-sm bg-dark text-white">
+          <h6 class="fw-bold text-warning mb-2"><i class="bi bi-stars me-2"></i>La Despedida</h6>
+          <p class="small text-white-50 mb-0">Esta ha sido nuestra última clase de didáctica, una sesión tan emotiva como intensa. Hemos dedicado todo el tiempo a las presentaciones finales de nuestros compañeros. Ha sido el broche de oro para cerrar todo lo que hemos vivido durante estos meses.</p>
+        </div>
+
+        <h4 class="fw-bold text-dark mb-4"><i class="bi bi-easel2-fill text-primary me-2"></i>Ronda de Exposiciones Finales</h4>
+
+        <div class="row g-4 mb-4">
+          
+          <div class="col-12">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-start border-4 border-success">
+              <h5 class="fw-bold text-success mb-2"><i class="bi bi-diagram-3-fill me-2"></i>Los sembradores de ideas</h5>
+              <p class="small mb-0">Empezaron muy intensos con una dinámica usando un ovillo de lana. Iban conectando a las personas, uniendo a toda la clase con el hilo o con post-its. Esta red representaba el apoyo y la escucha activa de los compañeros. Al romper el hilo, escenificaban el caos que se produce si se rompe esa red de convivencia. Demostraron que el aprendizaje es acompañamiento, emocionando a toda la clase (incluso al profe, que confesó tener pensada esa misma dinámica). Muchas personas terminaron llorando.</p>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-start border-4 border-purple" style="border-color: #6f42c1 !important;">
+              <h5 class="fw-bold mb-2" style="color: #6f42c1;"><i class="bi bi-droplet-fill me-2"></i>Ladygirls Power</h5>
+              <p class="small mb-2">Representaron visualmente su proceso con un jarrón y un vaso como metáfora de la mente y el aprendizaje. Fueron añadiendo elementos:</p>
+              <ul class="small ps-3 mb-2">
+                <li><strong>Piedras y agua:</strong> Experiencias, errores, debates y dificultades que elevan el nivel del proyecto.</li>
+                <li><strong>Un colador:</strong> El filtro necesario para quedarse solo con las ideas didácticas útiles, apoyándose en Vygotsky, Bruner, Dewey, Santomé y Giroux.</li>
+                <li><strong>Pintura azul y remolino:</strong> Encontrar una dirección clara conectando las ideas.</li>
+                <li><strong>Corazones y notas musicales:</strong> Afectividad y la huella sonora.</li>
+                <li><strong>Purpurina y flores:</strong> Las emociones del proceso (¡momento graciosísimo cuando Carmen echó todo el bote provocando risas masivas!).</li>
+              </ul>
+              <p class="small mb-0">No ocultaron sus problemas, sino que los usaron para explicar su evolución, demostrando que la didáctica es todo el proceso de construcción, no solo el resultado.</p>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-start border-4 border-dark">
+              <h5 class="fw-bold text-dark mb-2"><i class="bi bi-search me-2"></i>Detectives del conocimiento (Los Silbones)</h5>
+              <p class="small mb-2">Presentaron a "Jimmy", un muñeco que recorría un camino con curvas (dificultades) pintado en un degradado de colores oscuros a claros. Esto simbolizaba cómo, aunque al principio todo era agobiante, terminaron encontrando la luz al entender la asignatura. Destacaron cómo ser solo 3 personas fue un reto inicial que se convirtió en una ventaja organizativa.</p>
+              <div class="bg-light p-3 rounded-3 mt-2">
+                <strong class="small text-dark d-block mb-1">El momento estrella: El Efecto Pigmalión</strong>
+                <p class="small text-muted mb-0">Hicieron una representación donde <strong>Mario bailaba a lo Michael Jackson y Nati cantaba maravillosamente</strong>, mostrando dos formas de enseñar: una basada en el acompañamiento y reconocimiento (la de Josué a Mario) y otra centrada en castigar los errores. Dejaron claro cómo las expectativas del profesor influyen vitalmente en el rendimiento.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card h-100 border-0 bg-danger bg-opacity-10 shadow-sm p-4 rounded-4 border-start border-4 border-danger">
+              <h5 class="fw-bold text-danger mb-2"><i class="bi bi-camera-video-fill me-2"></i>Didactitiza</h5>
+              <p class="small text-dark mb-2"><strong>El grupo con el que más personas lloramos.</strong> Realizaron una exposición profundamente emotiva mediante un vídeo. Agradecieron a sus "yo del pasado" por el esfuerzo y constancia para llegar hasta aquí. Explicaron la didáctica usando cada letra de la palabra.</p>
+              <p class="small text-dark mb-0">El detalle que coronó la presentación fue la entrega de tarjetas personalizadas a todos los compañeros, un gesto de cercanía brutal. Conectaron directamente con el corazón de la clase, haciendo la presentación memorable.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-info">
+              <h6 class="fw-bold text-info mb-2"><i class="bi bi-globe me-2"></i>Didáctica-K</h6>
+              <p class="small mb-0">Usaron una maqueta del sistema solar pasando un cohete entre ellos. Viajaron por el <em>Planeta de las dudas</em>, el <em>Planeta de la planificación</em> (con turbulencias), se toparon con un meteorito (los imprevistos) y llegaron al <em>Planeta de la acción</em> y a la Tierra. Explicaron cómo redirigieron su proyecto gracias a Carlos. <strong>Nota crítica:</strong> Nos pareció una presentación muy completa en contenidos pero demasiado magistral, sin dinámicas que incluyeran al resto de la clase.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-warning">
+              <h6 class="fw-bold text-warning text-dark mb-2"><i class="bi bi-tsunami me-2"></i>Chispa Educativa</h6>
+              <p class="small mb-0">Metáfora de navegación marítima. Empezaron con un tsunami (la incertidumbre inicial) en un barco sin una vela (necesidad de trabajo en equipo) guiado por el capitán (el profesor). Visitaron islas con acertijos sobre las actividades del curso, afrontaron olas (dificultades) y hallaron una botella con un puzzle de autores (Camilloni, Vygotsky) hasta encontrar el tesoro: la Didáctica. <strong>Nota crítica:</strong> Perdió algo de originalidad al ser una metáfora de viaje tan parecida al grupo anterior.</p>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-start border-4 border-secondary">
+              <h5 class="fw-bold text-secondary mb-3"><i class="bi bi-egg-fried me-2"></i>Red Educadora</h5>
+              <p class="small mb-2">Explicaron su visión a través de una receta culinaria, donde el recipiente era el proceso de enseñanza:</p>
+              <div class="row g-2 small text-muted mb-3">
+                <div class="col-md-4">● <strong>Harina:</strong> Actividades prácticas.</div>
+                <div class="col-md-4">● <strong>Azúcar:</strong> La creatividad (Bruner).</div>
+                <div class="col-md-4">● <strong>Sal:</strong> Esfuerzo y motivación.</div>
+                <div class="col-md-4">● <strong>Levadura:</strong> Ayuda mutua (Vygotsky).</div>
+                <div class="col-md-4">● <strong>Huevos:</strong> Estructura lógica del pensamiento.</div>
+                <div class="col-md-4">● <strong>Aceite:</strong> Dinamicidad de las asambleas.</div>
+                <div class="col-md-4">● <strong>Leche:</strong> Vínculos y compañerismo.</div>
+                <div class="col-md-4">● <strong>Chocolate:</strong> Diversidad del alumnado.</div>
+                <div class="col-md-4">● <strong>Horno:</strong> El clima escolar.</div>
+              </div>
+              <p class="small mb-2">Terminaron añadiendo fideos de colores (la carta a los 5 años). <strong>Nota crítica:</strong> Aunque la metáfora era coherente y original en concepto, el uso de una imagen de fondo generada por Inteligencia Artificial contrastó negativamente frente al trabajo artesanal del resto de la presentación.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="my-5 border-primary opacity-25">
+
+        <div class="alert alert-primary border-0 rounded-4 p-4 shadow-sm bg-primary bg-opacity-10 text-dark">
+          <h5 class="fw-bold text-primary mb-3"><i class="bi bi-journal-bookmark-fill me-2"></i>Reflexión Final: El valor del camino</h5>
+          <p class="small mb-3">Esta última sesión ha supuesto un cierre especialmente significativo. A través de metáforas tan diversas como redes, viajes espaciales, mares o recetas, hemos evidenciado que el aprendizaje no es un proceso lineal. Es una construcción colectiva marcada por dudas, errores, emociones y descubrimientos.</p>
+          <p class="small mb-0 fw-bold">La didáctica no es un mero contenido académico, sino una experiencia viva que se construye con los demás. Terminamos esta etapa con la certeza de que las experiencias de este año nos acompañarán cuando entremos, por fin, en nuestras futuras aulas.</p>
+        </div>
+
+      </div>
     `
   },
-  // ------------------ EDICIÓN ESPECIAL: EVALUACIONES ------------------
+// ------------------ EDICIÓN ESPECIAL: EVALUACIONES ------------------
   {
     id: 31,
     semana: "🌟 Edición Especial",
-    fecha: "29/05/2026",
+    fecha: "01/06/2026",
     titulo: "Comisión Evaluadora: Valoración de las Exposiciones Finales",
     apuntes: `
       <div class="sesion-content text-muted lh-lg">
@@ -1605,127 +1839,140 @@ const sesionesDelPDF = [
         <div class="row g-4">
           <div class="col-md-6">
             <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-primary">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
                 <h6 class="fw-bold text-dark mb-0">Maestros en acción</h6>
-                <span class="badge bg-primary fs-6">8.325</span>
+                <span class="badge bg-primary fs-6">8,5</span>
               </div>
-              <p class="small mb-0">No han trabajado cooperativamente; hay miembros que han trabajado más (Irene y Ángel) y otros mucho menos (Carlos Suárez). Aún así, la idea era muy completa, incluyendo dificultades y vivencias personales que mostraban una gran evolución durante el curso.</p>
+              <p class="text-muted fst-italic mb-2" style="font-size: 0.75rem;">Gloria: 8,55 | Joselu: 8,5 | Pacheco: 7,95 | Nathalie: 8,2 | Josué: 8,95 | Mario: 8,3 | Natalia: 9,05</p>
+              <p class="small mb-0">Esto se debe a que no han trabajado todos cooperativamente y hay miembros que han trabajado más (Irene y Ángel) y otros mucho menos (Carlos Suárez). Aún así, la idea era muy completa, incluyendo dificultades y vivencias personales que mostraban una gran evolución durante el curso.</p>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="card h-100 border-0 bg-light shadow-sm p-4 rounded-4 border-top border-4 border-secondary">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
                 <h6 class="fw-bold text-dark mb-0">Profequerones (Nosotros)</h6>
-                <span class="badge bg-secondary fs-6">9.2</span>
+                <span class="badge bg-secondary fs-6">9,15</span>
               </div>
-              <p class="small mb-0 fst-italic">Como es nuestro equipo, no opinamos nuestra propia nota (está en la autoevaluación). Sin embargo, el equipo de Los Silbones determinó que nos merecemos esta calificación.</p>
+              <p class="text-muted fst-italic mb-2" style="font-size: 0.75rem;">Evaluación de Los Silbones: Josué: 8,85 | Mario: 9,4 | Natalia: 9,2</p>
+              <p class="small mb-0 fst-italic">Como es nuestro equipo no hemos opinado lo que merecemos (está en la autoevaluación). Para Los Silbones merecemos esta nota porque todos han trabajado de manera cooperativa y se han esforzado con múltiples recursos. Aunque nos pasamos de tiempo y una pregunta nos dejó perplejos, combinamos muy bien vivencias, teoría y la parte emotiva.</p>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-success">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
                 <h6 class="fw-bold text-dark mb-0">Guardianes del conocimiento</h6>
-                <span class="badge bg-success fs-6">9.325</span>
+                <span class="badge bg-success fs-6">9,39</span>
               </div>
-              <p class="small mb-0">Explicaron muy bien la didáctica con una actividad activa que incluía a la clase y al profesor. Se ha visto trabajo cooperativo, esfuerzo e investigación profunda llevada de forma muy clara al aula.</p>
+              <p class="text-muted fst-italic mb-2" style="font-size: 0.75rem;">Gloria: 8,95 | Joselu: 9,25 | Pacheco: 9,4 | Nathalie: 9,75 | Josué: 9,6 | Mario: 9,7 | Natalia: 9,05</p>
+              <p class="small mb-0">Han sabido explicar muy bien la didáctica con una actividad activa que incluía a la clase y al profesor. Se ha visto trabajo cooperativo, esfuerzo e investigación profunda llevada de forma muy clara al aula.</p>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-danger">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
                 <h6 class="fw-bold text-dark mb-0">Maestras en acción</h6>
-                <span class="badge bg-danger fs-6">8.075</span>
+                <span class="badge bg-danger fs-6">7,94</span>
               </div>
-              <p class="small mb-0">Han trabajado mucho en el bordado y la investigación. Todas merecen la nota excepto Noemí, cuya presencia e implicación fue escasa. Por lo demás, han crecido y mejorado mucho como equipo.</p>
+              <p class="text-muted fst-italic mb-2" style="font-size: 0.75rem;">Gloria: 7,75 | Joselu: 8,35 | Pacheco: 7,55 | Nathalie: 6,6 | Josué: 7,65 | Mario: 8,65 | Natalia: 9</p>
+              <p class="small mb-0">Han trabajado mucho en el bordado y la investigación. Todas merecen la nota excepto Noemí, cuya presencia e implicación en el grupo fue escasa. Por lo demás, han crecido y mejorado mucho como equipo.</p>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-warning">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
                 <h6 class="fw-bold text-dark mb-0">Las semillas de la educación</h6>
-                <span class="badge bg-warning text-dark fs-6">8.93</span>
+                <span class="badge bg-warning text-dark fs-6">8,97</span>
               </div>
-              <p class="small mb-0">Idea original y creativa: describir el curso a través de una canción. Tras el emotivo vídeo (donde Alba derramó lágrimas), hicieron un teatro sobre la didáctica. Cumplieron objetivos con participación activa de todos.</p>
+              <p class="text-muted fst-italic mb-2" style="font-size: 0.75rem;">Gloria: 8,9 | Joselu: 8,75 | Pacheco: 8,8 | Nathalie: 9,75 | Josué: 8,5 | Mario: 9,1 | Natalia: 9</p>
+              <p class="small mb-0">Muy original y creativo el uso de la canción para describir sus vivencias. Tras el emotivo vídeo (donde Alba derramó lágrimas), hicieron un teatro sobre la didáctica. Cumplieron objetivos con participación activa de todas.</p>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-info">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
                 <h6 class="fw-bold text-dark mb-0">Los sembradores de ideas</h6>
-                <span class="badge bg-info text-dark fs-6">9.0125</span>
+                <span class="badge bg-info text-dark fs-6">9,14</span>
               </div>
-              <p class="small mb-0">Idea brillante usando un hilo para narrar experiencias y teoría. Integraron a la clase y excluyeron a algunos a propósito para reflejar los fallos del sistema. Fue tan emotiva que hubo lágrimas (incluso de Angy). Muchísimo trabajo creativo e investigador.</p>
+              <p class="text-muted fst-italic mb-2" style="font-size: 0.75rem;">Gloria: 8,3 | Joselu: 9,05 | Pacheco: 9,25 | Nathalie: 9 | Josué: 9,3 | Mario: 9,45 | Natalia: 9,6</p>
+              <p class="small mb-0">Idea brillante usando un hilo para narrar experiencias y teoría. Integraron a la clase y excluyeron a algunos a propósito para reflejar los fallos del sistema educativo. Fue muy emotiva (hasta Angy terminó llorando). Muchísimo trabajo creativo e investigador.</p>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-purple" style="border-color: #6f42c1 !important;">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
                 <h6 class="fw-bold text-dark mb-0">LadyGirls Powers</h6>
-                <span class="badge fs-6" style="background-color: #6f42c1;">8.225</span>
+                <span class="badge fs-6" style="background-color: #6f42c1;">8,29</span>
               </div>
-              <p class="small mb-0">Se notó el esfuerzo y las dificultades que superaron. Tuvieron una idea simple pero única, sabiendo darle un toque cómico genial lanzando purpurina.</p>
+              <p class="text-muted fst-italic mb-2" style="font-size: 0.75rem;">Gloria: 7,8 | Joselu: 8,15 | Pacheco: 7,9 | Nathalie: 7 | Josué: 8,5 | Mario: 9,05 | Natalia: 9,6</p>
+              <p class="small mb-0">Se notó el esfuerzo y las dificultades que superaron. Tuvieron una idea simple pero única, sabiendo darle el toque cómico genial al echar toda la purpurina.</p>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="card h-100 border-0 bg-white shadow-sm p-4 rounded-4 border-top border-4 border-dark">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
                 <h6 class="fw-bold text-dark mb-0">Detectives del Conocimiento</h6>
-                <span class="badge bg-dark fs-6">8.16</span>
+                <span class="badge bg-dark fs-6">8,48</span>
               </div>
-              <p class="small mb-0">Evaluados por nosotros. Pese a ser solo 3, estuvieron a la altura de cualquiera. Trajeron una maqueta del recorrido de Jimmy mostrando su evolución y ejemplificaron muy bien lo que se debe y no se debe hacer.</p>
+              <p class="text-muted fst-italic mb-2" style="font-size: 0.75rem;">Gloria: 8,55 | Joselu: 8,3 | Pacheco: 7,65 | Nathalie: 9,4</p>
+              <p class="small mb-0">En este caso los Profequerones les ponemos la nota. Pese a ser solo 3, estuvieron a la altura de cualquiera. Trajeron una maqueta del recorrido de Jimmy mostrando su evolución y ejemplificaron muy bien lo que se debe y no se debe hacer.</p>
             </div>
           </div>
 
           <div class="col-12">
             <div class="card h-100 border-0 bg-danger bg-opacity-10 shadow-sm p-4 rounded-4 border-start border-4 border-danger">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
                 <h6 class="fw-bold text-danger mb-0">Didactitiza</h6>
-                <span class="badge bg-danger fs-6">9.0625</span>
+                <span class="badge bg-danger fs-6">9,0</span>
               </div>
+              <p class="text-muted fst-italic mb-2" style="font-size: 0.75rem;">Gloria: 9,55 | Joselu: 8,5 | Pacheco: 8,7 | Nathalie: 8,65 | Josué: 8,7 | Mario: 9,5 | Natalia: 9,4</p>
               <p class="small mb-0 text-dark"><strong>El equipo que más emocionó a la clase.</strong> Con su vídeo (que hizo llorar al 90% de nosotros) explicaron vivencias y teoría haciéndonos sentir parte del proceso. Repartieron tarjetas dedicadas a cada persona. Supieron ganarse al público llegando al corazón y cumpliendo todos los objetivos. Presentación excelente.</p>
             </div>
           </div>
 
           <div class="col-md-4">
             <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
                 <h6 class="fw-bold text-dark mb-0">Didacti-K</h6>
-                <span class="badge bg-secondary fs-6">8.2875</span>
+                <span class="badge bg-secondary fs-6">8,59</span>
               </div>
-              <p class="small mb-0">Narraron su experiencia como un trayecto espacial. No fue muy original (hubo grupos muy parecidos), pero lograron narrar vivencias y teoría usando la metáfora del meteorito. Podría haber estado mejor.</p>
+              <p class="text-muted fst-italic mb-2" style="font-size: 0.75rem;">Gloria: 7,6 | Joselu: 8,55 | Pacheco: 7,85 | Nathalie: 8,4 | Josué: 9,15 | Mario: 9,15 | Natalia: 9,4</p>
+              <p class="small mb-0">Narraron su experiencia como un trayecto espacial. No fue una idea muy original por su parecido con otros grupos, pero lograron narrar vivencias y teoría usando la metáfora del meteorito. Pensamos que podrían haberlo hecho mejor.</p>
             </div>
           </div>
 
           <div class="col-md-4">
             <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
                 <h6 class="fw-bold text-dark mb-0">Chispa Educativa</h6>
-                <span class="badge bg-secondary fs-6">8.3375</span>
+                <span class="badge bg-secondary fs-6">8,45</span>
               </div>
-              <p class="small mb-0">Viaje por el mar. Tampoco fue una idea muy original, pero fueron capaces de integrar la teoría y llegar a una conclusión sólida sobre la didáctica, aunque con margen de mejora.</p>
+              <p class="text-muted fst-italic mb-2" style="font-size: 0.75rem;">Gloria: 7,5 | Joselu: 8,4 | Pacheco: 8 | Nathalie: 8 | Josué: 9,3 | Mario: 9,45 | Natalia: 9,4</p>
+              <p class="small mb-0">Viaje por el mar. Tampoco nos pareció una idea original por su similitud con otros grupos. Aún así, fueron capaces de narrar sus vivencias con la teoría llegando a una conclusión sólida, aunque con margen de mejora.</p>
             </div>
           </div>
 
           <div class="col-md-4">
             <div class="card h-100 border-0 bg-white shadow-sm p-3 rounded-4">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
                 <h6 class="fw-bold text-dark mb-0">Red educadora</h6>
-                <span class="badge bg-secondary fs-6">7.2125</span>
+                <span class="badge bg-secondary fs-6">7,71</span>
               </div>
-              <p class="small mb-0">Usaron la metáfora de una receta. Faltó originalidad y el uso de IA para la imagen del recetario no gustó (otros grupos hicieron manualidades). Aún así, la conclusión teórica fue sólida.</p>
+              <p class="text-muted fst-italic mb-2" style="font-size: 0.75rem;">Gloria: 6,3 | Joselu: 7,2 | Pacheco: 6 | Nathalie: 6,45 | Josué: 9,3 | Mario: 9,35 | Natalia: 9,4</p>
+              <p class="small mb-0">Usaron la metáfora de una receta. Faltó originalidad y el uso de IA para la imagen del recetario no nos gustó. Sin embargo, narraron sus vivencias con la teoría llegando a una conclusión sólida, aunque podrían haberlo hecho mejor.</p>
             </div>
           </div>
 
         </div>
       </div>
     `,
+
   }
 ];
 
